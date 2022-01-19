@@ -1,0 +1,13 @@
+.FavoriteTwoToneIconinitial{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-100px;/* half width*/
+    margin-top:-300px;/* half height*/
+}
+
+
+.parainitail{
+    font-size: 15rem !important;
+    color: rgb(0, 60, 255);
+}

@@ -1,0 +1,33 @@
+.heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.heartt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+color: rgb(255, 255, 255);
+}
+
+..Footern{
+    position: absolute;
+    bottom: 0;
+align-items: center;
+align-self: center;
+justify-content: center;
+j
+}
