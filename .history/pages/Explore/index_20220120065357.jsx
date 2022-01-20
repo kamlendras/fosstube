@@ -31,7 +31,7 @@ export default function Explore() {
 
     <><Eshow/></>
 <div className={styles.block}>
-  <h1 className={styles.bo}>  TRENDING<Image src="/trending.png" alt="Trending"  height={'40%'}  width={'40%'}  /></h1></div>
+  <h1 className={styles.bo}>  TRENDING<Image src="/trending.png" alt=""  height={'40%'}  width={'40%'}  /></h1></div>
 
 <Icode/>
       
