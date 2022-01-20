@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "predeploy": "yarn run out",
     "deploy": "gh-pages -d out"
   },
@@ -60,3 +61,4 @@
     "tailwindcss": "^3.0.8"
   }
 }
+y
