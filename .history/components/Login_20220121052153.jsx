@@ -99,7 +99,7 @@ const Login = (props) => {
               />
             </span>
             {!session && (
-              <Grid className="authg" item xs={9}>
+              <Grid className="authg} item xs={9}>
                 <span className={styles.Form}>
                   <span className={styles.Google}>
                     <Image
@@ -115,7 +115,7 @@ const Login = (props) => {
 )}
 
 {session && (
-              <Grid className="authg" item xs={8}>
+              <Grid className={styles.authg} item xs={8}>
                 <span className={styles.Form}>
                   <span className={styles.Google}>
                     <Image
