@@ -27,8 +27,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install and Build 🔧
-        run: yarn && yarn build 
-        # && yarn export
+        run: yarn && yarn build && yarn export
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
