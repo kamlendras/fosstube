@@ -170,7 +170,7 @@ export default function MenuAppBar(props) {
               variant="h6"
               component="div"
               sx={{ flexGrow: 1 }}
-              className="nap"
+              className=.nap"
             >
               Arrow Nap
             </Typography>
