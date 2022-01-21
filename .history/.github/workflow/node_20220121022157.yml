@@ -1,0 +1,28 @@
+name :Node.js CI
+on:
+   push:
+    branches :[main]
+   pull_request:
+    branches:[main]
+
+jobs:
+  build:
+  runs-on:ubuntu-latest
+
+  strategy:
+  matrix:
+  node-version:[14.x]
+
+  steps:
+  -name:checkout
+  uses:actions/checkout@v2
+
+  -name:Use Node.js ${{matrix.node-version}}    
+  uses:action/setup-node@v1
+  with:
+  node-version:${{matrix.node-version}}
+
+  -name:Deploy
+  uses:JamesIves/github-pages-deploy-action@3.7.1
+  with:
+  GITHUB_TOCKEN:${{secrets.GITHUB_TO}}

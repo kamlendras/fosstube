@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export" :"next export && touch out/",
+    "export" :"next export && touch out/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
