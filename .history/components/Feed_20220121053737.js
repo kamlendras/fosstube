@@ -14,7 +14,7 @@ function Feed() {
     );
   }, []);
 
-  const { data: session, status } = useSession();
+  
   return (
     <div className={styles.feed}>
       <div className={styles.feed__header}>

@@ -31,15 +31,12 @@ function TweetBox() {
     setTweetMessage("");
     setTweetImage("");
   };
-  const { data: session, status } = useSession();
+
   return (
     <div className={styles.tweetBox}>
       <form>
         <div className={styles.tweetBox__input}>
-        {!session && (
-          <Avatar  /> )}
-
-          
+          <Avatar  />
           <input
             className={styles.anything}
             onChange={(e) => setTweetMessage(e.target.value)}

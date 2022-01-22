@@ -38,8 +38,6 @@ function TweetBox() {
         <div className={styles.tweetBox__input}>
         {!session && (
           <Avatar  /> )}
-
-          
           <input
             className={styles.anything}
             onChange={(e) => setTweetMessage(e.target.value)}

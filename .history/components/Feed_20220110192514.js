@@ -4,7 +4,6 @@ import Post from "./Ask1";
 import db from "./firebase";
 import FlipMove from "react-flip-move";
 import styles from "../styles/Ask.module.css";
-import { signIn, signOut, useSession } from "next-auth/react";
 function Feed() {
   const [ask, setask] = useState([]);
 
@@ -14,7 +13,6 @@ function Feed() {
     );
   }, []);
 
-  const { data: session, status } = useSession();
   return (
     <div className={styles.feed}>
       <div className={styles.feed__header}>

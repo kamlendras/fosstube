@@ -7,7 +7,6 @@ import IconButton from "@mui/material/IconButton";
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
 import Stack from "@mui/material/Stack";
 import styles from "../styles/Ask.module.css";
-import { signIn, signOut, useSession } from "next-auth/react";
 const Input = styled("input")({
   display: "none",
 });
@@ -31,15 +30,12 @@ function TweetBox() {
     setTweetMessage("");
     setTweetImage("");
   };
-  const { data: session, status } = useSession();
+
   return (
     <div className={styles.tweetBox}>
       <form>
         <div className={styles.tweetBox__input}>
-        {!session && (
-          <Avatar  /> )}
-
-          
+          {/* <Avatar  /> */}
           <input
             className={styles.anything}
             onChange={(e) => setTweetMessage(e.target.value)}
