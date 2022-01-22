@@ -219,12 +219,6 @@ var useMediaQuery_default = /*#__PURE__*/__webpack_require__.n(useMediaQuery_);
 
 
 
-
-
-
-
-
-
 const Napicologin_label = {
     inputProps: {
         'aria-label': 'Checkbox demo'
@@ -481,15 +475,12 @@ function Nap(props) {
     }));
 };
 
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(5675);
 // EXTERNAL MODULE: external "@mui/material"
 var material_ = __webpack_require__(5692);
 // EXTERNAL MODULE: ./styles/Code.module.css
 var Code_module = __webpack_require__(5275);
 var Code_module_default = /*#__PURE__*/__webpack_require__.n(Code_module);
 ;// CONCATENATED MODULE: ./components/Icode.jsx
-
 
 
 
