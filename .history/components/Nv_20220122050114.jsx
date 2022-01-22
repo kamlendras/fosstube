@@ -259,7 +259,7 @@ export default function MenuAppBar(props) {
                     </MyButton>
                   </React.Fragment> */}
                     <center>
-                      {/* <img
+                      {/* <Image
                         src="/brush-teeth.png"
                         height={200}
                         width={200}

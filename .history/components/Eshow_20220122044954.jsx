@@ -51,7 +51,7 @@ export default function Eshow() {
               }}
             > <center> 
              
-                <img
+                <Image
                   className={styles.eshow2img}
                   height={56}
                   alt="Remy Sharp"
@@ -76,7 +76,7 @@ export default function Eshow() {
               color: "white",
               }}
             ><center>
-              <img
+              <Image
                 className={styles.eshow3img}
                 height={56}
                 alt="Remy Sharp"
@@ -100,7 +100,7 @@ export default function Eshow() {
               color: "white",
             }}
           ><center>
-            <img
+            <Image
               className={styles.eshow4img}
               height={56}
               alt="Remy Sharp"

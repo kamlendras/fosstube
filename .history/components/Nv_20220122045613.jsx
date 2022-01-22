@@ -242,7 +242,7 @@ export default function MenuAppBar(props) {
                   <Divider />
                   <React.Fragment>
                     <MyButton onClick={handleClose} color="red">
-                      <img
+                      <Image
                         src="/google.svg"
                         height={"30%"}
                         width={"30%"}
@@ -250,7 +250,7 @@ export default function MenuAppBar(props) {
                       />
                     </MyButton>
                     <MyButton onClick={handleClose} color="blue">
-                      <img
+                      <Image
                         src="/face.ico"
                         height={"30%"}
                         width={"30%"}
@@ -259,7 +259,7 @@ export default function MenuAppBar(props) {
                     </MyButton>
                   </React.Fragment> */}
                     <center>
-                      {/* <img
+                      {/* <Image
                         src="/brush-teeth.png"
                         height={200}
                         width={200}

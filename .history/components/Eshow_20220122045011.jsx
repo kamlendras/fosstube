@@ -100,7 +100,7 @@ export default function Eshow() {
               color: "white",
             }}
           ><center>
-            <img
+            <Image
               className={styles.eshow4img}
               height={56}
               alt="Remy Sharp"
