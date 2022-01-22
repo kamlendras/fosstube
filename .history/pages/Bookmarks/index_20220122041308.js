@@ -2,7 +2,7 @@ import Head from "next/head";
 import Nv from "/components/Nv";
 import Footern from "/components/Footern";
 import styles from "/styles/Bookmarks.module.css";
-// import Image from "next/image";
+import Image from "next/image";
 function index() {
   return (
     <>
