@@ -17,7 +17,7 @@ export default function Home() {
           name="description"
           content="Arrow Nap| Arrow Nap is the knowledge-sharing community Of Developers."
         />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo" />
       </Head>
       {/* <Plus /> */}
       <Login />
