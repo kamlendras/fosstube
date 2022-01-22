@@ -8,12 +8,10 @@
 # testing
 /coverage
 
-
 # next.js
 /.next/
+/.history/
 /out/
-
-
 
 # production
 /build
