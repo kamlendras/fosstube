@@ -28,11 +28,11 @@ const Login = (props) => {
     <div className={styles.Container}>
       <div className={styles.Nav}>
         <a className={styles.ha}>
-          <Image src="/arrow.svg" alt="" height={60} width={60} />
+          <img src="/arrow.svg" alt="" height={60} width={60} />
         </a>
 
         <>
-          {" "}
+         
           <Search />
         </>
 
@@ -102,10 +102,10 @@ const Login = (props) => {
               <Grid className="authg" item xs={9}>
                 <span className={styles.Form}>
                   <span className={styles.Google}>
-                    <Image
+                    <img
                       src="/google.svg"
-                      height={"30%"}
-                      width={"30%"}
+                      height={"10%"}
+                      width={"10%"}
                       alt=""
                     />
                     Sign in with Google
@@ -118,10 +118,10 @@ const Login = (props) => {
               <Grid className="authg" item xs={8}>
                 <span className={styles.Form}>
                   <span className={styles.Google}>
-                    <Image
+                    <img
                       src="/cf.svg"
-                      height={"30%"}
-                      width={"30%"}
+                      height={"10%"}
+                      width={"10%"}
                       alt=""
                     />
                     Get Certificate
@@ -134,7 +134,7 @@ const Login = (props) => {
            
           </Grid>
           <Grid item xs={6}>
-          <Fade bottom>   <Image src="/mess.svg" alt="" height={512} width={512} /> </Fade>
+          <Fade bottom>   <img src="/mess.svg" alt="" height={512} width={512} /> </Fade>
           </Grid>
         </Grid>
       </div>

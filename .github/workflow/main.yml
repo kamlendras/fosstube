@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       - name: Checkout 🛎️
@@ -27,13 +27,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install and Build 🔧
-        run: yarn && yarn build 
-        # && yarn export
+        run: yarn && yarn build && yarn export
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: .next # The folder the action should deploy.
+          FOLDER: out # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch

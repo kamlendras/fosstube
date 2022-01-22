@@ -30,22 +30,22 @@ export default function App() {
         className="mySwiper"
       >
        <SwiperSlide>
-          <Image src="/14.jpeg" alt="no internet" height={400} width={1600}/>
+          <img src="/14.jpeg" alt="no internet" height={400} width={1600}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/11.jpeg" alt="no internet" height={400} width={1600}/>
+          <img src="/11.jpeg" alt="no internet" height={400} width={1600}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/12.jpeg" alt="no internet"height={400} width={1600} />
+          <img src="/12.jpeg" alt="no internet"height={400} width={1600} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/13.jpeg" alt="no internet" height={400} width={1600}/>
+          <img src="/13.jpeg" alt="no internet" height={400} width={1600}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/15.png" alt="no internet" height={400} width={1600}/>
+          <img src="/15.png" alt="no internet" height={400} width={1600}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/16.jpeg" alt="no internet" height={400} width={1600}/>
+          <img src="/16.jpeg" alt="no internet" height={400} width={1600}/>
         </SwiperSlide>
       </Swiper>
     </div>

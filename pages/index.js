@@ -74,7 +74,7 @@ export default function Home() {
         <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-10 h-10" viewBox="0 0 24 24">
             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-            <circle cx={12} cy={7} r={4} />
+        
           </svg>
         </div>
         <div className="flex-grow">
@@ -173,7 +173,7 @@ export default function Home() {
     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
       <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div className="rounded-lg h-64 overflow-hidden">
-          <Image height={400} width={720} alt="content" className="object-cover object-center h-full w-full" src="/00.svg" />
+          <img alt="content" className="object-cover object-center h-full w-full" src="/00.svg" />
         </div>
         <h2 className="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
         <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
@@ -185,7 +185,7 @@ export default function Home() {
       </div>
       <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div className="rounded-lg h-64 overflow-hidden">
-          <Image height={400} width={720} alt="content" className="object-cover object-center h-full w-full" src="/00.svg" />
+          <img alt="content" className="object-cover object-center h-full w-full" src="/00.svg" />
         </div>
         <h2 className="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
         <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
@@ -197,7 +197,7 @@ export default function Home() {
       </div>
       <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div className="rounded-lg h-64 overflow-hidden">
-          <Image height={400} width={720} alt="content" className="object-cover object-center h-full w-full" src="/00.svg" />
+          <img alt="content" className="object-cover object-center h-full w-full" src="/00.svg" />
         </div>
         <h2 className="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
         <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
@@ -216,7 +216,7 @@ export default function Home() {
     <div className="flex flex-wrap -m-4">
       <div className="p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <Image height={400} width={720} className="lg:h-48 md:h-36 w-full object-cover object-center" src="/00.svg" alt="blog" />
+          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/00.svg" alt="blog" />
           <div className="p-6">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
@@ -245,7 +245,7 @@ export default function Home() {
       </div>
       <div className="p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <Image height={400} width={720} className="lg:h-48 md:h-36 w-full object-cover object-center" src="/00.svg" alt="blog" />
+          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/00.svg" alt="blog" />
           <div className="p-6">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
@@ -274,7 +274,8 @@ export default function Home() {
       </div>
       <div className="p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <Image height={400} width={720} className="lg:h-48 md:h-36 w-full object-cover object-center" src="/00.svg"  alt="blog" />
+       
+          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/00.svg"  alt="blog" />
           <div className="p-6">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
