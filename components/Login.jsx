@@ -8,6 +8,7 @@ import { makeStyles } from "@mui/styles";
 import Fade from 'react-reveal/Fade';
 import { signIn, signOut, useSession } from "next-auth/react";
 import * as React from "react";
+
 const useStyles = makeStyles({
   root: {
     color: "red",
@@ -27,7 +28,7 @@ const Login = (props) => {
     <div className={styles.Container}>
       <div className={styles.Nav}>
         <a className={styles.ha}>
-          <img src="/arrow.svg" alt="" height={60} width={60} />
+          <img src="/logo.svg" alt="" height={60} width={60} />
         </a>
 
         <>
@@ -36,7 +37,7 @@ const Login = (props) => {
         </>
 
         <div className={styles.ox}>
-          <Link href="/signin" className={styles.tel} passHref>
+          <Link href="/community" className={styles.tel} passHref>
             <a className={styles.Join}>Join Now</a>
           </Link>
 

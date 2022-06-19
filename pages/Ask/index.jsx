@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Sidebar from "/components/Sidebar";
-import Feed from "/components/Feed";
+import Row from "/components/Row";
 import Widgets from "/components/Widgets";
 import styles from "/styles/Ask.module.css";
 export default function Ask() {
@@ -19,7 +19,7 @@ export default function Ask() {
       </Head>
        <div className={styles.void}>
       <Sidebar />
-      <Feed />
+      <Row />
       <Widgets />
     </div>
     </div>

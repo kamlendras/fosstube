@@ -1,26 +1,28 @@
-html,
+ html,
 body {
-  padding: 0;
+   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
     overflow-y: scroll;
-    /* overflow-x: hidden; */
-    /* background-color: rgb(217, 241, 255); */
-    background-color: #e3f2fd;
+    overflow-x: hidden;
+     background-color: rgb(217, 241, 255); 
+     background-color: #e3f2fd;
     box-sizing: border-box;
     --twitter-color: #50b7f5;
-    --twitter-background: #e6ecf0;
+    --twitter-background: #e6ecf0; 
+     border: 0 !important;
+    border-bottom: 0;  
 }
 
-a {
+ a {
   color: inherit;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
-}
+} 
 
 
 
@@ -42,9 +44,7 @@ a {
   background: rgb(0, 110, 255);
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 .sidebarOption {
   display: flex;
@@ -74,7 +74,7 @@ a {
 }
 
 
-/* search bar */
+
 
 .container .input {
   border: 0;
@@ -148,7 +148,7 @@ a {
   height: 1rem !important;
   width: 1rem !important;
 }
-/* end search bar */
+
 
 
 .authg{
@@ -157,7 +157,6 @@ a {
 }
 
 
-/* Navbar Logo */
 .nap {
   font-family: "Raleway", sans-serif !important;
   font-size: 2.5rem !important;
@@ -167,4 +166,11 @@ a {
   .nap {
     font-size: 1.5rem !important;
   }
+} 
+
+.ve{
+  margin-top: 2rem;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

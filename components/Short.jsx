@@ -1,7 +1,7 @@
 import Nap1 from ".//Nap1";
 import Avatar from "@mui/material/Avatar";
 import { deepOrange, deepPurple } from "@mui/material/colors";
-
+import Link from "next/link";
 function Short() {
   return (
     <div className="relative bg-white ">
@@ -141,13 +141,14 @@ function Short() {
                   </div>
                 </div>
               </div>
-
+              <Link passHref href="/post">
               <a
                 href="#"
                 className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-indigo-700"
               >
                 Post
               </a>
+              </Link>
             </div>
           </div>
         </div>

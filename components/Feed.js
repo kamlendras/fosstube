@@ -17,11 +17,7 @@ function Feed() {
   const { data: session, status } = useSession();
   return (
     <div className={styles.feed}>
-      <div className={styles.feed__header}>
-        <h2>Chat</h2>
-      </div>
-
-      <TweetBox />
+    
 
       <FlipMove>
         {ask.map((ask) => (

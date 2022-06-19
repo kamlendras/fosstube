@@ -4,13 +4,12 @@ import "firebase/compat/auth"
 import "firebase/compat/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDhIqhU7U3lzvBTyxiLxeEDShBB2joHL9M",
-  authDomain: "arrownapx.firebaseapp.com",
-  projectId: "arrownapx",
-  storageBucket: "arrownapx.appspot.com",
-  messagingSenderId: "527878991188",
-  appId: "1:527878991188:web:00ff0cc9d27ca2a877ecc1",
-  measurementId: "G-R0F7D6DBNR"
+  apiKey: "AIzaSyDDeQqelePMDOwcRq-eifUw6gkfQRUMpyQ",
+  authDomain: "x3267-598e2.firebaseapp.com",
+  projectId: "x3267-598e2",
+  storageBucket: "x3267-598e2.appspot.com",
+  messagingSenderId: "1082285561556",
+  appId: "1:1082285561556:web:7fab449f55d91b5c5f0d41"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
