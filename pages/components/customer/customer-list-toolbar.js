@@ -1,19 +1,22 @@
 import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  TextField,
-  InputAdornment,
-  SvgIcon, Typography
+  Box
 } from '@mui/material';
-import { Search as SearchIcon } from '../../icons/search';
-import { Upload as UploadIcon } from '../../icons/upload';
-import { Download as DownloadIcon } from '../../icons/download';
+// import {
+//   Box,
+//   Button,
+//   Card,
+//   CardContent,
+//   TextField,
+//   InputAdornment,
+//   SvgIcon, Typography
+// } from '@mui/material';
+// import { Search as SearchIcon } from '../../icons/search';
+// import { Upload as UploadIcon } from '../../icons/upload';
+// import { Download as DownloadIcon } from '../../icons/download';
 
 export const CustomerListToolbar = (props) => (
-  <Box {...props}>
-    <Box
+   <Box {...props}>
+     <Box
       sx={{
         alignItems: 'center',
         display: 'flex',
@@ -22,7 +25,7 @@ export const CustomerListToolbar = (props) => (
         m: -1
       }}
     >
-      <Typography
+      {/* <Typography
         sx={{ m: 1 }}
         variant="h4"
       >
@@ -72,7 +75,7 @@ export const CustomerListToolbar = (props) => (
             />
           </Box>
         </CardContent>
-      </Card>
-    </Box>
+      </Card> */}
+     </Box>
   </Box>
 );

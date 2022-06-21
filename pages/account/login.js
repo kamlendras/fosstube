@@ -5,8 +5,8 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Box, Button, Container, Grid, Link, TextField, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Facebook as FacebookIcon } from '../icons/facebook';
-import { Google as GoogleIcon } from '../icons/google';
+// import { Facebook as FacebookIcon } from '../icons/facebook';
+// import { Google as GoogleIcon } from '../icons/google';
 
 const Login = () => {
   const router = useRouter();
@@ -85,7 +85,7 @@ const Login = () => {
                 xs={12}
                 md={6}
               >
-                <Button
+                {/* <Button
                   color="info"
                   fullWidth
                   startIcon={<FacebookIcon />}
@@ -94,14 +94,14 @@ const Login = () => {
                   variant="contained"
                 >
                   Login with Facebook
-                </Button>
+                </Button> */}
               </Grid>
               <Grid
                 item
                 xs={12}
                 md={6}
               >
-                <Button
+                {/* <Button
                   fullWidth
                   color="error"
                   startIcon={<GoogleIcon />}
@@ -110,7 +110,7 @@ const Login = () => {
                   variant="contained"
                 >
                   Login with Google
-                </Button>
+                </Button> */}
               </Grid>
             </Grid>
             <Box
