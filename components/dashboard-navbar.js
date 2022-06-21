@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 import { AppBar, Avatar, Badge, Box, IconButton, Toolbar, Tooltip } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import { Bell as BellIcon } from '../icons/bell';
-import { UserCircle as UserCircleIcon } from '../icons/user-circle';
+// import { Bell as BellIcon } from '../icons/bell';
+// import { UserCircle as UserCircleIcon } from '../icons/user-circle';
 // import { Users as UsersIcon } from '../icons/users';
 
 const DashboardNavbarRoot = styled(AppBar)(({ theme }) => ({
@@ -58,7 +58,7 @@ export const DashboardNavbar = (props) => {
             </IconButton>
           </Tooltip>
           <Tooltip title="Notifications">
-            <IconButton sx={{ ml: 1 }}>
+            {/* <IconButton sx={{ ml: 1 }}>
               <Badge
                 badgeContent={4}
                 color="primary"
@@ -66,9 +66,9 @@ export const DashboardNavbar = (props) => {
               >
                 <BellIcon fontSize="small" />
               </Badge>
-            </IconButton>
+            </IconButton> */}
           </Tooltip>
-          <Avatar
+          {/* <Avatar
             sx={{
               height: 40,
               width: 40,
@@ -77,7 +77,7 @@ export const DashboardNavbar = (props) => {
             src="/static/images/avatars/avatar_1.png"
           >
             <UserCircleIcon fontSize="small" />
-          </Avatar>
+          </Avatar> */}
         </Toolbar>
       </DashboardNavbarRoot>
     </>
