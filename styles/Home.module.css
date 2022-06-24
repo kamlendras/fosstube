@@ -20,46 +20,7 @@
   flex-wrap: nowrap;
 }
 
-.ha {
-  width: 85px;
-  height: 64px;
-  @media (max-width: 768px) {
-    padding: 0 5px;
-  }
-}
-.Join {
-  font-size: 16px;
-  padding: 10px 12px;
-  text-decoration: none;
-  border-radius: 4px;
-  color: rgba(0, 0, 0, 0.6);
-  margin-right: 0.5rem;
-  margin-left: 1rem;
-}
-.Join :hover {
-  background-color: rgba(0, 0, 0, 0.08);
-  color: rgba(0, 0, 0, 0.9);
-  text-decoration: none;
-}
-.SignIn {
-  box-shadow: inset 0 0 0 1px #0a66c2;
-  color: #0a66c2;
-  margin-right: 0.5rem;
 
-  border-radius: 24px;
-  transition-duration: 167ms;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 40px;
-  padding: 10px 24px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-}
-.SignIn:hover {
-  background-color: rgba(112, 181, 249, 0.15);
-  color: #0a66c2;
-  text-decoration: none;
-}
 .Section {
   display: flex;
   align-content: start;
@@ -78,7 +39,10 @@
     min-height: 0px;
   }
 }
-
+.messa{
+  height: 512;
+  width: 512;
+}
 .hb {
   /* padding-bottom: 0; */
   width: 55%;
@@ -91,12 +55,7 @@
 .message {
   width: 50%;
   display: flex;
-  @media (max-width: 768px) {
-    top: 230px;
-    width: initial;
-    position: initial;
-    height: initial;
-  }
+ 
 }
 
 .Form {
@@ -141,7 +100,59 @@
   color: var(--twitter-color) !important;
 }
 
-
+@media only screen and (min-width: 992px) {
+  .messa{
+    height: 412;
+    
+  }
+  .hb {
+    /* padding-bottom: 0; */
+    width: 55%;
+    font-size: 2.5rem;
+    color: #2977c9;
+    font-weight: 200;
+    line-height: 4.375rem;
+  }
+  .message {
+    width: 50%;
+    height: 400;
+    display: flex;
+   
+  }
+  
+  .Form {
+    margin-top: 100px;
+    width: 408px;
+    margin-top: 10rem !important;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+  
+  .Google {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%),
+      inset 0 0 0 2px rgb(0 0 0 / 0%) inset 0 0 0 1px rgb(0 0 0 / 0);
+    vertical-align: middle;
+    z-index: 0;
+    transition-duration: 167ms;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    border: 0.125rem solid #42a5f5;
+  }
+  
+  .Google:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.75);
+    border: 0.125rem solid #1976d2;
+  }
+}
 /* Navbar Logo */
 .nap {
   font-family: "Raleway", sans-serif;

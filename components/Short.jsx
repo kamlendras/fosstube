@@ -1,6 +1,6 @@
 import Nap1 from ".//Nap1";
 import Avatar from "@mui/material/Avatar";
-import { deepOrange, deepPurple } from "@mui/material/colors";
+import { deepOrange, deepPurple,deepBlue,deepRed,deepYellow,deepGreen } from "@mui/material/colors";
 import Link from "next/link";
 function Short() {
   return (
@@ -9,7 +9,7 @@ function Short() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
           <div className="sm:max-w-lg">
             <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-              Post a Coding Blog!!
+              Post a Coding Blog !!
             </h1>
             <p className="mt-4 text-xl text-gray-500">
               Share your coding skill to the world.
@@ -17,31 +17,32 @@ function Short() {
           </div>
           <div>
             <div className="mt-10">
-              {/* Decorative image grid */}
               <div
                 aria-hidden="true"
                 className="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"
               >
                 <div className="absolute transform sm:left -1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                   <div className="flex items-center space-x-6 lg:space-x-8">
-                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="w-60 h-94 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
+                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-20">
+                    <div className="w-44 h-64 rounded-lg ">
                         <Nap1
-                          a={<Avatar>H</Avatar>}
+                           a={
+                            <Avatar sx={{ bgcolor: deepOrange[500] }}>L</Avatar>
+                          }
                           n={"Lester J."}
-                          d={"Dec 2, 2022"}
+                          d={"Dec 2"}
                           i={
                             "https://miro.medium.com/max/1838/1*gDr1IQol5X617j3QV4_5Cw.png"
                           }
                           t={"Pizza with CSS"}
-                          p={"p"}
-                          pp={"pp"}
+                          p={""}
+                          pp={""}
                         />
                       </div>
                       <div className="w-44 h-64 rounded-lg overflow-hidden">
                         <Nap1
                           a={
-                            <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>
+                            <Avatar sx={{ bgcolor: deepBlue }}>N</Avatar>
                           }
                           n={"Kevin S."}
                           d={"Jan 14"}
@@ -55,7 +56,7 @@ function Short() {
                       </div>
                     </div>
                     <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                    <div className="w-44 h-64 rounded-lg overflow-hidden">
                         <Nap1
                           className="w-full h-full object-center object-cover"
                           a={
@@ -69,8 +70,8 @@ function Short() {
                             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMyIQhtL1dzThrj28rXGdMy5t8UUiSUKXw1f7wSeHRPwKyVDS6C-zj-m9Rk5xF2PWzFow&usqp=CAU"
                           }
                           t={"SEO"}
-                          p={"pghg"}
-                          pp={"pphjj"}
+                          p={"."}
+                          pp={"."}
                         />
                       </div>
                       <div className="w-44 h-64 rounded-lg overflow-hidden">
@@ -133,8 +134,8 @@ function Short() {
                             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEp0WLprQ4xTcexoFSCjxlWlOZfkz1C-dmaTvrOn9knjZOaGiWZ24yYHUCar3eLkS08JI&usqp=CAU"
                           }
                           t={"Search engine"}
-                          p={"pghg"}
-                          pp={"pphjj"}
+                          p={""}
+                          pp={""}
                         />
                       </div>
                     </div>
@@ -144,7 +145,7 @@ function Short() {
               <Link passHref href="/post">
               <a
                 href="#"
-                className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-indigo-700"
+                className="inline-block text-center bg-blue-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-blue-700"
               >
                 Post
               </a>

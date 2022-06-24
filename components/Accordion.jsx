@@ -23,7 +23,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Arrow Nap is a platform in which you can post coding blogs.
+            Arrow Nap is The knowledge-sharing community Of Developers.
 
           </Typography>
         </AccordionDetails>
@@ -67,7 +67,6 @@ export default function SimpleAccordion() {
           <Typography>
             Taking a Quizze gives you the confidence to learn more and more.<br />
             It tells how much you know about your profession<br />
-            Take a Quizze Now at arrownap.com/Quizzes
           </Typography>
         </AccordionDetails>
       </Accordion>
