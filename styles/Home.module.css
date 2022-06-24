@@ -34,10 +34,7 @@
   max-width: 1128px;
   align-items: center;
   margin: auto;
-  @media (max-width: 768px) {
-    margin: auto;
-    min-height: 0px;
-  }
+ 
 }
 .messa{
   height: 512;
