@@ -1,264 +1,195 @@
 import Head from "next/head";
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { experimentalStyled as styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
+import Link from 'next/link'
+import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
 function index() {
   return (
     <div>
       <Head>
-        <title>Newsroom</title>
+        <title>Newsroom | Nap</title>
         <meta
           name="description"
           content="Arrow Nap| Arrow Nap is the knowledge-sharing community Of Developers."
         />
         <link rel="icon" href="favicon.ico" />
       </Head>
+      <center><h1 class="mt-1 text-blue-500  text-2xl">Newsroom</h1></center>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-0 mx-auto">
+          {/* <div> */}
+          <div className="flex flex-col">
+            <div className="h-1 bg-gray-200 rounded overflow-hidden">
+              <div className="w-24 h-full bg-blue-500" />
+            </div>
+            <div className="flex flex-wrap sm:flex-row flex-col py-6">
 
-      <body class="bg-neutral-50 ...">
-        <h1 class="ml-2 underline decoration-4">Newsroom</h1>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid
-            container
-            spacing={{ xs: 0, md: 0 }}
-            columns={{ xs: 0, sm: 1, md: 0 }}
-          >
-            <Grid item xs={12} sm={12} md={6}>
-              <span>
-                <Card sx={{ maxWidth: 600 }}>
-                  <CardMedia
-                    component="img"
-                    alt="oi"
-                    height="140"
-                    image="https://cdn1.expresscomputer.in/wp-content/uploads/2021/03/24161745/EC_Artificial_Intelligence_AI_750.jpg"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Artificial intelligence challenges what it means to be
-                      creative
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      When British artist Harold Cohen met his first computer in
-                      1968, he wondered if the machine might help solve a
-                      mystery that had long puzzled him: How can we look at a
-                      drawing, a few little scribbles, and see a face? Five
-                      years later, he devised a robotic artist called AARON to
-                      explore this idea. He equipped it with basic rules for
-                      painting and for how body parts are represented in
-                      portraiture and then set it loose making art.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
-                </Card>
-              </span>
-            </Grid>
+              <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Newsroom</h1>
+              <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">See Latest Announcements ➡</p>
+            </div>
+          </div>
 
-            <Grid item xs={2} sm={2} md={2} key={index}>
-            <span>
-          <Card sx={{ maxWidth: 200 }}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="140"
-              image="https://cdn1.expresscomputer.in/wp-content/uploads/2021/03/24161745/EC_Artificial_Intelligence_AI_750.jpg"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Artificial intelligence challenges what it means to be creative
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                When British artist Harold Cohen met his first computer in 1968,
-                he wondered if the machine might help solve a mystery that had
-                long puzzled him:
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-        </span>
-          </Grid>
-          <Grid item xs={2} sm={2} md={2} key={index}>
-          <span>
-          <Card sx={{ maxWidth: 200 }}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="140"
-              image="https://cdn1.expresscomputer.in/wp-content/uploads/2021/03/24161745/EC_Artificial_Intelligence_AI_750.jpg"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Artificial inte
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                When British ar
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-        </span>
-          </Grid>
-          
-          <Grid item xs={2} sm={2} md={2} key={index}>
-          <span>
-          <Card sx={{ maxWidth: 200 }}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="140"
-              image="https://cdn1.expresscomputer.in/wp-content/uploads/2021/03/24161745/EC_Artificial_Intelligence_AI_750.jpg"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Artificial intelligence challenges what it means to be creative
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                When British artist Harold Cohen met his first computer in 1968,
-                he wondered if the machine might help solve a mystery that had
-                long puzzled
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-        </span>
-          </Grid>
-          </Grid>
-        </Box>
+        </div>
 
-        
-       
-     
-        <section className="text-gray-600 body-font overflow-hidden">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="-my-8 divide-y-2 divide-gray-100">
-              <div className="py-8 flex flex-wrap md:flex-nowrap">
-                <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                  <span className="font-semibold title-font text-gray-700">
-                    CATEGORY
-                  </span>
-                  <span className="mt-1 text-gray-500 text-sm">
-                    12 Jun 2019
-                  </span>
-                </div>
-                <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
-                    Bitters hashtag waistcoat fashion axe chia unicorn
-                  </h2>
-                  <p className="leading-relaxed">
-                    Glossier echo park pug, church-key sartorial biodiesel
-                    vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
-                    moon party messenger bag selfies, poke vaporware kombucha
-                    lumbersexual pork belly polaroid hoodie portland craft beer.
-                  </p>
-                  <a className="text-indigo-500 inline-flex items-center mt-4">
-                    Learn More
-                    <svg
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
+
+
+
+
+
+        <div className=" container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap -m-4">
+            <div className=" p-4 md:w-1/3">
+              <div className="  shadow-xl hover:shadow-2xl transition delay-500  hover:-translate-y-6   hover: duration-400 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://abnresource.com/wp-content/uploads/2021/05/We-are-carbon-positive-LinkedIn.png" alt="blog" />
+                <div className="p-6">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">We are carbon neutral</h1>
+                  <p className="leading-relaxed mb-3">We are the worlds 1st e-company to achive the title of 100% carbon neutral.      </p>
+                  <div className="flex items-center flex-wrap ">
+                    <Link href="/news/carbon-neutral">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </Link>
+
+                  </div>
                 </div>
               </div>
-              <div className="py-8 flex flex-wrap md:flex-nowrap">
-                <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                  <span className="font-semibold title-font text-gray-700">
-                    CATEGORY
-                  </span>
-                  <span className="mt-1 text-gray-500 text-sm">
-                    12 Jun 2019
-                  </span>
-                </div>
-                <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
-                    Meditation bushwick direct trade taxidermy shaman
-                  </h2>
-                  <p className="leading-relaxed">
-                    Glossier echo park pug, church-key sartorial biodiesel
-                    vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
-                    moon party messenger bag selfies, poke vaporware kombucha
-                    lumbersexual pork belly polaroid hoodie portland craft beer.
-                  </p>
-                  <a className="text-indigo-500 inline-flex items-center mt-4">
-                    Learn More
-                    <svg
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
+            </div>
+            <div className="p-4 md:w-1/3">
+              <div className="shadow-xl hover:shadow-2xl transition delay-500  hover:-translate-y-6   hover: duration-400 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/00.svg" alt="blog" />
+                <div className="p-6">
+
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Right to Code</h1>
+                  <p className="leading-relaxed mb-3">Through our Nap Learning program we are helping millions to Learn to code.</p>
+                  <div className="flex items-center flex-wrap">
+                    <Link href="/news/Right-to-Code">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </Link>
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+
+                    </span>
+
+                  </div>
                 </div>
               </div>
-              <div className="py-8 flex flex-wrap md:flex-nowrap">
-                <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                  <span className="font-semibold title-font text-gray-700">
-                    CATEGORY
-                  </span>
-                  <span className="text-sm text-gray-500">12 Jun 2019</span>
-                </div>
-                <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
-                    Woke master cleanse drinking vinegar salvia
-                  </h2>
-                  <p className="leading-relaxed">
-                    Glossier echo park pug, church-key sartorial biodiesel
-                    vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
-                    moon party messenger bag selfies, poke vaporware kombucha
-                    lumbersexual pork belly polaroid hoodie portland craft beer.
+            </div>
+            <div className="p-4 md:w-1/3">
+              <div className="shadow-xl hover:shadow-2xl transition delay-500  hover:-translate-y-6   hover: duration-400 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://media.istockphoto.com/photos/variety-of-raw-black-angus-prime-meat-steaks-picture-id923692030?k=20&m=923692030&s=612x612&w=0&h=k-b2wtmHwBbpmSM74dN0gZzRD9oEwBUYiXdlWYD6mHY=" alt="blog" />
+                <div className="p-6">
+
+
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">No Meat</h1>
+                  <p className="leading-relaxed mb-3">Since meat contribute in 15% in Global carbon footprint we are no longer providing meat to our employees.
+
                   </p>
-                  <a className="text-indigo-500 inline-flex items-center mt-4">
-                    Learn More
-                    <svg
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
+                  <div className="flex items-center flex-wrap ">
+                    <Link href="/news/no-meat-policy">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </Link>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </body>
+        </div>
+      </section>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap -m-4">
+            <div className=" p-4 md:w-1/3">
+              <div className=" shadow-xl hover:shadow-2xl transition delay-500  hover:-translate-y-6   hover: duration-400 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://c1.wallpaperflare.com/preview/41/972/836/people-work-hands-business.jpg" alt="blog" />
+                <div className="p-6">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CAREERS</h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">We hire without degree</h1>
+                  <p className="leading-relaxed mb-3">We belive degree or any kind of certificate is not necessary to get a job.
+                  </p>
+                  <div className="flex items-center flex-wrap ">
+                    <Link href="/news/We-hire-without-degree">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </Link>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3">
+              <div className="shadow-xl hover:shadow-2xl transition delay-500  hover:-translate-y-6   hover: duration-400 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://ocdn.eu/images/pulscms/YmI7MDA_/dae186791f35a41f702b11fe648b79b4.jpg" alt="blog" />
+                <div className="p-6">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">SOCIAL</h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Unemployment</h1>
+                  <p className="leading-relaxed mb-3">Today a large quator of worlds population suffers from Unemployment and we are commeted to solve it.</p>
+                  <div className="flex items-center flex-wrap">
+                    <Link href="/news/Unemployment">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </Link>
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+
+                    </span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3">
+              <div className="shadow-xl hover:shadow-2xl transition delay-500  hover:-translate-y-6   hover: duration-400 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://static-cse.canva.com/blob/558554/studyingtips1.4762374a.jpg" alt="blog" />
+                <div className="p-6">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">EDUCATION</h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Get scholarship (NSAT)</h1>
+                  <p className="leading-relaxed mb-3">NSAT (NAP SCHOLARSHIP ADMISSION TEST)
+
+                  </p>
+                  <div className="flex items-center flex-wrap ">
+                    <Link href="/news/NSAT">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </Link>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
+        <center><Link href="/community">
+          <button type="button" class="text-white bg-gradient-to-r 
+        from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 
+        focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg 
+        text-sm px-5 py-2.5 text-center mr-2 mb-2"><ExpandCircleDownRoundedIcon/>  See More</button>
+        </Link>
+        </center>
     </div>
   );
 }

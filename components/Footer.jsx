@@ -70,7 +70,7 @@ const Footer = () => {
               href="https://www.youtube.com/channel/UCpE-bSIESqYtIEkBiZC-7tA/featured"
               passHref
             >
-              <div className={styles.FooterLink}>
+              <div className={styles.FooterLinky}>
                 <a>
                   <YouTubeIcon />
                   <span style={{ marginLeft: "10px" }}>Youtube</span>
@@ -86,7 +86,7 @@ const Footer = () => {
               </div>
             </Link>
             <Link href="https://twitter.com/NapArrow" passHref>
-              <div className={styles.FooterLink}>
+              <div className={styles.FooterLinkt}>
                 <a>
                   <TwitterIcon />
                   <span style={{ marginLeft: "10px" }}>Twitter</span>
@@ -96,7 +96,7 @@ const Footer = () => {
 
         
             <Link href="https://www.linkedin.com/in/arrownap/" passHref>
-              <div className={styles.FooterLink}>
+              <div className={styles.FooterLinkl}>
                 <a>
                   <LinkedInIcon/>
                   <span style={{ marginLeft: "10px" }}>LinkedIn</span>

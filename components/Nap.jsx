@@ -69,7 +69,7 @@ export default function Nap(props) {
               component="img"
               height="194"
               image={props.i}
-              alt="No Internet"  width={100}
+              alt={props.t}  width={100}
             />
          
 

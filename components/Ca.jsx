@@ -53,7 +53,7 @@ export default function Ca(props) {
         </Stack>
       ) : (
         <Card sx={{ maxWidth: 345 }}>
-          <CardHeader
+          {/* <CardHeader
             avatar={props.a}
             action={
               <IconButton aria-label="settings">
@@ -62,7 +62,7 @@ export default function Ca(props) {
             }
             title={props.n}
             subheader={props.d}
-          />
+          /> */}
 
         
 

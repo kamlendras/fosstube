@@ -71,112 +71,41 @@ export default function Icode() {
 
 const messageExamples = [
   {
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/KJgsSFOSQv0',
+    t: 'C Programming Tutorial for Beginners',
+    p: 'This course will give you a full introduction into all of the core concepts in the C programming language.',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/3lQEunpmtRA',
+    t: 'C Programming | In One Video',
+    p: '',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/87SH2Cn0s9A',
+    t: 'C Full Course 🕹️ -Learn to code today',
+    p: ' C tutorial for beginners full course',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/ci1PJexnfNE',
+    t: 'Why C is so Influential - Computerphile',
+    p: 'Why is C such an influential language? We asked ardent C  Professor Brailsford.',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/8PopR3x-VMY',
+    t: 'C Programming For Beginners | Learn C Programming | C Tutorial For Beginners',
+    p: ' Learn C Programming basics with examples. This C tutorial for beginners covers all the topics for all the three categories of learners, beginner, intermediate and experienced professionals.',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: '',
+    t: 'C Programming All-in-One Tutorial Series (10 HOURS!)',
+    p: 'Learn C Programming',
+    pp: 'https://www.youtube.com/embed/Bz4MxDeEM6k',
 
   },
-
-
-
-
-
-
- 
-
  ];

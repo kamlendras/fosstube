@@ -11,7 +11,7 @@ import Footern from "/components/Footern";
 function refreshMessages() {
   const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
-  return Array.from(new Array(30)).map(
+  return Array.from(new Array(7)).map(
     () => messageExamples[getRandomInt(messageExamples.length)],
   );
 }
@@ -71,107 +71,51 @@ export default function Icode() {
 
 const messageExamples = [
   {
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/rfscVS0vtbw',
+    t: 'Learn Python - Full Course for Beginners [Tutorial]',
+    p: 'This course will give you a full introduction into all of the core concepts in python',
+
+    pp: '',
 
   },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/kqtD5dpn9C8',
+    t: 'Python for Beginners - Learn Python in 1 Hour',
+    p: 'This Python tutorial for beginners show how to get started with Python quickly. Learn to code in 1 hour! Watch this tutorial get started! ',
+
+    pp: '',
 
   },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/_uQrJ0TkZlc',
+    t: 'Python Tutorial - Python Full Course for Beginners',
+    p: 'Python tutorial - Python full course for beginners - Go from Zero to Hero with Python (includes machine learning & web development projects).',
+
+    pp: '',
 
   },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: '',
+    t: 'Python Tutorial for Beginners - Learn Python in 5 Hours [FULL COURSE]',
+    p: 'In this complete Python course you will learn everything you need to get started with Python.  ',
+    pp: '',
 
   },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/Y8Tko2YC5hA',
+    t: 'What is Python? Why Python is So Popular?',
+    p: 'In this video',
+    pp: '- What is Python?- What can you do with Python What kind of applications can you build with Python How to learn Python',
 
   },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/XKHEtdqhLK8',
+    t: 'Python Full Course 🐍 -Learn to code today-',
+    p: 'Python tutorial for beginners full course',
+    pp: '',
 
   },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/b093aqAZiPU',
+    t: 'Python for Beginners Tutorial',
+    p: '  In this step-by-step Python for beginners tutorial',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },
-
+  }
 
 
 

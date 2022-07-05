@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
+import Link from 'next/link'
 function Signup() {
   return (
     <>
@@ -120,10 +121,11 @@ function Signup() {
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
-
+<Link href="/">
           <button className="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
             Join Now
           </button>
+          </Link>
           <p className="text-xs text-gray-500 mt-3">
             By clicking Create account, I agree that Terms of Use & Privacy
             Policy.

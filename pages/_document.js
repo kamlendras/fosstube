@@ -10,6 +10,7 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" href="/icon.png"></link>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700&display=optional" />
           <meta name="theme-color" content="#fff" />
+          <script async src="https://cse.google.com/cse.js?cx=7837bd8bdb141ae82"></script>
         </Head>
         <body>
           <Main />

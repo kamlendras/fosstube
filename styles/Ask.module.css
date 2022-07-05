@@ -42,7 +42,7 @@
 }
 
 .sidebar {
-  border-right: 1px solid var(--twitter-background);
+  border-right: 1px solid rgb(231, 231, 231);
   flex: 0.3;
   /* min-width: 250px; */
   margin-top: 20px;
@@ -51,14 +51,14 @@
 }
 
 .sidebartwitterIcon {
-  color: var(--twitter-color);
+  color: #1a73e8;
   font-size: 30px !important;
   margin-left: 20px;
   margin-bottom: 20px;
 }
 
 .sidebartweet {
-  background-color: var(--twitter-color) !important;
+  background-color: #1a73e8 !important;
   border: none !important;
   color: rgb(255, 255, 255) !important;
   font-weight: 900 !important;
@@ -68,7 +68,7 @@
   margin-top: 20px !important;
 }
 .sidebartweets {
-  background-color: var(--twitter-color) !important;
+  background-color: #1a73e8 !important;
   border: none !important;
   color: rgb(255, 255, 255) !important;
   /* font-weight: 900 !important; */
@@ -118,7 +118,7 @@
 
 .tweetBox {
   padding-bottom: 10px;
-  border-bottom: 8px solid var(--twitter-background);
+  border-bottom: 1px solid #1a73e8;
   padding-right: 10px;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .tweetBox__tweetButton {
-  background-color: var(--twitter-color) !important;
+  background-color: #1a73e8 !important;
   border: none !important;
   color: white !important;
   font-weight: 900 !important;
@@ -156,18 +156,12 @@
   margin-top: 20px !important;
   margin-left: auto !important;
 }
-.anything {
-  border-radius: 20px;
 
-  border: none;
-  outline: none;
-  padding: 0rem 1rem;
-}
 
 .post {
   display: flex;
   align-items: flex-start;
-  border-bottom: 1px solid var(--twitter-background);
+  border-bottom: 1px solid #1a73e8;
   padding-bottom: 10px;
   outline: 4px solid rgb(255, 255, 255);
 }

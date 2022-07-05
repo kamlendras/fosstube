@@ -41,10 +41,12 @@ function TweetBox() {
 
           
           <input
-            className={styles.anything}
+            class="border-2 border-blue-600 rounded-lg
+
+            "
             onChange={(e) => setTweetMessage(e.target.value)}
             value={tweetMessage}
-            placeholder="  Ask Anything?"
+            placeholder="  Ask ?"
             type="text"
           />
         </div>
@@ -70,7 +72,7 @@ function TweetBox() {
               aria-label="upload picture"
               component="span"
             >
-              <PhotoCamera style={{ color: "#2196f3" }} />
+              <PhotoCamera style={{ color: "#1a73e8" }} />
             </IconButton>
           </label>
         </div>

@@ -1,7 +1,14 @@
 import Nap1 from ".//Nap1";
 import Avatar from "@mui/material/Avatar";
-import { deepOrange, deepPurple,deepBlue,deepRed,deepYellow,deepGreen } from "@mui/material/colors";
+import { deepPurple } from "@mui/material/colors";
 import Link from "next/link";
+
+import { red } from "@mui/material/colors";
+import { green} from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
+import { yellow } from "@mui/material/colors";
+import { deepOrange } from "@mui/material/colors";
+import { gray } from "@mui/material/colors";
 function Short() {
   return (
     <div className="relative bg-white ">
@@ -29,8 +36,8 @@ function Short() {
                            a={
                             <Avatar sx={{ bgcolor: deepOrange[500] }}>L</Avatar>
                           }
-                          n={"Lester J."}
-                          d={"Dec 2"}
+                          n={"Lester"}
+                          d={"Jun 2"}
                           i={
                             "https://miro.medium.com/max/1838/1*gDr1IQol5X617j3QV4_5Cw.png"
                           }
@@ -39,33 +46,32 @@ function Short() {
                           pp={""}
                         />
                       </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                      <div className="w-44 h-64 rounded-lg ">
                         <Nap1
-                          a={
-                            <Avatar sx={{ bgcolor: deepBlue }}>N</Avatar>
-                          }
+                        
+                         a={
+                          <Avatar sx={{ bgcolor: blue[500] }}>L</Avatar>
+                        }
                           n={"Kevin S."}
                           d={"Jan 14"}
                           i={
                             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFyGY2NeC_3GnvoOl5lqvS_wge0BuA9rG-4y3DVRUAXVdZXTdUgxNVda0hajzURKa2XNQ&usqp=CAU"
                           }
                           t={"API"}
-                          p={"pghg"}
-                          pp={"pp"}
                         />
                       </div>
                     </div>
                     <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                    <div className="w-44 h-64 rounded-lg overflow-hidden">
+                    <div className="w-44 h-64 rounded-lg ">
                         <Nap1
                           className="w-full h-full object-center object-cover"
                           a={
-                            <Avatar sx={{ bgcolor: deepPurple[500] }}>
-                              OP
+                            <Avatar sx={{bgcolor:red[500]}}>
+                              R
                             </Avatar>
                           }
-                          n={"Robert T."}
-                          d={"September 14, 2020"}
+                          n={"Robert"}
+                          d={"Sep 14"}
                           i={
                             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMyIQhtL1dzThrj28rXGdMy5t8UUiSUKXw1f7wSeHRPwKyVDS6C-zj-m9Rk5xF2PWzFow&usqp=CAU"
                           }
@@ -74,65 +80,62 @@ function Short() {
                           pp={"."}
                         />
                       </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                      <div className="w-44 h-64 rounded-lg ">
                         <Nap1
                           a={
-                            <Avatar sx={{ bgcolor: deepPurple[500] }}>
-                              OP
+                            <Avatar sx={{ bgcolor: green[500]}}>
+                              O
                             </Avatar>
                           }
                           n={"Olga N."}
-                          d={"Octorber 14, 2022"}
+                          d={"Aug 8"}
                           i={
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKvYOgCUwVhBSIo9_WR4MXUvTx8_G_lQ1Tpq8S69FFRyJfgnPP_IDW2S0LPV_ZDMm2ncQ&usqp=CAU"
+                            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Android_robot_head.svg/1200px-Android_robot_head.svg.png"
                           }
-                          t={"Authentication"}
+                          t={"Android"}
                           p={"p"}
                           pp={"p"}
                         />
                       </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                      <div className="w-44 h-64 rounded-lg ">
                         <Nap1
                           className="w-full h-full object-center object-cover"
                           a={
-                            <Avatar sx={{ bgcolor: deepPurple[500] }}>V</Avatar>
+                            <Avatar sx={{ bgcolor: yellow[500] }}>V</Avatar>
                           }
                           n={"Viola P."}
-                          d={"September 14, 2020"}
-                          i={
-                            "https://www.gstatic.com/devrel-devsite/prod/v84e6f6a61298bbae5bb110c196e834c7f21fe3fb34e722925433ddb936d280c9/firebase/images/touchicon-180.png"
-                          }
-                          t={"Nextjs Project "}
+                          d={"Sep 14"}
+                          i={"https://my.element14.com/wcsstore/ExtendedSitesCatalogAssetStore/cms/asset/images/common/campaign/ai/ai-configurator.jpg"}
+                          t={"Ai"}
                           p={"p"}
                           pp={"p"}
                         />
                       </div>
                     </div>
                     <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                      <div className="w-44 h-64 rounded-lg ">
                         <Nap1
                           className="w-full h-full object-center object-cover"
                           a={
-                            <Avatar sx={{ bgcolor: deepPurple[600] }}>D</Avatar>
+                            <Avatar sx={{ bgcolor: blue[200] }}>D</Avatar>
                           }
-                          n={"Joanne D."}
-                          d={"September 14, 2020"}
+                          n={"Joanne"}
+                          d={"Sep 4"}
                           i={
-                            "https://previews.123rf.com/images/defmorph/defmorph1902/defmorph190200017/118119260-artificial-intelligence-ai-icon-ai-brain-concept-eps-10-editable-stroke-.jpg"
+                            "https://photos5.appleinsider.com/gallery/38563-73356-iCloud-Logo-xl.jpg"
                           }
-                          t={"AI"}
-                          p={"pghg"}
-                          pp={"pphjj"}
+                          t={"Cloud"}
+                          p={""}
+                          pp={""}
                         />
                       </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                      <div className="w-44 h-64 rounded-lg ">
                         <Nap1
                           a={<Avatar src="/logo.png" />}
                           n={"Nap"}
-                          d={"September 14, 2020"}
+                          d={"Oct 8"}
                           i={
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEp0WLprQ4xTcexoFSCjxlWlOZfkz1C-dmaTvrOn9knjZOaGiWZ24yYHUCar3eLkS08JI&usqp=CAU"
-                          }
+                            "https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg" }
                           t={"Search engine"}
                           p={""}
                           pp={""}
@@ -145,7 +148,7 @@ function Short() {
               <Link passHref href="/post">
               <a
                 href="#"
-                className="inline-block text-center bg-blue-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-blue-700"
+                className="inline-block text-center bg-m border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-blue-700"
               >
                 Post
               </a>

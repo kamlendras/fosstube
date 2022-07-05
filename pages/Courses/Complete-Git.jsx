@@ -71,109 +71,36 @@ export default function Icode() {
 
 const messageExamples = [
   {
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/RGOj5yH7evk',
+    t: 'Git and GitHub for Beginners - Crash Course',
+    p: 'Learn about Git and GitHub in this tutorial. These are important tools for all developers to understand. Git and GitHub make it easier to manage different software versions and make it easier for multiple people to work on the same software project.    ',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/USjZcfj8yxE',
+    t: 'Learn Git In 15 Minutes',
+    p: 'In this video, well go over all the important stuff you need to know to get started using Git',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: '',
+    t: 'Git and GitHub for Beginners Tutorial',
+    p: 'In this step-by-step tutorial, learn how to use Git and GitHub for source control management (SCM). We start with Git. What is it? How you can get it running on your system, and how you can start working with it? Then we look at GitHub.com, a platform for hosting and collaborating on Git repositories.',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: '',
+    t: 'What is Git? Explained in 2 Minutes!',
+    p: 'This short video explains what Git is.',
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: '',
+    t: '',
+    p: '',
+    pp: '',
 
   },
-
-
-
 
 
 

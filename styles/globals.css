@@ -6,8 +6,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
     overflow-y: scroll;
     overflow-x: hidden;
-     background-color: rgb(217, 241, 255); 
-     background-color: #e3f2fd;
+     /* background-color: rgb(234, 247, 255);  */
+     /* background-color: #e3f2fd; */
     box-sizing: border-box;
     --twitter-color: #50b7f5;
     --twitter-background: #e6ecf0; 
@@ -44,7 +44,11 @@ body {
   background: rgb(0, 110, 255);
 }
 
-
+.hr1{
+  color: #000;
+  width: 100%;
+  height: 7px;
+}
 
 .sidebarOption {
   display: flex;
@@ -104,13 +108,9 @@ body {
   padding: 0.625rem 1.25rem;
   border-radius: 0.1875rem;
   font-size: 1rem;
-  border: 0.125rem solid #42a5f5;
-  transition: 0.1s;
+  border: 0.125rem solid #1a73e8;
 }
-.search_wrap .search_box .input:hover {
-  border: 0.125rem solid #1976d2;
-  transition: 0.1s;
-}
+
 
 .search_wrap .search_box .btn {
   position: absolute;
@@ -118,12 +118,12 @@ body {
   right: 0;
   width: 3rem;
   height: 100%;
-  background: #1976d2;
+  background: #1a73e8;
   z-index: 1;
   cursor: pointer;
 }
 .search_wrap .search_box .btn:hover {
-  background: #1565c0;
+  background: #1a73e8;
 }
 .search_wrap .search_box .btn.btn_common .fas {
   position: absolute;
