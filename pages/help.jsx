@@ -1,23 +1,18 @@
-// import Plus from "../components/Plus";
+
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Short from "../components/Short";
-import Login from "../components/Login";
+
 import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
-import Typography from "@mui/material/Typography";
-import ReactTyped from "react-typed";
-import Link from 'next/link'
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Arrow Nap</title>
+        <title>Cod Nap</title>
         <meta
           name="description"
-          content="Arrow Nap| Arrow Nap is the knowledge-sharing community Of Developers."
+          content="Cod Nap| Cod Nap is the knowledge-sharing community Of Developers."
         />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/codnapblack.png" />
       </Head>
      <div className="mt-6">
       <div className="text-center mb-10">
