@@ -11,7 +11,7 @@ import Footern from "/components/Footern";
 function refreshMessages() {
   const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
-  return Array.from(new Array(30)).map(
+  return Array.from(new Array(5)).map(
     () => messageExamples[getRandomInt(messageExamples.length)],
   );
 }
@@ -71,111 +71,49 @@ export default function Icode() {
 
 const messageExamples = [
   {
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/FTFaQWZBqQ8',
+    t: 'Figma UI Design Tutorial: Get Started in Just 24 Minutes!',
+    p: 'Do you want to learn Figma but don’t know where to start? Well, if you follow this step-by-step tutorial, it will only take you 24 minutes to learn all the basics you need to know to start designing apps and websites in Figma.',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    
+    pp: '',
+    
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  },  {
+    i: 'https://www.youtube.com/embed/Cx2dkpBxst8',
+    t: 'What is Figma',
+    p: 'Figma is where teams design together. Bring ideas to life in a design, wireframe, or prototype. Partner with teammates from content creation to design implementation. Get better feedback from your stakeholders. Figma gets everyone on the same page—literally.',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    
+    pp: '',
+    
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  },  {
+    i: 'https://www.youtube.com/embed/jwCmIBJ8Jtc',
+    t: 'Figma Tutorial for UI Design - Course for Beginners',
+    p: 'In this Figma course, you will learn how to use Figma for UI Design. Figma is a vector graphics editor and prototyping tool.',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    
+    pp: '',
+    
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  },  {
+    i: 'https://www.youtube.com/embed/kbZejnPXyLM',
+    t: 'Free Figma UX Design UI Essentials Course',
+    p: 'Learn Figma',
+    
+    pp: '',
+    
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
-
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  },  {
+    i: 'https://www.youtube.com/embed/eZJOSK4gXl4',
+    t: 'Getting started with Figma: A beginners guide',
+    p: 'Learn Figma',
+    
+    pp: '',
+    
 
   },
-
-
-
-
-
 
  
 

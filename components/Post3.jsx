@@ -1,4 +1,4 @@
-import Nap1 from ".//Nap1";
+import Nap1 from "./Nap1";
 import Avatar from "@mui/material/Avatar";
 import { deepPurple } from "@mui/material/colors";
 import Link from "next/link";
@@ -9,7 +9,7 @@ import { blue } from "@mui/material/colors";
 import { yellow } from "@mui/material/colors";
 import { deepOrange } from "@mui/material/colors";
 import { gray } from "@mui/material/colors";
-function Short() {
+function Post3() {
   return (
     <div className="relative bg-white ">
       <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
@@ -161,4 +161,4 @@ function Short() {
   );
 }
 
-export default Short;
+export default Post3;

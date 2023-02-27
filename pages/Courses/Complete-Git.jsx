@@ -83,21 +83,21 @@ const messageExamples = [
     pp: '',
 
   }, {
-    i: '',
+    i: 'https://www.youtube.com/embed/Uszj_k0DGsg',
     t: 'Git and GitHub for Beginners Tutorial',
     p: 'In this step-by-step tutorial, learn how to use Git and GitHub for source control management (SCM). We start with Git. What is it? How you can get it running on your system, and how you can start working with it? Then we look at GitHub.com, a platform for hosting and collaborating on Git repositories.',
     pp: '',
 
   }, {
-    i: '',
+    i: 'https://www.youtube.com/embed/2ReR1YJrNOM',
     t: 'What is Git? Explained in 2 Minutes!',
     p: 'This short video explains what Git is.',
     pp: '',
 
   }, {
-    i: '',
-    t: '',
-    p: '',
+    i: 'https://www.youtube.com/embed/wpISo9TNjfU',
+    t: 'Git vs. GitHub: Whats the difference?',
+    p: 'Learn more about Git',
     pp: '',
 
   },

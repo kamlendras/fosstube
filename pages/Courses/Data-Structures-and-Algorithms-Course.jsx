@@ -11,7 +11,7 @@ import Footern from "/components/Footern";
 function refreshMessages() {
   const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
-  return Array.from(new Array(30)).map(
+  return Array.from(new Array(8)).map(
     () => messageExamples[getRandomInt(messageExamples.length)],
   );
 }
@@ -71,111 +71,74 @@ export default function Icode() {
 
 const messageExamples = [
   {
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    i: 'https://www.youtube.com/embed/8hly31xKli0',
+    t: 'Algorithms and Data Structures Tutorial - Full Course for Beginners',
+    p: 'In this course you will learn about algorithms and data structures, two of the fundamental topics in computer science.',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    
+    pp: '',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/oz9cEqFynHU',
+    t: 'Data Structures and Algorithms in 15 Minutes',
+    p: 'learn Data Structures and Algorithms:',
+    
+    pp: '',
+    
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/BBpAmxU_NQo',
+    t: 'Data Structures and algorithms for beginners.',
+    p: 'Data Structures and algorithms for beginners',
+    
+    pp: '',
+    
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/bum_19loj9A',
+    t: 'What Are Data Structures?',
+    p: 'Data structures and algorithms tutorial',
+    
+    pp: '',
+    
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/RBSGKlAvoiM',
+    t: 'Data Structures Easy to Advanced Course',
+    p: 'Learn and master the most common data structures in this full course from Google engineer William Fiset. This course teaches data structures to beginners using high quality animations to represent the data structures visually.',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    
+    pp: '',
+    
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+  }, {
+    i: 'https://www.youtube.com/embed/pkYVOmU3MgA',
+    t: 'Data Structures and Algorithms in Python - Full Course for Beginners',
+    p: 'A beginner-friendly introduction to common data structures (linked lists, stacks, queues, graphs) and algorithms (search, sorting, recursion, dynamic programming) in Python.',
 
-  },{
-    i: 'https://www.youtube-nocookie.com/embed/xNPkXGdVw7E',
-    a: <Avatar src="https://pbs.twimg.com/media/FGb_8DzUcAU657a?format=png&name=small" />,
-    url: "Code/Sourcecode",
-    n: 'Arrow Nap',
-    d: 'September 14, 2020',
-    t: '3 things to know about Modern Android Development',
-    p: '.',
-    pp: '.',
+    
+    pp: '',
+    
+
+  }, {
+    i: 'https://www.youtube.com/embed/jQqQpPMYPXs',
+    t: 'Algorithms & Data Structures Full Crash Course',
+    p: 'This is a full four-and-a-half hour crash course on algorithms and data structures. It is a compilation of all the individual episodes from the playlist.',
+
+    
+    pp: '',
+    
+
+  }, {
+    i: 'https://www.youtube.com/embed/kQDxmjfkIKY',
+    t: 'Data Structures And Algorithms in Python - Python Data Structures Full Tutorial ',
+    p: 'Python Data Structures full Tutorial  and Data Structures and Algorithms .',
+    
+    pp: '',
+    
 
   },
-
-
-
-
-
 
  
 

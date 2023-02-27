@@ -12,8 +12,8 @@
     "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@iconify/icons-ant-design": "^1.1.1",

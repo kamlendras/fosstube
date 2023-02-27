@@ -161,7 +161,7 @@ export default function MenuAppBar(props) {
               sx={{ flexGrow: 1 }}
               className="nap"
             >
-              Arrow Nap
+              Cod Nap
             </Typography>
             <span class="w-10 invisible">.</span>
             <Search/>

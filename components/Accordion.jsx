@@ -19,11 +19,11 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Arrow Nap is Used for?</Typography>
+          <Typography>Cod Nap is Used for?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Arrow Nap is The knowledge-sharing community Of Developers.
+            Cod Nap is The knowledge-sharing community Of Developers.
 
           </Typography>
         </AccordionDetails>
@@ -33,7 +33,7 @@ export default function SimpleAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header">
-          <Typography>Is Arrow Nap free?</Typography>
+          <Typography>Is Cod Nap free?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -47,7 +47,7 @@ export default function SimpleAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header">
-          <Typography>Can I earn money from Arrow Nap?</Typography>
+          <Typography>Can I earn money from Cod Nap?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -80,9 +80,9 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <Typography>
             Getting a certificate proves your commitment to upgrade your skills, gives you the credibility needed for more responsibilities, larger projects, and a higher salary.
-            <br />Study for free at arrownap.com <br />
+            <br />Study for free at Codnap.com <br />
             Study at your own speed
-            Test your skills with Arrow Nap online quizzes<br />
+            Test your skills with Cod Nap online quizzes<br />
             Apply for your certificate by paying an exam fee<br />
             Take your exam online, at any time, and from any location.
           </Typography>
@@ -97,7 +97,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Advertise with us # For business enquiries email at arrownap.com@gmail.com
+            Advertise with us # For business enquiries email at Codnap.com@gmail.com
           </Typography>
         </AccordionDetails>
       </Accordion>

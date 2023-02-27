@@ -1,19 +1,42 @@
+ 
  html,
-body {
+ /* body {
    padding: 0;
   margin: 0;
    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
     overflow-y: scroll;
     overflow-x: hidden;
-     /* background-color: rgb(234, 247, 255);  */
-     /* background-color: #e3f2fd; */
-    box-sizing: border-box;
-    --twitter-color: #50b7f5;
+      background-color: rgb(234, 247, 255);  
+      background-color: #e3f2fd; 
+     box-sizing: border-box; 
+     --twitter-color: #50b7f5; 
     --twitter-background: #e6ecf0; 
      border: 0 !important;
     border-bottom: 0;  
+    
+ }   */
+
+body,
+body[data-theme="light"] {
+  --color-text-primary: #000000;
+  --color-text-secondary: #076963;
+  --color-bg-primary: #e3f2fd;
+  --color-bg-toggle: #1E90FF; 
 }
+
+body[data-theme="dark"] {
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #fffaf6;
+  --color-bg-primary: #15232d;
+  --color-bg-toggle: #a9a9a9; 
+}
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: sans-serif;
+}
+
 
  a {
   color: inherit;
