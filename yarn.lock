@@ -2868,7 +2868,7 @@ aria-query@^4.2.2:
     "@babel/runtime" "^7.10.2"
     "@babel/runtime-corejs3" "^7.10.2"
 
-array-flatten@1.1.1, array-flatten@^1.0.0:
+array-flatten@1.1.1, array-flatten@^1.0.0, array-flatten@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
@@ -3716,6 +3716,11 @@ classnames@2.2.6:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
+classnames@^2.1.3:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
+
 classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
@@ -3918,6 +3923,11 @@ compare-semver@^1.0.0:
   integrity sha1-fAp5onu4C2xplERfgpWCWdPQIVM=
   dependencies:
     semver "^5.0.1"
+
+component-type@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/component-type/-/component-type-1.1.0.tgz#95b666aad53e5c8d1f2be135c45b5d499197c0c5"
+  integrity sha512-rLfU88D3tytip79EqPsLD+ND+Fl8HsIhz5KkOEeNidNVN1GUO9AWEs8+DPLtZR63BecAC883DuF2GZ1DM78BbA==
 
 compress-commons@^4.1.0:
   version "4.1.1"
@@ -4381,6 +4391,13 @@ degenerator@^3.0.1:
     escodegen "^1.8.1"
     esprima "^4.0.0"
     vm2 "^3.9.3"
+
+deku-youtube-subscribe-button@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/deku-youtube-subscribe-button/-/deku-youtube-subscribe-button-1.1.2.tgz#c75e415451c7ca226626967a7ec5eb4c6da94c21"
+  integrity sha512-NK3ulpw58mbq7O36VOn/oCr7YKzpgBdhXkleBgj92YJWFyX040Ql9+0CJWXy1++aqvOqzMINWnzeirSxkZuPdw==
+  dependencies:
+    magic-virtual-element "^1.0.6"
 
 del@^4.1.1:
   version "4.1.1"
@@ -7287,6 +7304,17 @@ magic-string@^0.25.0, magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.4"
 
+magic-virtual-element@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/magic-virtual-element/-/magic-virtual-element-1.0.6.tgz#87a34e02d477d4730e4cb274cfa19838ebccaf28"
+  integrity sha512-yu3Vjhm1xJDMURkyl6pAIBMubZ6Gee6ZZgAJG7s1BMulZTMns1c+DltOgMXLPGnZBbq+eh+SiJ5UGwyblkzgYA==
+  dependencies:
+    classnames "^2.1.3"
+    component-type "~1.1.0"
+    sliced "^1.0.1"
+    to-style "^1.3.3"
+    virtual-element "^1.1.2"
+
 make-dir@^3.0.0, make-dir@^3.0.2, make-dir@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
@@ -9634,6 +9662,16 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
+sliced@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/sliced/-/sliced-0.0.5.tgz#5edc044ca4eb6f7816d50ba2fc63e25d8fe4707f"
+  integrity sha512-9bYT917D6H3+q8GlQBJmLVz3bc4OeVGfZ2BB12wvLnluTGfG6/8UdOUbKJDW1EEx9SZMDbjnatkau5/XcUeyOw==
+
+sliced@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sliced/-/sliced-1.0.1.tgz#0b3a662b5d04c3177b1926bea82b03f837a2ef41"
+  integrity sha512-VZBmZP8WU3sMOZm1bdgTadsQbcscK0UM8oKxKVBs4XAhUo2Xxzm/OFMGBkPusxw9xL3Uy8LrzEqGqJhclsr0yA==
+
 smart-buffer@^4.1.0, smart-buffer@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.2.0.tgz#6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae"
@@ -10263,6 +10301,11 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+to-style@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/to-style/-/to-style-1.3.3.tgz#63a2b70a6f4a7d4fdc2ed57a0be4e7235cb6699c"
+  integrity sha512-9K8KYegr9hrdm8yPpu5iZjJp5t6RPAp4gFDU5hD9zR8hwqgF4fsoSitMtkRKQG2qkP5j/uG3wajbgV09rjmIqg==
+
 toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
@@ -10731,6 +10774,14 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+virtual-element@^1.1.2:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/virtual-element/-/virtual-element-1.2.0.tgz#a25e5b044540be974a42e158924277c5ff32e2c2"
+  integrity sha512-ZK+/VU3ethgxwmzYnf2BlyBToks6QxIBMm0Ed+mYUOp+KJgNEcJwYiI5wiLsJBA4idP5emYz/4diDWDoQyNpfA==
+  dependencies:
+    array-flatten "^1.1.1"
+    sliced "0.0.5"
 
 vm-browserify@1.1.2:
   version "1.1.2"

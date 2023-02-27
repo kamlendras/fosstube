@@ -5,45 +5,116 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Stack from '@mui/material/Stack';
 const Footer = () => {
   return (
     <div className={styles.Box}>
-      <div className={styles.Container}>
+     
+      <Stack direction="row" spacing={2}>
+
+<span>  <Link
+  href="https://www.facebook.com/codnap"
+  passHref
+>
+  <div className={styles.FooterLinky}>
+    <a>
+      <img src="/fb.svg" height={26} width={26} />
+      <span style={{ marginLeft: "10px" }}></span>
+    </a>
+  </div>
+</Link></span>
+<span> <Link
+  href="https://www.instagram.com/cod_nap"
+  passHref
+>
+  <div className={styles.FooterLinky}>
+    <a>
+      <img src="/insta.svg" height={30} width={30} />
+      <span style={{ marginLeft: "10px" }}></span>
+    </a>
+  </div>
+
+</Link></span>
+
+<span>
+  <Link
+    href="https://www.youtube.com/@codnap"
+    passHref
+  >
+    <div className={styles.FooterLinky}>
+      <a>
+        <img src="/youtube.svg" height={50} width={50} />
+        <span style={{ marginLeft: "0px" }}></span>
+      </a>
+    </div>
+  </Link>
+</span>
+<span>
+  <Link href="https://www.github.com/codnap/" passHref>
+    <div className={styles.FooterLink}>
+      <a>
+        <img src="/githubblack.svg" height={26} width={26} />
+        <span style={{ marginLeft: "10px" }}></span>
+      </a>
+    </div>
+  </Link></span>
+
+
+<span> <Link href="https://twitter.com/cod_nap" passHref>
+  <div className={styles.FooterLinkt}>
+    <a>
+      <img src="/twitter.svg" height={26} width={26} />
+      <span style={{ marginLeft: "10px" }}></span>
+    </a>
+  </div>
+</Link></span>
+
+
+<span>  <Link href="https://www.linkedin.com/in/codnap/" passHref>
+  <div className={styles.FooterLinkl}>
+    <a>
+      <img src="/linkedin.svg" height={26} width={26} />
+      <span style={{ marginLeft: "10px" }}></span>
+    </a>
+  </div>
+</Link></span>
+</Stack>
+<div className={styles.Container}>
         <div className={styles.Row}>
           <div className={styles.Column}>
             <div className={styles.Heading}>Company</div>
             <Link href="/about" passHref>
-            <div className={styles.FooterLink} href="#">
-              About Us
-            </div>
+              <div className={styles.FooterLink} href="#">
+                About Us
+              </div>
             </Link>
             <Link href="/news" passHref>
-            <div className={styles.FooterLink} href="#">
-              Blog
-            </div>
+              <div className={styles.FooterLink} href="#">
+                Blog
+              </div>
             </Link>
             <Link href="/community" passHref>
-            <div className={styles.FooterLink} href="#">
-              Careers
-            </div>
+              <div className={styles.FooterLink} href="#">
+                Careers
+              </div>
             </Link>
             <Link href="/community" passHref>
-            <div className={styles.FooterLink} href="#">
-              Advertise with us
-            </div>
+              <div className={styles.FooterLink} href="#">
+                Advertise with us
+              </div>
             </Link>
           </div>
           <div className={styles.Column}>
             <div className={styles.Heading}>Community</div>
             <Link href="/community" passHref>
-            <div className={styles.FooterLink} href="#">
-              Developers
-            </div>
+              <div className={styles.FooterLink} href="#">
+                Developers
+              </div>
             </Link>
             <Link href="/community" passHref>
-            <div className={styles.FooterLink} href="#">
-              Freelancer
-            </div>
+              <div className={styles.FooterLink} href="#">
+                Freelancer
+              </div>
             </Link>
           </div>
           <div className={styles.Column}>
@@ -64,50 +135,11 @@ const Footer = () => {
               </div>
             </Link>
           </div>
-          <div className={styles.Column}>
-            <div className={styles.Heading}>Follow Us</div>
-            <Link
-              href="https://www.youtube.com/channel/UCpE-bSIESqYtIEkBiZC-7tA/featured"
-              passHref
-            >
-              <div className={styles.FooterLinky}>
-                <a>
-                  <YouTubeIcon />
-                  <span style={{ marginLeft: "10px" }}>Youtube</span>
-                </a>
-              </div>
-            </Link>
-            <Link href="https://www.github.com/arrownap/" passHref>
-              <div className={styles.FooterLink}>
-                <a>
-                  <GitHubIcon />
-                  <span style={{ marginLeft: "10px" }}>Github</span>
-                </a>
-              </div>
-            </Link>
-            <Link href="https://twitter.com/NapArrow" passHref>
-              <div className={styles.FooterLinkt}>
-                <a>
-                  <TwitterIcon />
-                  <span style={{ marginLeft: "10px" }}>Twitter</span>
-                </a>
-              </div>
-            </Link>
+         
 
-        
-            <Link href="https://www.linkedin.com/in/arrownap/" passHref>
-              <div className={styles.FooterLinkl}>
-                <a>
-                  <LinkedInIcon/>
-                  <span style={{ marginLeft: "10px" }}>LinkedIn</span>
-                </a>
-              </div>
-            </Link>
-          </div>
-        </div>
-        <Footernx />
-      </div>
-    </div>
-  );
+        </div><Footernx />
+      </div >
+</div>
+      );
 };
-export default Footer;
+      export default Footer;
