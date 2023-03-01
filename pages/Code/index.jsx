@@ -1,27 +1,27 @@
 import Head from "next/head";
-import Nv from "/components/Nv";
-import Icode from "/components/Icode";
+import NavBar from "/components/NavBar";
+import CodeCardData from "/components/CodeCardData";
 import styles from "/styles/Code.module.css";
 export default function index() {
   return (
    <>
       <Head>
         <title>   
-         Code - Arrow Nap
+         Code - CodNap
           </title>
         <meta
           name="description"
-          content="Arrow Nap| Arrow Nap is the knowledge-sharing community Of Developers."
+          content="Cod Nap| Cod Nap is the knowledge-sharing community Of Developers."
         />
      
      
 
       </Head>
    <div>
-      <Nv p={"fixed"}/>
+      <NavBar p={"fixed"}/>
     </div>
     <div className={styles.icodev}>
-      <Icode/>
+      <CodeCardData/>
     </div>
     </>
   )

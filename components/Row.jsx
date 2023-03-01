@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import TweetBox from "./TweetBox";
+import ChatBox from "./ChatBox";
 import Feed from "./Feed";
 import Post from "./Ask1";
 import db from "./firebase";
 import FlipMove from "react-flip-move";
 import styles from "../styles/Ask.module.css";
 import { signIn, signOut, useSession } from "next-auth/react";
-// import * as React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material/styles';
@@ -120,7 +119,7 @@ export default function FloatingActionButtonZoom() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-        <TweetBox />
+        <ChatBox />
         <Feed/>
      
         </TabPanel>

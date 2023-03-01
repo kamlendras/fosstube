@@ -26,13 +26,17 @@ import PropTypes from "prop-types";
 import Badge from "@mui/material/Badge";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import styles from "../styles/Home.module.css";
-import Dr from "./Dr";
+import SideBar from "./SideBar";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Paper from "@mui/material/Paper";
 import styless from "/styles/Ask.module.css";
 import stylex from "/styles/Nav.module.scss";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import PersonPinIcon from "@mui/icons-material/PersonPin";
+import dynamic from "next/dynamic";
+const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
+  ssr: false,
+});
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -123,7 +127,7 @@ export default function MenuAppBar(props) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Dr />
+      <SideBar />
     </Box>
   );
 
@@ -150,7 +154,7 @@ export default function MenuAppBar(props) {
   }
   return (
     // <span className={stylex.nav}>
-    <div class="whitespace-nowrap">
+    <div class="whitespace-nowrap dark:bg-black">
     <Box sx={{ flexGrow: 1 }} >
       <ElevationScroll {...props}>
         <AppBar position={props.p}>
@@ -166,8 +170,11 @@ export default function MenuAppBar(props) {
             <span class="w-10 invisible">.</span>
             <Search/>
             <span class="w-10 invisible">.</span>
+            <ThemeToggle />
             {!session && (
+
               <div>
+                   
                 <IconButton
                   size="large"
                   aria-label="show 17 new notifications"

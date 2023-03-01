@@ -8,11 +8,11 @@ export default function Ask() {
     <div>
       <Head>
         <title>   
-         Ask - Arrow Nap
+         Ask - CodNap
           </title>
         <meta
           name="description"
-          content="Arrow Nap| Arrow Nap is the knowledge-sharing community Of Developers."
+          content="Cod Nap| Cod Nap is the knowledge-sharing community Of Developers."
         />
      
 

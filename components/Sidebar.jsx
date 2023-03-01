@@ -14,9 +14,9 @@ function Sidebar() {
   return (
     <div className={styles.sidebar1}>
       <Link activeClassName="active" href="/" className={styles.cc4} passHref>
-        <a>
+        
           <SidebarOption Icon={HomeIcon} text="    Home" />
-        </a>
+        
       </Link>
       <Link
         activeClassName="active"
@@ -24,9 +24,9 @@ function Sidebar() {
         className={styles.cc4}
         passHref
       >
-        <a>
+      
           <SidebarOption Icon={CodeOutlinedIcon} text="Code" />
-        </a>
+        
       </Link>
       <Link
         href="/Courses"
@@ -34,9 +34,9 @@ function Sidebar() {
         className={styles.cc4}
         passHref
       >
-        <a>
+        
           <SidebarOption Icon={BookOutlinedIcon} text="Courses" />
-        </a>
+        
       </Link>
 
       <Link
@@ -45,9 +45,9 @@ function Sidebar() {
         className={styles.cc4}
         passHref
       >
-        <a>
+        
           <SidebarOption Icon={ExploreOutlinedIcon} text="Explore" />
-        </a>
+        
       </Link>
       <Link
         activeClassName="active"
@@ -55,9 +55,9 @@ function Sidebar() {
         className={styles.cc4}
         passHref
       >
-        <a>
+        
           <SidebarOption Icon={FavoriteBorderOutlinedIcon} text="Favorites" />
-        </a>
+        
       </Link>
       <Link
         activeClassName="active"
@@ -65,9 +65,9 @@ function Sidebar() {
         className={styles.cc4}
         passHref
       >
-        <a>
+        
           <SidebarOption Icon={BookmarkBorderOutlinedIcon} text="Bookmarks" />
-        </a>
+        
       </Link>
 
       <Link
@@ -76,9 +76,9 @@ function Sidebar() {
         className={styles.cc4}
         passHref
       >
-        <a>
+        
           <SidebarOption Icon={PermIdentityOutlinedIcon} text="Account" />
-        </a>
+        
       </Link>
 
       <Button variant="outlined" className={styles.sidebartweet} fullWidth>

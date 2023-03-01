@@ -1,4 +1,11 @@
 import Link from "next/link";
+import React, { useRef, useState ,useEffect} from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 import Search from "./Search";
 import { signIn, signOut, useSession } from "next-auth/react";
 import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
@@ -16,17 +23,18 @@ import Grid from '@mui/material/Grid';
 import Head from "next/head";
 import NewspaperRoundedIcon from '@mui/icons-material/NewspaperRounded';
 import dynamic from "next/dynamic";
+import {useTheme} from "next-themes";
+import Social from "./Social"
 
-const ThemeToggle = dynamic(() => import("../components/ThemeToggle"), {
+const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
   ssr: false,
 });
-const Main = (props) => {
+const New = (props) => {
   const { data: session, status } = useSession();
   return (
     <>
        <Head>
-         
-          <script async src="https://cse.google.com/cse.js?cx=7837bd8bdb141ae82"></script>
+        
         </Head>
       <div class="flex space-x-4 mt-2">
         <a class="ml-2">
@@ -61,7 +69,7 @@ const Main = (props) => {
                   text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-m dark:text-m dark:hover:text-white 
                   dark:hover:bg-m dark:focus:ring-m"
               >
-                Sign in
+                Log in
               </button>
             </a>
           )}
@@ -145,10 +153,10 @@ const Main = (props) => {
           <><center>
    <button type="button" class="mt-10 text-white bg-[#42a5f5] hover:bg-[#3b5998]/90 focus:ring-4
     focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-12 py-3 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
-  <img src="/fb.svg" height={30} width={30}  />
+  <img src="/insta.svg" height={30} width={30}  />
   {/* <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#1877f2" d="M512 256c0 127.78-93.62 233.69-216 252.89V330h59.65L367 256h-71v-48.02c0-20.25 9.92-39.98 41.72-39.98H370v-63s-29.3-5-57.31-5c-58.47 0-96.69 35.44-96.69 99.6V256h-65v74h65v178.89C93.62 489.69 0 383.78 0 256 0 114.62 114.62 0 256 0s256 114.62 256 256z" data-original="#1877f2" class=""></path><path fill="#ffffff" d="M355.65 330 367 256h-71v-48.021c0-20.245 9.918-39.979 41.719-39.979H370v-63s-29.296-5-57.305-5C254.219 100 216 135.44 216 199.6V256h-65v74h65v178.889c13.034 2.045 26.392 3.111 40 3.111s26.966-1.066 40-3.111V330z" data-original="#ffffff" class=""></path></g></svg> */}
   
-  Sign in with Facebook
+  Sign in with Instagram
 </button></center>
 <hr class="hr1"/>
 <center>
@@ -157,7 +165,7 @@ const Main = (props) => {
    <img src="/twitter.svg" height={30} width={30}  />
    Sign in with Twitter
 </button></center>
-        <hr class="hr1"/>
+        <hr class="hr1" />
           <button
             type="button"
             class="  text-white bg-[#24292F] hover:bg-[#24292F]/90
@@ -165,13 +173,14 @@ const Main = (props) => {
               font-medium rounded-lg text-sm px-16 py-3 text-center inline-flex items-center
                dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 "
           >
-           <img src="/githubwhite.svg" height={30} width={30}  />
+           <img src="/githubwhite.svg" height={20} width={20}  />
             Sign in with Github
           </button>
 
          
         </>
         )}
+        
 
         {session && (
           <button
@@ -199,9 +208,34 @@ const Main = (props) => {
      </Grid>
         </Grid>
         <Grid item xs={12} md={6}>
-        <Fade bottom>
-          <img  src="/mess.svg" />
-        </Fade>
+        <div className={styles.Swiper}>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        className="mySwiper"
+      >
+       <SwiperSlide>
+          <img src="/mess.svg" alt="no internet" height={400} width={1600}/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/ask.svg" alt="no internet" height={400} width={1000}/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/codes.svg" alt="no internet" height={400} width={1000}/>
+        </SwiperSlide>
+       
+      </Swiper>
+    </div>
+      
+        
         </Grid>
   
       </Grid>
@@ -212,4 +246,4 @@ const Main = (props) => {
   );
 };
 
-export default Main;
+export default New;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import TweetBox from "./TweetBox";
+import ChatBox from "./ChatBox";
 import Post from "./Ask1";
 import db from "./firebase";
 import FlipMove from "react-flip-move";

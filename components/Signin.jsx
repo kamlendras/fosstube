@@ -17,8 +17,8 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://arrownap.com/">
-        arrownap
+      <Link color="inherit" href="https://codnap.com/">
+      CodNap
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

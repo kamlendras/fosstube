@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Co from "./Co";
+import CardCourses from "./CardCourses";
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import styles from "../styles/Courses.module.css";
@@ -38,7 +38,7 @@ export default function Icourses() {
           <><div className={styles.grid}>
 
 
-            <Co d={d} i={i} t={t} l={l} />
+            <CardCourses d={d} i={i} t={t} l={l} />
 
 
 

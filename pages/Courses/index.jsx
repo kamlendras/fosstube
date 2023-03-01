@@ -1,8 +1,9 @@
 import Head from "next/head";
-import Nv from "/components/Nv";
-import Swiper from "/components/Swiper";
-import Footern from "/components/Footern";
-import Icourses from "/components/Icourses";
+import NavBar from "/components/NavBar";
+import CoursesSwiper from "/components/CoursesSwiper";
+import Copyright2 from "/components/Copyright2";
+import CoursesCardData from "/components/CoursesCardData";
+import { Copyright } from "@material-ui/icons";
 
 function index() {
   return (
@@ -10,30 +11,30 @@ function index() {
 
 <Head>
         <title>   
-         Courses - Arrow Nap
+         Courses - CodNap
           </title>
         <meta
           name="description"
-          content="Arrow Nap| Arrow Nap is the knowledge-sharing community Of Developers."
+          content="Cod Nap| Cod Nap is the knowledge-sharing community Of Developers."
         />
 
      
 
       </Head>
     <div>
-      <Nv p={"fixed"}  />
+      <NavBar p={"fixed"}  />
     </div>
 
     <div>
-<Swiper/>
+<CoursesSwiper/>
     </div>
     
     <div>
-<Icourses/>
+<CoursesCardData/>
     </div>
 
     <div>
-<Footern/>
+<Copyright2/>
     </div>
     
     
