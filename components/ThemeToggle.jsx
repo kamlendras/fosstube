@@ -19,14 +19,14 @@ const ThemeToggle = () => {
 
       if(currentTheme ==="dark"){
         return (
-          <LightModeIcon className="w-10 h-10 text-yellow-500 " role="button" onClick={() => setTheme('light')} />
+          <LightModeIcon  role="button" onClick={() => setTheme('light')} />
           )
         }
   
 
       else {
         return (
-          <DarkModeIcon className="w-10 h-10 text-gray-500 " role="button" onClick={() => setTheme('dark')} 
+          <DarkModeIcon  role="button" onClick={() => setTheme('dark')} 
        />
         )
       }

@@ -159,14 +159,42 @@ export default function MenuAppBar(props) {
       <ElevationScroll {...props}>
         <AppBar position={props.p}>
           <Toolbar>
+            
+                        {["left"].map((anchor) => (
+              <React.Fragment key={anchor}>
+                <span
+                  style={{ fontSize: "0" }}
+                  onClick={toggleDrawer(anchor, true)}
+                >
+                  {anchor}
+
+                  <IconButton
+                    size="large"
+                    edge="start"
+                    color="inherit"
+                    aria-label="menu"
+                    sx={{ mr: 0 }}
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                </span>
+                <SwipeableDrawer
+                  anchor={anchor}
+                  open={state[anchor]}
+                  onClose={toggleDrawer(anchor, false)}
+                  onOpen={toggleDrawer(anchor, true)}
+                >
+                  {list(anchor)}
+                </SwipeableDrawer>
+              </React.Fragment>
+            ))}
             <Typography
               variant="h6"
               component="div"
               sx={{ flexGrow: 1 }}
               className="nap"
             >
-              Cod Nap
-            </Typography>
+                        <img src="/codnapwhite.svg" alt="" height={70} width={70} /> </Typography>
             <span class="w-10 invisible">.</span>
             <Search/>
             <span class="w-10 invisible">.</span>
@@ -361,34 +389,7 @@ export default function MenuAppBar(props) {
               </div>
             )}
 
-            {["right"].map((anchor) => (
-              <React.Fragment key={anchor}>
-                <span
-                  style={{ fontSize: "0" }}
-                  onClick={toggleDrawer(anchor, true)}
-                >
-                  {anchor}
-
-                  <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    sx={{ mr: 0 }}
-                  >
-                    <MenuIcon />
-                  </IconButton>
-                </span>
-                <SwipeableDrawer
-                  anchor={anchor}
-                  open={state[anchor]}
-                  onClose={toggleDrawer(anchor, false)}
-                  onOpen={toggleDrawer(anchor, true)}
-                >
-                  {list(anchor)}
-                </SwipeableDrawer>
-              </React.Fragment>
-            ))}
+          
           </Toolbar>
         </AppBar>
       </ElevationScroll>

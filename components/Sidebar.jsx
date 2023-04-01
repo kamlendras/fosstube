@@ -13,17 +13,13 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 function Sidebar() {
   return (
     <div className={styles.sidebar1}>
-      <Link activeClassName="active" href="/" className={styles.cc4} passHref>
-        
-          <SidebarOption Icon={HomeIcon} text="    Home" />
-        
-      </Link>
+      
       <Link
-        activeClassName="active"
+        
         href="/Code"
         className={styles.cc4}
         passHref
-      >
+        legacyBehavior>
       
           <SidebarOption Icon={CodeOutlinedIcon} text="Code" />
         
@@ -33,7 +29,7 @@ function Sidebar() {
         activeClassName="active"
         className={styles.cc4}
         passHref
-      >
+        legacyBehavior>
         
           <SidebarOption Icon={BookOutlinedIcon} text="Courses" />
         
@@ -44,7 +40,7 @@ function Sidebar() {
         href="/Explore"
         className={styles.cc4}
         passHref
-      >
+        legacyBehavior>
         
           <SidebarOption Icon={ExploreOutlinedIcon} text="Explore" />
         
@@ -54,7 +50,7 @@ function Sidebar() {
         href="/Favorites"
         className={styles.cc4}
         passHref
-      >
+        legacyBehavior>
         
           <SidebarOption Icon={FavoriteBorderOutlinedIcon} text="Favorites" />
         
@@ -64,7 +60,7 @@ function Sidebar() {
         href="/Bookmarks"
         className={styles.cc4}
         passHref
-      >
+        legacyBehavior>
         
           <SidebarOption Icon={BookmarkBorderOutlinedIcon} text="Bookmarks" />
         
@@ -75,7 +71,7 @@ function Sidebar() {
         href="/Account"
         className={styles.cc4}
         passHref
-      >
+        legacyBehavior>
         
           <SidebarOption Icon={PermIdentityOutlinedIcon} text="Account" />
         

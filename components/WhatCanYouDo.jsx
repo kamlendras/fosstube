@@ -25,12 +25,13 @@ function WhatCanYouDo () {
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Learning</h2>
                 <p className="leading-relaxed text-base">Enrole to courses and enjoy weekly quiz.</p>
-                <Link href="/news/learning">
-                  <a className="mt-3 text-blue-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
+                <Link
+                  href="/news/learning"
+                  className="mt-3 text-blue-500 inline-flex items-center">
+                  Learn More<svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+
                 </Link>
               </div>
             </div>
@@ -45,12 +46,11 @@ function WhatCanYouDo () {
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Answer</h2>
                 <p className="leading-relaxed text-base">Solving the problems helps you to learn better.</p>
-                <Link href="/Ask">
-                  <a className="mt-3 text-blue-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
+                <Link href="/Ask" className="mt-3 text-blue-500 inline-flex items-center">
+                  Learn More<svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+
                 </Link>
               </div>
             </div>
@@ -78,7 +78,7 @@ function WhatCanYouDo () {
           </div>
 
 
-          <Link passHref href="/community">
+          <Link passHref href="/community" legacyBehavior>
             <button className="flex mx-auto mt-16 text-white bg-m border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Join</button>
           </Link>
         </div>

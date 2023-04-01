@@ -6,9 +6,7 @@ export default function index() {
   return (
    <>
       <Head>
-        <title>   
-         Code - CodNap
-          </title>
+      
         <meta
           name="description"
           content="Cod Nap| Cod Nap is the knowledge-sharing community Of Developers."

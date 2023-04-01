@@ -52,7 +52,7 @@ function TweetBox() {
         </div>
         <div className={styles.w__i}>
           <input
-            className={styles.pick,styles.tweetBox__imageInput}
+            className={(styles.pick, styles.tweetBox__imageInput)}
             value={tweetImage}
             onChange={(e) => setTweetImage(e.target.value)}
             

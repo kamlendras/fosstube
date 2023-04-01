@@ -53,19 +53,7 @@ export default function Nap(props) {
         </Stack>
       ) : (
         <Card sx={{ maxWidth: 345 }}>
-          <CardHeader
-            avatar={props.a}
-            action={
-              <IconButton aria-label="settings">
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title={props.n}
-            subheader={props.d}
-          />
-
-          
-            <CardMedia
+           <CardMedia
               component="img"
               height="194"
               image={props.i}
@@ -73,12 +61,25 @@ export default function Nap(props) {
             />
          
 
-          <CardContent>
+         {/* <CardContent>
             <Typography variant="body1" color="text.primary">
-              {props.t}
+            {props.t}
             </Typography>
-          </CardContent>
-          <CardActions disableSpacing>
+          </CardContent> */}
+          <CardHeader
+            
+            action={
+              <IconButton aria-label="settings">
+                <MoreVertIcon />
+              </IconButton>
+            }
+            avatar={props.a} 
+           x={props.t}
+            title={props.n}
+            subheader={props.d}
+            subheader2={props.d}
+          />
+          {/* <CardActions disableSpacing>
           
           
           {!session && (
@@ -101,13 +102,13 @@ export default function Nap(props) {
             >
               <ExpandMoreIcon />
             </ExpandMore>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
+          </CardActions> */}
+          {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
               <Typography paragraph>{props.p}</Typography>
               <Typography paragraph>{props.pp}</Typography>
             </CardContent>
-          </Collapse>
+          </Collapse> */}
         </Card>
       )}
     </span>

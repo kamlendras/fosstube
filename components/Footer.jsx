@@ -11,22 +11,22 @@ const Footer = () => {
         <div className={styles.Row}>
           <div className={styles.Column}>
             <div className={styles.Heading}>Company</div>
-            <Link href="/about" passHref>
+            <Link href="/about" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 About Us
               </div>
             </Link>
-            <Link href="/news" passHref>
+            <Link href="/news" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 Blog
               </div>
             </Link>
-            <Link href="/community" passHref>
+            <Link href="/community" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 Careers
               </div>
             </Link>
-            <Link href="/community" passHref>
+            <Link href="/community" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 Advertise with us
               </div>
@@ -34,12 +34,12 @@ const Footer = () => {
           </div>
           <div className={styles.Column}>
             <div className={styles.Heading}>Community</div>
-            <Link href="/community" passHref>
+            <Link href="/community" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 Developers
               </div>
             </Link>
-            <Link href="/community" passHref>
+            <Link href="/community" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 Freelancer
               </div>
@@ -47,17 +47,17 @@ const Footer = () => {
           </div>
           <div className={styles.Column}>
             <div className={styles.Heading}>Help</div>
-            <Link href="/community" passHref>
+            <Link href="/community" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 Sign Up
               </div>
             </Link>
-            <Link href="/help" passHref>
+            <Link href="/help" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 Help Center
               </div>
             </Link>
-            <Link href="/help" passHref>
+            <Link href="/help" passHref legacyBehavior>
               <div className={styles.FooterLink} href="#">
                 Safety Centre
               </div>
@@ -68,6 +68,6 @@ const Footer = () => {
         </div><Footernx />
       </div >
 </div>
-      );
+  );
 };
       export default Footer;

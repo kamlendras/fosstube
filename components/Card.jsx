@@ -77,7 +77,7 @@ export default function Ca(props) {
               {props.t}
             </Typography>
           </CardContent>
-          <CardActions disableSpacing>
+          {/* <CardActions disableSpacing>
             {!session && (
               <>
                 <Napicologin />
@@ -101,7 +101,7 @@ export default function Ca(props) {
             >
               <ExpandMoreIcon />
             </ExpandMore>
-          </CardActions>
+          </CardActions> */}
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
               <Typography paragraph>{props.p}</Typography>

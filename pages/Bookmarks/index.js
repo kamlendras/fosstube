@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Nv from "/components/Nv";
-import Footern from "/components/Footern";
+import NavBar from "/components/NavBar";
+import Copyright2 from "/components/Copyright2";
 import styles from "/styles/Bookmarks.module.css";
 function index() {
   return (
@@ -12,14 +12,14 @@ function index() {
           </title>
         <meta
           name="description"
-          content="Arrow Nap| Arrow Nap is the knowledge-sharing community Of Developers."
+          content="CODE| CODE is the knowledge-sharing community Of Developers."
         />
      
      
 
       </Head>
     <div>
-      <Nv p={"fixed"}  />
+      <NavBar p={"fixed"}  />
     </div>
 <div className={styles.Container}>
   <div className={styles.Content}>
@@ -31,7 +31,7 @@ function index() {
       <p className={styles.text}>Your Bookmarks will appear here.</p>
 
     <span className={styles.Footern}>
-          <Footern />
+          <Copyright2 />
         </span>
         </div>
         </div>

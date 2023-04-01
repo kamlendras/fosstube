@@ -11,8 +11,11 @@ import { deepOrange } from "@mui/material/colors";
 import { gray } from "@mui/material/colors";
 function Post3() {
   return (
-    <div className="relative bg-white ">
-      <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+    <div style={{
+      position: "relative",
+backgroundColor: "#ffffff",
+    }} >
+      <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48" >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
           <div className="sm:max-w-lg">
             <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
@@ -145,13 +148,13 @@ function Post3() {
                   </div>
                 </div>
               </div>
-              <Link passHref href="/post">
-              <a
-                href="#"
-                className="inline-block text-center bg-m border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-blue-700"
-              >
+              <Link
+                passHref
+                href="/post"
+                className="inline-block text-center bg-m border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-blue-700">
+              
                 Post
-              </a>
+              
               </Link>
             </div>
           </div>

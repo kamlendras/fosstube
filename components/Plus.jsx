@@ -15,7 +15,7 @@ const actions = [
         href="/Code"
         passHref
         style={{ color: "grey", position: "relative", top: "5px" }}
-      >
+        legacyBehavior>
        
           <CodeIcon />
   
@@ -29,7 +29,7 @@ const actions = [
         href="/Explore"
         passHref
         style={{ color: "grey", position: "relative", top: "5px" }}
-      >
+        legacyBehavior>
   
           <ExploreIcon />
     
@@ -43,7 +43,7 @@ const actions = [
         href="/Courses"
         passHref
         style={{ color: "grey", position: "relative", top: "5px" }}
-      >
+        legacyBehavior>
   
           <BookIcon />
     
@@ -57,7 +57,7 @@ const actions = [
         href="/Ask"
         passHref
         style={{ color: "grey", position: "relative", top: "5px" }}
-      >
+        legacyBehavior>
   
           <QuickreplyIcon />
     
@@ -69,21 +69,21 @@ const actions = [
 
 export default function Plus() {
     return (
-        <span  className={styles.plus}>
-  <Link   href="/Post"    passHref>
-        <SpeedDial
-          ariaLabel="SpeedDial openIcon example"
-          sx={{ position: 'fixed', bottom: 20, right: 20 }}  
-          icon={<SpeedDialIcon openIcon={            <EditIcon /> } />}
-        >
-          {actions.map((action) => (
-            <SpeedDialAction
-              key={action.name}
-              icon={action.icon}
-              tooltipTitle={action.name}
-            />
-          ))}
-        </SpeedDial>
-        </Link></span>
+      <span  className={styles.plus}>
+<Link href="/Post" passHref legacyBehavior>
+      <SpeedDial
+        ariaLabel="SpeedDial openIcon example"
+        sx={{ position: 'fixed', bottom: 20, right: 20 }}  
+        icon={<SpeedDialIcon openIcon={            <EditIcon /> } />}
+      >
+        {actions.map((action) => (
+          <SpeedDialAction
+            key={action.name}
+            icon={action.icon}
+            tooltipTitle={action.name}
+          />
+        ))}
+      </SpeedDial>
+      </Link></span>
     );
   }

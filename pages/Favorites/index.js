@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Nv from "/components/Nv";
-import Footern from "/components/Footern";
+import NavBar from "/components/NavBar";
+import Copyright2 from "/components/Copyright2";
 import styles from "/styles/Favorites.module.css";
 function index() {
   return (
@@ -9,12 +9,12 @@ function index() {
         <title>Favorites</title>
         <meta
           name="description"
-          content="Arrow Nap| Arrow Nap is the knowledge-sharing community Of Developers."
+          content="CODE| CODE is the knowledge-sharing community Of Developers."
         />
         <link rel="icon" href="favicon.ico" />
       </Head>
       <div>
-        <Nv p={"fixed"} />
+        <NavBar p={"fixed"} />
       </div>
 
       <span className={styles.heart}>
@@ -24,7 +24,7 @@ function index() {
       <p className={styles.heartt}>Your Favorites will appear here.</p>
      
         <span className={styles.Footern}>
-          <Footern />
+          <Copyright2 />
         </span>
    
     </>

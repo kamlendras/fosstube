@@ -43,13 +43,14 @@ function index() {
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">We are carbon neutral</h1>
                   <p className="leading-relaxed mb-3">We are the worlds 1st e-company to achive the title of 100% carbon neutral.      </p>
                   <div className="flex items-center flex-wrap ">
-                    <Link href="/news/carbon-neutral">
-                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M5 12h14" />
-                          <path d="M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
+                    <Link
+                      href="/news/carbon-neutral"
+                      className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      Learn More<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+
                     </Link>
 
                   </div>
@@ -64,13 +65,14 @@ function index() {
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Right to Code</h1>
                   <p className="leading-relaxed mb-3">Through our Nap Learning program we are helping millions to Learn to code.</p>
                   <div className="flex items-center flex-wrap">
-                    <Link href="/news/Right-to-Code">
-                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M5 12h14" />
-                          <path d="M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
+                    <Link
+                      href="/news/Right-to-Code"
+                      className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      Learn More<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+
                     </Link>
                     <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
 
@@ -91,13 +93,14 @@ function index() {
 
                   </p>
                   <div className="flex items-center flex-wrap ">
-                    <Link href="/news/no-meat-policy">
-                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M5 12h14" />
-                          <path d="M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
+                    <Link
+                      href="/news/no-meat-policy"
+                      className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      Learn More<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+
                     </Link>
 
                   </div>
@@ -119,13 +122,14 @@ function index() {
                   <p className="leading-relaxed mb-3">We belive degree or any kind of certificate is not necessary to get a job.
                   </p>
                   <div className="flex items-center flex-wrap ">
-                    <Link href="/news/We-hire-without-degree">
-                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M5 12h14" />
-                          <path d="M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
+                    <Link
+                      href="/news/We-hire-without-degree"
+                      className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      Learn More<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+
                     </Link>
 
                   </div>
@@ -140,13 +144,14 @@ function index() {
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Unemployment</h1>
                   <p className="leading-relaxed mb-3">Today a large quator of worlds population suffers from Unemployment and we are commeted to solve it.</p>
                   <div className="flex items-center flex-wrap">
-                    <Link href="/news/Unemployment">
-                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M5 12h14" />
-                          <path d="M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
+                    <Link
+                      href="/news/Unemployment"
+                      className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      Learn More<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+
                     </Link>
                     <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
 
@@ -167,13 +172,14 @@ function index() {
 
                   </p>
                   <div className="flex items-center flex-wrap ">
-                    <Link href="/news/NSAT">
-                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M5 12h14" />
-                          <path d="M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
+                    <Link
+                      href="/news/NSAT"
+                      className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      Learn More<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+
                     </Link>
 
                   </div>
@@ -183,7 +189,7 @@ function index() {
           </div>
         </div>
       </section>   
-        <center><Link href="/community">
+        <center><Link href="/community" legacyBehavior>
           <button type="button" class="text-white bg-gradient-to-r 
         from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 
         focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg 

@@ -6,7 +6,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import Link from "next/link";
 export default function Co(props) {
   return (
-    <Link passHref href={props.l}>
+    <Link passHref href={props.l} legacyBehavior>
       <Card sx={{ maxWidth: 300, maxHight: 50 }}>
         <CardActionArea>
           <CardMedia
