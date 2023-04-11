@@ -2,6 +2,7 @@ import connectDb from "../../middleware/mongoose"
 import Product from "../../models/Product"
 const handler = async (req, res) => {
     if (req.method == 'POST') {
+        console.log(req.body)
         for (let i = 0; i < req.body.length; i++) {
             let P = new Product({
                 title: req.body[i].title,
@@ -17,13 +18,13 @@ const handler = async (req, res) => {
 
             await p.save()
         }
+
+        res.status(200).json({ success: "success"})
     }
     else {
         res.status(400).json({ error: "This methord is not allowed" })
     }
-    let products = await Product.find()
-
-    res.status(200).json({ products })
+  
 }
 
 export default connectDb(handler);

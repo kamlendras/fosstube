@@ -1,400 +1,242 @@
-import {
-  styled,
-  useTheme,
-} from "@mui/material/styles";
-import { signIn, signOut, useSession } from "next-auth/react";
-import * as React from "react";
-import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
-import Autocomplete from '@mui/material/Autocomplete';
-import Search from "./Search";
-import SearchBar from "material-ui-search-bar";
-import Button from "@mui/material/Button";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import * as React from 'react';
+import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import MuiDrawer from '@mui/material/Drawer';
+import Box from '@mui/material/Box';
+import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
+import MuiAppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import List from '@mui/material/List';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import Badge from '@mui/material/Badge';
+import Container from '@mui/material/Container';
+import Link from '@mui/material/Link';
+import MenuIcon from '@mui/icons-material/Menu';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import { mainListItems, secondaryListItems } from './listItems';
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import Tooltip from "@mui/material/Tooltip";
-import Avatar from "@mui/material/Avatar";
-import { makeStyles } from "@mui/styles";
-import PropTypes from "prop-types";
-import Badge from "@mui/material/Badge";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import styles from "../styles/Home.module.css";
-import SideBar from "./SideBar";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Paper from "@mui/material/Paper";
-import styless from "/styles/Ask.module.css";
-import stylex from "/styles/Nav.module.scss";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import PersonPinIcon from "@mui/icons-material/PersonPin";
-import dynamic from "next/dynamic";
-const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
-  ssr: false,
-});
-const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
-
-const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
-const useStyles = makeStyles({
-  root: {
-    background: (props) =>
-      props.color === "red"
-        ? "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"
-        : "linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)",
-
-    border: 0,
-    borderRadius: 3,
-    boxShadow: (props) =>
-      props.color === "red"
-        ? "0 3px 5px 2px rgba(255, 105, 135, .3)"
-        : "0 3px 5px 2px rgba(33, 203, 243, .3)",
-    color: "white",
-    height: 48,
-    padding: "0 30px",
-    margin: 8,
-  },
-});
-
-function MyButton(props) {
-  const { color, ...other } = props;
-  const classes = useStyles(props);
-  return <Button className={classes.root} {...other} />;
-}
-
-MyButton.propTypes = {
-  color: PropTypes.oneOf(["blue", "red"]).isRequired,
-};
-
-function ElevationScroll(props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
-    target: window ? window() : undefined,
-  });
-
-  return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
-  });
-}
-
-ElevationScroll.propTypes = {
-  children: PropTypes.element.isRequired,
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
-
-export default function MenuAppBar(props) {
-  const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event &&
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  };
-
-  const list = (anchor) => (
-    <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <SideBar />
-    </Box>
-  );
-
-  // const [auth, setAuth] = React.useState(false);
-  const { data: session, status } = useSession();
-  const loading = status === "loading";
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleChange = (event) => {
-    setAuth(event.target.checked);
-  };
-
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  function MyApp() {
-    const theme = useTheme();
-    const colorMode = React.useContext(ColorModeContext);
-  }
+import ListItemIcon from '@mui/material/ListItemIcon';
+import NOTIFICATIONS from "./NOTIFICATIONS"
+import CREATE from "./CREATE"
+import AVATAR from "./AVATAR"
+import TextField from '@mui/material/TextField';
+import SearchIcon from '@mui/icons-material/Search';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Unstable_Grid2';
+function Copyright(props) {
   return (
-    // <span className={stylex.nav}>
-    <div class="whitespace-nowrap dark:bg-black">
-    <Box sx={{ flexGrow: 1 }} >
-      <ElevationScroll {...props}>
-        <AppBar position={props.p}>
-          <Toolbar>
-            
-                        {["left"].map((anchor) => (
-              <React.Fragment key={anchor}>
-                <span
-                  style={{ fontSize: "0" }}
-                  onClick={toggleDrawer(anchor, true)}
-                >
-                  {anchor}
+    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+      {'Copyright © '}
+      <Link color="inherit" href="https://code.press/">
+        CODE PRESS
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
-                  <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    sx={{ mr: 0 }}
-                  >
-                    <MenuIcon />
-                  </IconButton>
-                </span>
-                <SwipeableDrawer
-                  anchor={anchor}
-                  open={state[anchor]}
-                  onClose={toggleDrawer(anchor, false)}
-                  onOpen={toggleDrawer(anchor, true)}
-                >
-                  {list(anchor)}
-                </SwipeableDrawer>
-              </React.Fragment>
-            ))}
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1 }}
-              className="nap"
+const drawerWidth = 240;
+
+const AppBar = styled(MuiAppBar, {
+  shouldForwardProp: (prop) => prop !== 'open',
+})(({ theme, open }) => ({
+  zIndex: theme.zIndex.drawer + 1,
+  transition: theme.transitions.create(['width', 'margin'], {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.leavingScreen,
+  }),
+  ...(open && {
+    marginLeft: drawerWidth,
+    width: `calc(100% - ${drawerWidth}px)`,
+    transition: theme.transitions.create(['width', 'margin'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  }),
+}));
+
+const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
+  ({ theme, open }) => ({
+    '& .MuiDrawer-paper': {
+      position: 'relative',
+      whiteSpace: 'nowrap',
+      width: drawerWidth,
+      transition: theme.transitions.create('width', {
+        easing: theme.transitions.easing.sharp,
+        duration: theme.transitions.duration.enteringScreen,
+      }),
+      boxSizing: 'border-box',
+      ...(!open && {
+        overflowX: 'hidden',
+        transition: theme.transitions.create('width', {
+          easing: theme.transitions.easing.sharp,
+          duration: theme.transitions.duration.leavingScreen,
+        }),
+        width: theme.spacing(7),
+        [theme.breakpoints.up('sm')]: {
+          width: theme.spacing(9),
+        },
+      }),
+    },
+  }),
+);
+
+const mdTheme = createTheme();
+
+function DashboardContent() {
+  const [open, setOpen] = React.useState(true);
+  const toggleDrawer = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <ThemeProvider theme={mdTheme}>
+      <Box sx={{ display: 'flex' }}>
+        <CssBaseline />
+        <AppBar position="absolute" open={open}>
+          <Toolbar
+            sx={{
+              pr: '24px', // keep right padding when drawer closed
+            }}
+          >
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              onClick={toggleDrawer}
+              sx={{
+                marginRight: '36px',
+                ...(open && { display: 'none' }),
+              }}
             >
-                        <img src="/codnapwhite.svg" alt="" height={70} width={70} /> </Typography>
-            <span class="w-10 invisible">.</span>
-            <Search/>
-            <span class="w-10 invisible">.</span>
-            <ThemeToggle />
-            {!session && (
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              component="h1"
+              variant="h6"
+              color="inherit"
+              noWrap
+              sx={{ flexGrow: 1 }}
+            >
+              <img src="/codnapwhite.svg" alt="" height={50} width={50} />
+            </Typography>
 
-              <div>
-                   
-                <IconButton
-                  size="large"
-                  aria-label="show 17 new notifications"
-                  color="inherit"
-                >
-                  <Badge badgeContent={2} color="error">
-                    <NotificationsIcon />
-                  </Badge>
-                </IconButton>
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleMenu}
-                  color="inherit"
-                >
-                  <AccountCircle />
-                </IconButton>
-                {/* <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 0 }}
-              >
-                <MenuIcon />
-              </IconButton> */}
-                {/* <Link href="/signin" passHref> */}
-                  <Menu
-                    id="menu-appbar"
-                    anchorEl={anchorEl}
-                    anchorOrigin={{
-                      vertical: "top",
-                      horizontal: "right",
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                      vertical: "top",
-                      horizontal: "right",
-                    }}
-                    open={Boolean(anchorEl)}
-                    onClose={handleClose}
-                  >
-                    {/* <FormGroup>
-                  <FormControlLabel
-                    control={
-                      <Switch
-                        checked={auth}
-                        onChange={handleChange}
-                        aria-label="login switch"
-                      />
-                    }
-                    label={auth ? "Logout" : "Login"}
-                  />
-                </FormGroup> */}
+            <Paper elevation={3} className="sp">
+              <Grid container spacing={2} >
+                <Grid xs={11}>
+                <input type="text" placeholder="Search Code Press" className='searchcodepress' />
+                </Grid>
+                <Grid xs={1}>
+                <centre><SearchIcon style={{ color: "gray" }} className='vc' /></centre>
+                </Grid>
+               
+              </Grid>
+         
 
-                    {/* <MenuItem onClick={handleClose}>Login With Email</MenuItem> */}
-                    {/* <MyButton  color="blue">
-                    Login With Email
-                    <AlternateEmailIcon />
-                  </MyButton>
-                  <Divider />
-                  <React.Fragment>
-                    <MyButton color="red">
-                      <img
-                        src="/google.svg"
-                        height={"30%"}
-                        width={"30%"}
-                        alt=""
-                      />
-                    </MyButton>
-                    <MyButton onClick={handleClose} color="blue">
-                      <img
-                        src="/face.ico"
-                        height={"30%"}
-                        width={"30%"}
-                        alt=""
-                      />
-                    </MyButton>
-                  </React.Fragment> */}
-                    <center>
-                      {/* <img
-                        src="/brush-teeth.png"
-                        height={200}
-                        width={200}
-                        alt=""
-                      />*/}
-                      <PersonPinIcon className={styles.person} />
-                    </center>
-                    <center>
-                    <a
-                href={`/api/auth/signin`}
-                className={styles.buttonPrimary}
-                onClick={(e) => {
-                  e.preventDefault()
-                  signIn()
-                }}
-              >
-                      <Button
-                        onClick={handleClose}
-                        variant="outlined"
-                        className={styless.sidebartweets}
-                        Width
-                      >
-                        Sign In
-                      </Button> </a>
-                    </center>
-                  </Menu>
-                {/* </Link> */}
-              </div>
-            )}
+            </Paper >
 
-            {session && (
-              <div>
-                <IconButton
-                  size="large"
-                  aria-label="show 17 new notifications"
-                  color="inherit"
-                >
-                  <Badge badgeContent={2} color="error">
-                    <NotificationsIcon />
-                  </Badge>
-                </IconButton>
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleMenu}
-                  color="inherit"
-                >
-                  <Tooltip title="Open settings">
-                    <Avatar alt="You" src={session.user.image} />
-                  </Tooltip>
-                </IconButton>
 
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  open={Boolean(anchorEl)}
-                  onClose={handleClose}
-                >
-                   <span className={styles.signedInText}>
-                <small>Signed in as</small>
-                <br />
-                <strong>{session.user.email || session.user.name}</strong>
-              </span>
-                  <MenuItem onClick={handleClose}>Your Profile</MenuItem>
-                  <MenuItem onClick={handleClose}>Settings</MenuItem>
-                  {/* <MenuItem onClick={handleClose}>Sign out</MenuItem>
-                  <FormGroup>
-                    <FormControlLabel
-                      control={
-                        <Switch
-                          checked={auth}
-                          onChange={handleChange}
-                          aria-label="login switch"
-                        />
-                      }
-                      label={auth ? "Logout" : "Login"}
-                    />
-                  </FormGroup> */}
-                    <a
-                href={`/api/auth/signout`}
-                className={styles.button}
-                onClick={(e) => {
-                  e.preventDefault()
-                  signOut()
-                }}
-              >
-                Sign out
-              </a>
-                </Menu>
-              </div>
-            )}
 
-          
+
+
+
+
+
+            {/* <IconButton
+                     size="large"
+                     aria-label="account of current user"
+                     aria-controls="menu-appbar"
+                     aria-haspopup="true"
+                    //  onClick={handleMenu}
+                     color="inherit"
+                   >
+                     <AddCircleOutlineRoundedIcon />
+                   </IconButton> */}
+            {/* <IconButton
+                     size="large"
+                     aria-label="show 17 new notifications"
+                     color="inherit"
+                     >
+                     <Badge badgeContent={2} color="error">
+                       <NotificationsIcon />
+                     </Badge> */}
+            {/* </IconButton> */}
+            <CREATE />
+            <NOTIFICATIONS />
+            <AVATAR />
+            {/* <IconButton
+                     size="large"
+                     aria-label="account of current user"
+                     aria-controls="menu-appbar"
+                     aria-haspopup="true"
+            
+                     color="inherit"
+                   >
+                     <AccountCircle />
+                   </IconButton> */}
+
+            {/* <PersonPinIcon className={styles.person} /> */}
+
+
+
+
+
+
+
           </Toolbar>
         </AppBar>
-      </ElevationScroll>
-    </Box>
-   </div>
+        <Drawer variant="permanent" open={open}>
+          <Toolbar
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-end',
+              px: [1],
+            }}
+          >
+            <IconButton onClick={toggleDrawer}>
+              <ChevronLeftIcon />
+            </IconButton>
+          </Toolbar>
+          <Divider />
+          <List component="nav">
+            {mainListItems}
+            <Divider sx={{ my: 1 }} />
+            {secondaryListItems}
+          </List>
+        </Drawer>
+        <Box
+          component="main"
+          sx={{
+            backgroundColor: (theme) =>
+              theme.palette.mode === 'light'
+                ? theme.palette.grey[100]
+                : theme.palette.grey[900],
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto',
+          }}
+        >
+
+          <Toolbar />
+          <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+            {/* <Grid container spacing={3}>
+             
+             
+            
+            </Grid> */}
+            <Copyright sx={{ pt: 4 }} />
+          </Container>
+        </Box>
+      </Box>
+    </ThemeProvider>
   );
 }
 
+export default function Dashboard() {
+  return <DashboardContent />;
+}

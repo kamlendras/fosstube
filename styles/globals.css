@@ -30,13 +30,30 @@
 
 
 
+
+
+
 * {
   box-sizing: border-box;
 } 
-
-
-
-
+.sp{
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+ 
+}
+.searchcodepress{
+  width: 100%;
+  /* border-color: white; */
+  border: none;
+  :active {
+    border: none;
+}
+}
+.vc{
+ 
+  margin-top: 0.5rem;
+}
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -101,7 +118,7 @@
 
 }
 
-.container .input {
+/* .container .input {
   border: 0;
   outline: none;
   color: #8b7d77;
@@ -110,11 +127,11 @@
 .search_wrap {
   width: 100%; 
   
-   /* margin: 38px auto; */
+  
  
-}
+} */
 
-.search_wrap .search_box {
+/* .search_wrap .search_box {
   position: relative;
   width: 100%;
   height: 3rem;
@@ -168,7 +185,7 @@
 .SearchIcon{
   height: 1rem !important;
   width: 1rem !important;
-}
+} */
 
 
 
