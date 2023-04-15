@@ -1,27 +1,31 @@
-import * as React from 'react';
+import React, { useRef, useEffect } from "react";
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
-import PersonAdd from '@mui/icons-material/PersonAdd';
-import Settings from '@mui/icons-material/Settings';
-import Logout from '@mui/icons-material/Logout';
-import CodeIcon from '@mui/icons-material/Code';
-import SwitchAccountIcon from '@mui/icons-material/SwitchAccount';
+import SwitchAccountOutlinedIcon from '@mui/icons-material/SwitchAccountOutlined';
 import Brightness3OutlinedIcon from '@mui/icons-material/Brightness3Outlined';
 import TranslateOutlinedIcon from '@mui/icons-material/TranslateOutlined';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import KeyboardOutlinedIcon from '@mui/icons-material/KeyboardOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import FeedbackOutlinedIcon from '@mui/icons-material/FeedbackOutlined';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import Grid from '@mui/material/Unstable_Grid2';
+import Link2 from '@mui/material/Link';
+import RocketOutlinedIcon from '@mui/icons-material/RocketOutlined';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -31,7 +35,7 @@ export default function AccountMenu() {
   return (
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-      
+
         <Tooltip >
           <IconButton
             onClick={handleClick}
@@ -45,12 +49,14 @@ export default function AccountMenu() {
           </IconButton>
         </Tooltip>
       </Box>
+     
       <Menu
         anchorEl={anchorEl}
         id="account-menu"
         open={open}
         onClose={handleClose}
-        onClick={handleClose}
+        // onClick={handleClick}
+
         PaperProps={{
           elevation: 0,
           sx: {
@@ -69,8 +75,8 @@ export default function AccountMenu() {
               position: 'absolute',
               top: 0,
               right: 14,
-              width: 10,
-              height: 10,
+              width: 0,
+              height: 0,
               bgcolor: 'background.paper',
               transform: 'translateY(-50%) rotate(45deg)',
               zIndex: 0,
@@ -81,48 +87,94 @@ export default function AccountMenu() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <MenuItem onClick={handleClose}>
-          <Avatar /> Profile
+        
+          <Grid container columnSpacing={2}>
+          <Grid xs={2}>
+          {/* <Avatar
+        alt="You"
+        src="./avatar.svg"
+        sx={{ width: 26, height: 26 }}
+      /> */}
+      <img src="./avatar.svg" width={56} height={56} alt="You" />
+            </Grid>
+          <Grid xs={10}>
+            <Grid xs={12}>
+              <ListItemText> KSINGH
+              </ListItemText>
+            </Grid>
+            <Grid xs={12}>
+              <ListItemText> @KSINGH
+              </ListItemText>
+            </Grid>
+            <Grid xs={12}>
+              <Link2 href="#" underline="none" fontSize="medium">
+                {'Manage your Universal Account'}
+              </Link2>
+            </Grid>
+            </Grid>
+           
+
+          </Grid>
+
+
         </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Avatar /> Your Space
-        </MenuItem>
+        <Divider />
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
-            <CodeIcon fontSize="small" />
+            <RocketOutlinedIcon />
           </ListItemIcon>
-          Code
+          Your Space
         </MenuItem>
+
+
+     
+        <MenuItem  onClick={handleClick} >
+                    <ListItemIcon>
+                        <SwitchAccountOutlinedIcon fontSize="small" />
+                    </ListItemIcon>
+
+                    <ListItemText> Switch account</ListItemText>
+                    <ListItemIcon>
+                         <ArrowForwardIosOutlinedIcon fontSize="small" />
+                   </ListItemIcon>
+
+
+                </MenuItem>
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
-            <SwitchAccountIcon fontSize="small" />
-          </ListItemIcon>
-          Switch account
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <Logout fontSize="small" />
+            <LogoutOutlinedIcon fontSize="small" />
           </ListItemIcon>
           Sign out
         </MenuItem>
         <Divider />
-      
+
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
             <  Brightness3OutlinedIcon fontSize="small" />
           </ListItemIcon>
-          Appearance: Device theme
+          <ListItemText> Appearance: Device theme
+          </ListItemText>
+          <ListItemIcon>
+            <ArrowForwardIosOutlinedIcon fontSize="small" />
+          </ListItemIcon>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
             <TranslateOutlinedIcon fontSize="small" />
           </ListItemIcon>
-          Language: English
+          <ListItemText>  Language: English   </ListItemText>
+          <ListItemIcon>
+            <ArrowForwardIosOutlinedIcon fontSize="small" />
+          </ListItemIcon>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
             <LanguageOutlinedIcon fontSize="small" />
           </ListItemIcon>
-          Location: India
+          <ListItemText>Location: India</ListItemText>
+          <ListItemIcon>
+            <ArrowForwardIosOutlinedIcon fontSize="small" />
+          </ListItemIcon>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
@@ -133,7 +185,7 @@ export default function AccountMenu() {
         <Divider />
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
-            <Settings fontSize="small" />
+            <SettingsOutlinedIcon fontSize="small" />
           </ListItemIcon>
           Settings
         </MenuItem>
@@ -150,9 +202,9 @@ export default function AccountMenu() {
           </ListItemIcon>
           Send feedback
         </MenuItem>
-     
-        
-      
+
+
+
       </Menu>
     </React.Fragment>
   );

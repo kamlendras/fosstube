@@ -26,11 +26,21 @@
   text-decoration: none;
 }
 
+.exee{
+  color: inherit;
+}
 
+.borders{
+  border-radius: 1000000000000px;
+}
 
-
-
-
+.scrollleft{
+  /* overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  height: 100rem; */
+scroll-behavior: smooth;
+}
 
 
 * {
@@ -55,7 +65,7 @@
   margin-top: 0.5rem;
 }
 ::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0rem;
 }
 
 ::-webkit-scrollbar-track {

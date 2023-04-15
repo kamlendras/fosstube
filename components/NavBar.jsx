@@ -26,18 +26,8 @@ import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://code.press/">
-        CODE PRESS
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+
+
 
 const drawerWidth = 240;
 
@@ -94,10 +84,18 @@ function DashboardContent() {
   };
 
   return (
+
+
     <ThemeProvider theme={mdTheme}>
-      <Box sx={{ display: 'flex' }}>
+      <Box
+        sx={{ display: 'flex' }}
+      >
+
         <CssBaseline />
-        <AppBar position="absolute" open={open}>
+
+        <AppBar position="absolute"
+        // open={open}
+        >
           <Toolbar
             sx={{
               pr: '24px', // keep right padding when drawer closed
@@ -110,7 +108,7 @@ function DashboardContent() {
               onClick={toggleDrawer}
               sx={{
                 marginRight: '36px',
-                ...(open && { display: 'none' }),
+                // ...(open && { display: 'none' }),
               }}
             >
               <MenuIcon />
@@ -128,87 +126,48 @@ function DashboardContent() {
             <Paper elevation={3} className="sp">
               <Grid container spacing={2} >
                 <Grid xs={11}>
-                <input type="text" placeholder="Search Code Press" className='searchcodepress' />
+                  <input type="text" placeholder="Search Code Press" className='searchcodepress' />
                 </Grid>
                 <Grid xs={1}>
-                <centre><SearchIcon style={{ color: "gray" }} className='vc' /></centre>
+                  <centre><SearchIcon style={{ color: "gray" }} className='vc' /></centre>
                 </Grid>
-               
+
               </Grid>
-         
-
             </Paper >
-
-
-
-
-
-
-
-
-            {/* <IconButton
-                     size="large"
-                     aria-label="account of current user"
-                     aria-controls="menu-appbar"
-                     aria-haspopup="true"
-                    //  onClick={handleMenu}
-                     color="inherit"
-                   >
-                     <AddCircleOutlineRoundedIcon />
-                   </IconButton> */}
-            {/* <IconButton
-                     size="large"
-                     aria-label="show 17 new notifications"
-                     color="inherit"
-                     >
-                     <Badge badgeContent={2} color="error">
-                       <NotificationsIcon />
-                     </Badge> */}
-            {/* </IconButton> */}
             <CREATE />
             <NOTIFICATIONS />
             <AVATAR />
-            {/* <IconButton
-                     size="large"
-                     aria-label="account of current user"
-                     aria-controls="menu-appbar"
-                     aria-haspopup="true"
-            
-                     color="inherit"
-                   >
-                     <AccountCircle />
-                   </IconButton> */}
-
-            {/* <PersonPinIcon className={styles.person} /> */}
-
-
-
-
-
-
-
           </Toolbar>
         </AppBar>
-        <Drawer variant="permanent" open={open}>
+
+
+
+
+        <Drawer variant="permanent" open={open}className="scrollleft">
+
           <Toolbar
             sx={{
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'flex-end',
+              justifyContent: 'flex-start',
               px: [1],
             }}
+
           >
             <IconButton onClick={toggleDrawer}>
-              <ChevronLeftIcon />
+
+              <MenuIcon />
             </IconButton>
+
           </Toolbar>
-          <Divider />
+          {/* <Divider /> */}
           <List component="nav">
             {mainListItems}
             <Divider sx={{ my: 1 }} />
             {secondaryListItems}
           </List>
         </Drawer>
+
         <Box
           component="main"
           sx={{
@@ -224,16 +183,14 @@ function DashboardContent() {
 
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-            {/* <Grid container spacing={3}>
-             
-             
-            
-            </Grid> */}
-            <Copyright sx={{ pt: 4 }} />
+         <p>hello</p>
           </Container>
         </Box>
+
+
       </Box>
     </ThemeProvider>
+
   );
 }
 

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from "react";
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
@@ -11,9 +11,13 @@ import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
-import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
-
-export default function AccountMenu() {
+import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import Live from "./../public/live.svg"
+import { SvgIcon } from '@mui/material';
+export default function CREATE() {
+  const [isActive, setIsActive] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -35,8 +39,12 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            {/* <Avatar sx={{ width: 32, height: 32 }}>M</Avatar> */}
-            <AddCircleOutlineRoundedIcon style={{ color: "white" }} />
+              {isActive? <AddCircleIcon  style={{ color: "white" }} onClick={()=>{
+          setIsActive(!isActive)}}/>:
+      <AddCircleOutlineOutlinedIcon  style={{ color: "white" }} onClick={()=>{
+          setIsActive(!isActive)}} />
+           }
+          
           </IconButton>
         </Tooltip>
       </Box>
@@ -46,6 +54,7 @@ export default function AccountMenu() {
         open={open}
         onClose={handleClose}
         onClick={handleClose}
+        onClose={setIsActive}
         PaperProps={{
           elevation: 0,
           sx: {
@@ -64,8 +73,8 @@ export default function AccountMenu() {
               position: 'absolute',
               top: 0,
               right: 14,
-              width: 10,
-              height: 10,
+              width: 0,
+              height: 0,
               bgcolor: 'background.paper',
               transform: 'translateY(-50%) rotate(45deg)',
               zIndex: 0,
@@ -75,31 +84,20 @@ export default function AccountMenu() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <MenuItem onClick={handleClose}>
-          <Avatar /> Profile
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Avatar /> My account
-        </MenuItem>
-        <Divider />
+        
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
-            <PersonAdd fontSize="small" />
+            < FileUploadOutlinedIcon fontSize="small" />
           </ListItemIcon>
-          Add another account
+          Upload
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
-            <Settings fontSize="small" />
+          <img src="/live.svg" width={26} height={26}/> 
           </ListItemIcon>
-          Settings
+          Go Live
         </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <Logout fontSize="small" />
-          </ListItemIcon>
-          Logout
-        </MenuItem>
+      
       </Menu>
     </React.Fragment>
   );
