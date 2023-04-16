@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import Avatar from '@mui/material/Avatar';
-import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -24,7 +24,7 @@ const Ask1 = forwardRef(
               <h3>
                 {displayName}
                 <span className={styles.post__headerSpecial}>
-                  {verified && <VerifiedUserIcon className={styles.post__badge} />}
+                  {verified && <CheckCircleIcon className={styles.post__badge} />}
                   {username}
                 </span>
               </h3>

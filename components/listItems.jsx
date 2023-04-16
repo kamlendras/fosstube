@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Copyright from './CopyRightR'
+import Divider from '@mui/material/Divider';
+import Typography from '@mui/material/Typography';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
@@ -22,7 +24,11 @@ import MusicNoteOutlinedIcon from '@mui/icons-material/MusicNoteOutlined';
 import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
-export const mainListItems = (
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
+import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import FeedbackOutlinedIcon from '@mui/icons-material/FeedbackOutlined';
+export const ListItems = (
   <React.Fragment>
     <ListItemButton>
       <ListItemIcon>
@@ -44,14 +50,8 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Spaces" />
     </ListItemButton>
-   
-  
-  </React.Fragment>
-);
-
-export const secondaryListItems = (
-  <React.Fragment>
-     <ListItemButton>
+    <Divider sx={{ my: 1 }} />
+    <ListItemButton>
       <ListItemIcon>
         <LibraryBooksOutlinedIcon />
       </ListItemIcon>
@@ -75,15 +75,26 @@ export const secondaryListItems = (
       </ListItemIcon>
       <ListItemText primary="Favorites" />
     </ListItemButton>
-    <ListSubheader component="div" inset>
-      Spaces
+    <Divider sx={{ my: 1 }} />
+    <ListSubheader  inset>
+    <Typography variant="body1" gutterBottom >
+        Spaces
+      </Typography>
     </ListSubheader>
+  
+  
+    {/* <ListItemText >
+        Browse
+      </ListItemText> */}
     <ListItemButton>
       <ListItemIcon>
         < AddCircleOutlineOutlinedIcon/>
       </ListItemIcon>
-      <ListItemText primary="Browse" />
+      <ListItemText >
+        Browse
+      </ListItemText>
     </ListItemButton>
+    <Divider sx={{ my: 1 }} />
     <ListSubheader component="div" inset>
       Explore
     </ListSubheader>
@@ -117,9 +128,55 @@ export const secondaryListItems = (
       </ListItemIcon>
       <ListItemText primary="Learning" />
     </ListItemButton>
+    <Divider sx={{ my: 1 }} />
+    <ListSubheader component="div" inset>
+      More From Code Press
+    </ListSubheader>
+    <ListItemButton>
+    <ListItemIcon>
+    <img src="/ce.svg" height={26} width={26} ></img>
+      </ListItemIcon>
+      
+  
+      <ListItemText primary="Code Editor" />
+    </ListItemButton>
+    <ListItemButton>
+      <ListItemIcon>
+      <img src="/wc.svg" height={26} width={26} ></img>
+      </ListItemIcon>
+      <ListItemText primary="Web Compiler" />
+    </ListItemButton>
+      <Divider sx={{ my: 1 }} />
+    <ListItemButton>
+      <ListItemIcon>
+        < SettingsOutlinedIcon/>
+      </ListItemIcon>
+      <ListItemText primary="Settings" />
+    </ListItemButton>
+    <ListItemButton>
+      <ListItemIcon>
+        < OutlinedFlagIcon />
+      </ListItemIcon>
+      <ListItemText primary="Report" />
+    </ListItemButton>
+    <ListItemButton>
+      <ListItemIcon>
+        < HelpOutlineOutlinedIcon/>
+      </ListItemIcon>
+      <ListItemText primary="Help" />
+    </ListItemButton>
+    <ListItemButton>
+      <ListItemIcon>
+        < FeedbackOutlinedIcon/>
+      </ListItemIcon>
+      <ListItemText primary="Feedback" />
+    </ListItemButton>
+
+
     <ListSubheader component="div" inset>
     <Copyright sx={{ pt: 4 }} />
     </ListSubheader>
-   
+  
   </React.Fragment>
 );
+

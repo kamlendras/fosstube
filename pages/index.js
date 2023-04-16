@@ -13,12 +13,14 @@ export default function Home() {
         <link rel="icon" href="/codnapwhite.svg" />
       </Head>
 
-      <NavBar />
+<NavBar />
+
+      
 
 
 
 
-    </>
+   </> 
   );
 }
 

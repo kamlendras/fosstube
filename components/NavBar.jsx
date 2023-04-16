@@ -3,7 +3,6 @@ import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiDrawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
-import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
@@ -14,11 +13,7 @@ import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import ListItemIcon from '@mui/material/ListItemIcon';
+import { ListItems } from './listItems';
 import NOTIFICATIONS from "./NOTIFICATIONS"
 import CREATE from "./CREATE"
 import AVATAR from "./AVATAR"
@@ -26,7 +21,7 @@ import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
-
+// import { windowDimensions } from './useWindowDimension';
 
 
 const drawerWidth = 240;
@@ -76,7 +71,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 );
 
 const mdTheme = createTheme();
-
+// const { width, height } = windowDimensions();
 function DashboardContent() {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
@@ -90,10 +85,9 @@ function DashboardContent() {
       <Box
         sx={{ display: 'flex' }}
       >
-
         <CssBaseline />
 
-        <AppBar position="absolute"
+        <AppBar position="fixed"
         // open={open}
         >
           <Toolbar
@@ -143,7 +137,7 @@ function DashboardContent() {
 
 
 
-        <Drawer variant="permanent" open={open}className="scrollleft">
+        <Drawer variant="permanent" open={open} className='star42' position="fixed" style={{display:"inline-block"}}> 
 
           <Toolbar
             sx={{
@@ -160,14 +154,13 @@ function DashboardContent() {
             </IconButton>
 
           </Toolbar>
-          {/* <Divider /> */}
+          
           <List component="nav">
-            {mainListItems}
+            {ListItems}
             <Divider sx={{ my: 1 }} />
-            {secondaryListItems}
           </List>
         </Drawer>
-
+        
         <Box
           component="main"
           sx={{
@@ -176,21 +169,21 @@ function DashboardContent() {
                 ? theme.palette.grey[100]
                 : theme.palette.grey[900],
             flexGrow: 1,
-            height: '100vh',
+            // height: '100vh',
             overflow: 'auto',
           }}
         >
 
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-         <p>hello</p>
+         <p>Rocket</p>
           </Container>
         </Box>
 
 
       </Box>
     </ThemeProvider>
-
+    
   );
 }
 
