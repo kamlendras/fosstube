@@ -82,12 +82,10 @@ function DashboardContent() {
 
 
     <ThemeProvider theme={mdTheme}>
-      <Box
-        sx={{ display: 'flex' }}
-      >
+    <span>
         <CssBaseline />
 
-        <AppBar position="fixed"
+        <AppBar position="fixed" 
         // open={open}
         >
           <Toolbar
@@ -136,8 +134,9 @@ function DashboardContent() {
 
 
 
-
-        <Drawer variant="permanent" open={open} className='star42' position="fixed" style={{display:"inline-block"}}> 
+<div className="LeftPage">
+{/* <div> */}
+        <Drawer variant="permanent" open={open} > 
 
           <Toolbar
             sx={{
@@ -160,7 +159,8 @@ function DashboardContent() {
             <Divider sx={{ my: 1 }} />
           </List>
         </Drawer>
-        
+        </div>
+{/*         
         <Box
           component="main"
           sx={{
@@ -178,15 +178,16 @@ function DashboardContent() {
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
          <p>Rocket</p>
           </Container>
-        </Box>
+        </Box> */}
+       
 
 
-      </Box>
-    </ThemeProvider>
-    
-  );
+        </span>
+        </ThemeProvider>
+
+);
 }
 
 export default function Dashboard() {
-  return <DashboardContent />;
+return <DashboardContent />;
 }

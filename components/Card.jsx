@@ -69,7 +69,8 @@ export default function Ca(props) {
 <CardMedia
   component="iframe"
   image={props.i}
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"
+  allow="accelerometer; autoplay; clipboard-write;
+   encrypted-media; gyroscope; picture-in-picture; fullscreen;"
 />
 
           <CardContent>

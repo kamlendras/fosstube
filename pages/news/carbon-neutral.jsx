@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Accordion from "/components/Accordion";
+// import Accordion from "/components/Accordion";
 import Footer from "/components/Footer";
 import Typography from "@mui/material/Typography";
 import ReactTyped from "react-typed";
@@ -49,7 +49,7 @@ Commitment from countries and the organizations within is critical to the forwar
 
       
   
-      <Accordion />
+      {/* <Accordion /> */}
       <Footer />
     </>
   );

@@ -1,22 +1,19 @@
 import Head from "next/head";
-import Plus from "/components/Plus";
-import Post3 from "/components/Post3";
-import WhatCanYouDo from "/components/WhatCanYouDo";
-import New from "/components/New";
+
+
 import QA from "/components/QA";
 import Footer from "/components/Footer";
 import styled from "@emotion/styled";
 import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
-import { SpaceBarTwoTone } from "@material-ui/icons";
-import OurFeatures from "/components/OurFeatures";
-import Newsroom from "/components/Newsroom";
-import NewsLetter from "/components/NewsLetter";
-import UsedBy from "/components/UsedBy";
-import Design from "/components/Design";
-
+import SpaceBarTwoToneIcon from '@mui/icons-material/SpaceBarTwoTone';
+import Images from "/components/about/images"
+import Appbar from "/components/about/appbar"
+import Toolbar from '@mui/material/Toolbar';
+import Text from '/components/about/text'
+import CardGrid from "/components/about/cardgrid";
 export default function Home() {
   return (
-    <div className="dark:bg-black width-max height-max">
+    <div >
       <Head>
         <title>CodNap</title>
         <meta
@@ -25,20 +22,17 @@ export default function Home() {
         />
         <link rel="icon" href="/codnapwhite.svg" />
       </Head>
-  
-      <Plus />
-      <New/>
- 
-      <UsedBy/>
-      <WhatCanYouDo/>
-      <Design/>
-      <Post3/>
-     
-      <OurFeatures/>
+      <Appbar/>
+      <Toolbar/>
+  <Images/>
+      <Text/>
+      <CardGrid/>
+    
+    
 
-  <Newsroom/>
+  
       <QA/>
-      <NewsLetter/>
+ 
       <Footer />
      
     

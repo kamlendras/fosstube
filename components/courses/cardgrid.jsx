@@ -1,8 +1,8 @@
 import * as React from 'react';
-import CardCourses from "./CardCourses";
+import Card from "./Card";
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import styles from "../styles/Courses.module.css";
+import styles from "../../styles/Courses.module.css";
 function refreshMessages() {
   const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
   // Array.from(new Array(40))
@@ -38,7 +38,7 @@ export default function Icourses() {
           <><div className={styles.grid}>
 
 
-            <CardCourses d={d} i={i} t={t} l={l} />
+            <Card d={d} i={i} t={t} l={l} />
 
 
 

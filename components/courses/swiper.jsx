@@ -3,14 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import styles from "../styles/Courses.module.css";
+import styles from "../../styles/Courses.module.css";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 export default function App() {
   return (
-    <div className={styles.Swiper}>
-      <Swiper
+    
+      <Swiper style={{marginBottom:'1rem'}}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -42,6 +42,6 @@ export default function App() {
           <img src="/16.jpeg" alt="no internet" height={400} width={1600}/>
         </SwiperSlide>
       </Swiper>
-    </div>
+   
   );
 }
