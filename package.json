@@ -67,6 +67,7 @@
     "react-firebase-hooks": "^5.1.1",
     "react-flip-move": "^3.0.4",
     "react-helmet-async": "^1.2.2",
+    "react-hover-video-player": "^10.0.0",
     "react-perfect-scrollbar": "^1.5.8",
     "react-player": "^2.10.1",
     "react-redux": "^8.0.5",

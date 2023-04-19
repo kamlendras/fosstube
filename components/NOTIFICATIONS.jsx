@@ -91,11 +91,11 @@ export default function AccountMenu() {
         </Grid>
         <Grid xs={2}>
         <Tooltip title="Settings">
-        <MenuItem className="borders">
-              <ListItemIcon >
+        
+              <IconButton aria-label="settings"   >
             <SettingsOutlinedIcon fontSize="small" />
-          </ListItemIcon>
-        </MenuItem>
+            </IconButton>
+       
         </Tooltip>
         </Grid>
       </Grid>
