@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Card from "./Card";
+import Card from "./card";
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import styles from "../../styles/Courses.module.css";
