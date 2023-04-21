@@ -10,7 +10,6 @@
     "lint": "next lint",
     "export": "next export && touch out/.nojekyll",
     "build-ssg": "next build && next export && touch out/.nojekyll",
-    "postbuild": "node ./scripts/Elasticsearch.mjs",
     "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
