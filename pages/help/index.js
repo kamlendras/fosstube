@@ -1,7 +1,7 @@
 
 import Head from "next/head";
 
-import Accordion from "../components/Accordion";
+import QA from "../components/QA";
 import Footer from "../components/Footer";
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
     </div>
       
   
-      <Accordion />
+      <QA />
       <Footer />
     </>
   );

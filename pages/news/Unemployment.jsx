@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Accordion from "/components/Accordion";
+import QA from "/components/QA";
 import Footer from "/components/Footer";
 import Typography from "@mui/material/Typography";
 import ReactTyped from "react-typed";
@@ -42,7 +42,7 @@ Because of the difficulty in measuring the unemployment rate by, for example, us
 
       
   
-      <Accordion />
+      <QA />
       <Footer />
     </>
   );

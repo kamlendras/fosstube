@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Accordion from "/components/Accordion";
+import QA from "/components/QA";
 import Footer from "/components/Footer";
 import Typography from "@mui/material/Typography";
 import ReactTyped from "react-typed";
@@ -46,7 +46,7 @@ export default function Home() {
 
       
   
-      <Accordion />
+      <QA />
       <Footer />
     </>
   );

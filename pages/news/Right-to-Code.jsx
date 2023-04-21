@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Accordion from "/components/Accordion";
+import QA from "/components/QA";
 import Footer from "/components/Footer";
 import Typography from "@mui/material/Typography";
 import ReactTyped from "react-typed";
@@ -51,7 +51,7 @@ The first computer program is generally dated to 1843, when mathematician Ada Lo
 
       
   
-      <Accordion />
+      <QA />
       <Footer />
     </>
   );

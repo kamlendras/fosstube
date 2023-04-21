@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Accordion from "/components/Accordion";
+import QA from "/components/QA";
 import Footer from "/components/Footer";
 import Typography from "@mui/material/Typography";
 import ReactTyped from "react-typed";
@@ -44,7 +44,7 @@ There are movements for education reforms, such as for improving quality and eff
 
       
   
-      <Accordion />
+      <QA />
       <Footer />
     </>
   );

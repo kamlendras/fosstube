@@ -1,15 +1,9 @@
 import Head from "next/head";
 import React, { useEffect } from 'react'
-import Aos from 'aos';
-import "aos/dist/aos.css";
 import CodeCardData from "/components/CodeCardData";
 import NavBar from "/components/NavBar";
 import styles from "/styles/Explore.module.css";
 import { Box, Container, Grid } from '@mui/material';
-import { Budget } from '/components/dashboard/budget';
-import { TasksProgress } from '/components/dashboard/tasks-progress';
-import { TotalCustomers } from '/components/dashboard/total-customers';
-import { TotalProfit } from '/components/dashboard/total-profit';
 export default function Explore() {
 
   return (
@@ -18,7 +12,7 @@ export default function Explore() {
 
 <Head>
         <title>   
-         Explore - CodNap
+         Explore
           </title>
         <meta
           name="description"
@@ -29,7 +23,7 @@ export default function Explore() {
 
       </Head>
 <div>
-      <NavBar p={"static"}  />
+      <NavBar  />
     </div>
 
     <Box
@@ -51,7 +45,7 @@ export default function Explore() {
             xl={3}
             xs={12}
           >
-            <Budget />
+        <p>hello1</p>
           </Grid>
           <Grid
             item
@@ -60,7 +54,7 @@ export default function Explore() {
             sm={6}
             xs={12}
           >
-            <TotalCustomers />
+         <p>h2</p>
           </Grid>
           <Grid
             item
@@ -69,7 +63,7 @@ export default function Explore() {
             sm={6}
             xs={12}
           >
-            <TasksProgress />
+          <p>h3</p>
           </Grid>
           <Grid
             item
@@ -78,7 +72,7 @@ export default function Explore() {
             sm={6}
             xs={12}
           >
-            <TotalProfit sx={{ height: '100%' }} />
+        <p>h4</p>
           </Grid>
       
          
