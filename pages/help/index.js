@@ -1,8 +1,8 @@
 
 import Head from "next/head";
 
-import QA from "../components/QA";
-import Footer from "../components/Footer";
+import QA from "../../components/QA";
+import Footer from "../../components/Footer";
 export default function Home() {
   return (
     <>

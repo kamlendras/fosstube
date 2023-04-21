@@ -13,11 +13,7 @@
     "postbuild": "node ./scripts/Elasticsearch.mjs",
     "deploy": "gh-pages -d out -t true"
   },
-  
- 
-  
   "dependencies": {
-    "@elastic/elasticsearch": "^8.6.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",
