@@ -20,7 +20,7 @@ import UpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { green } from '@mui/material/colors';
 import Box from '@mui/material/Box';
 import Link from 'next/link'
-
+import { SessionProvider } from 'next-auth/react';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -32,8 +32,9 @@ function TabPanel(props) {
       );
     }, []);
   
-    const { data: session, status } = useSession();
+    // const { data: session, status } = useSession();
   return (
+    <SessionProvider session={props.t}>
     <Typography
       component="div"
       role="tabpanel"
@@ -44,6 +45,7 @@ function TabPanel(props) {
     >
       {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </Typography>
+    </SessionProvider >
   );
 }
 

@@ -12,7 +12,7 @@ const style = {
   };
 function favorites() {
   return (
-    <>
+    <div className="leftspace">
       <Head>
         <title>Favorites</title>
         <meta
@@ -35,7 +35,7 @@ function favorites() {
           <Copyright2 />
         </span>
    
-    </>
+    </div>
   );
 }
 
