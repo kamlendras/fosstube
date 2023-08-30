@@ -1,8 +1,8 @@
 
 import Head from "next/head";
 
-import QA from "../../components/qa";
-import Footer from "../../components/footer";
+import Qa from "../components/qa";
+import Footer from "../components/footer";
 export default function Home() {
   return (
     <>
@@ -25,7 +25,7 @@ export default function Home() {
     </div>
       
   
-      <QA />
+      <Qa />
       <Footer />
     </>
   );
