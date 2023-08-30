@@ -5,7 +5,7 @@ import Copyright2 from "../components/copyright2";
 import styles from "../styles/Favorites.module.css";
 import React from "react";
 import Lottie from "lottie-react";
-import favorite from "./favorites.json";
+import library from "./library.json";
 import { HistoryEdu } from "@mui/icons-material";
 const style = {
     height: 400,
@@ -25,7 +25,7 @@ function favorites() {
 
       <span className={styles.heart}>
         {/* <img src="/heart.svg" height={512} width={512} alt="heart"></img> */}
-        <Lottie animationData={favorite} loop={true}
+        <Lottie animationData={library} loop={true}
        style={style} />
       </span>
 
