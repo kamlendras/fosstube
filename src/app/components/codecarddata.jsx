@@ -1,3 +1,4 @@
+"use client"
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import { experimentalStyled as styled } from '@mui/material/styles';

@@ -1,3 +1,4 @@
+"use client"
 import  { useState, useEffect } from 'react';
 import Napico from "./napico";
 import Napicologin from "./napicologin";
@@ -16,6 +17,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
 import { signIn, signOut, useSession } from "next-auth/react";
+import { SessionProvider } from 'next-auth/react';
 import * as React from "react";
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const ExpandMore = styled((props) => {
@@ -43,10 +45,10 @@ export default function Nap(props) {
       setLoading(false)
     }, 1)
   }, [])
-  const { data: session, status } = useSession();
+  // const { data: session, status } = useSession();
 
   return (
-    <span>
+      <SessionProvider session={props.t}>
       {loading ? (
         <Stack spacing={1}>
           <Skeleton variant="rectangular" width={345} height={390} />
@@ -111,7 +113,7 @@ export default function Nap(props) {
           </Collapse> */}
         </Card>
       )}
-    </span>
+    </SessionProvider>
   );
 }
 
