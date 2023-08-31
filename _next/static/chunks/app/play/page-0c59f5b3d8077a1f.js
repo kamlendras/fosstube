@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9974],{35403:function(e,r,n){Promise.resolve().then(n.bind(n,85031))},85031:function(e,r,n){"use strict";n.r(r),n.d(r,{default:function(){return l}});var i=n(57437);n(2265);var t=n(28278);n(87021),n(86054);var o=n(97062);function l(){return(0,i.jsx)(i.Fragment,{children:(0,i.jsxs)(t.tq,{direction:"vertical",slidesPerView:1,spaceBetween:30,mousewheel:!0,pagination:{clickable:!0},modules:[o.Gk,o.tl],className:"mySwiper",children:[(0,i.jsx)(t.o5,{children:"Slide 1"}),(0,i.jsx)(t.o5,{children:"Slide 2"}),(0,i.jsx)(t.o5,{children:"Slide 3"}),(0,i.jsx)(t.o5,{children:"Slide 4"}),(0,i.jsx)(t.o5,{children:"Slide 5"}),(0,i.jsx)(t.o5,{children:"Slide 6"}),(0,i.jsx)(t.o5,{children:"Slide 7"}),(0,i.jsx)(t.o5,{children:"Slide 8"}),(0,i.jsx)(t.o5,{children:"Slide 9"})]})})}},30622:function(e,r,n){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var i=n(2265),t=Symbol.for("react.element"),o=Symbol.for("react.fragment"),l=Object.prototype.hasOwnProperty,s=i.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,c={key:!0,ref:!0,__self:!0,__source:!0};function d(e,r,n){var i,o={},d=null,u=null;for(i in void 0!==n&&(d=""+n),void 0!==r.key&&(d=""+r.key),void 0!==r.ref&&(u=r.ref),r)l.call(r,i)&&!c.hasOwnProperty(i)&&(o[i]=r[i]);if(e&&e.defaultProps)for(i in r=e.defaultProps)void 0===o[i]&&(o[i]=r[i]);return{$$typeof:t,type:e,key:d,ref:u,props:o,_owner:s.current}}r.Fragment=o,r.jsx=d,r.jsxs=d},57437:function(e,r,n){"use strict";e.exports=n(30622)}},function(e){e.O(0,[9112,2971,596,1744],function(){return e(e.s=35403)}),_N_E=e.O()}]);
