@@ -1,11 +1,11 @@
 "use client"
 import Head from "next/head";
+import history from "./history.json";
+import Lottie from "lottie-react";
 
 import Copyright2 from "../components/copyright2";
 import styles from "../styles/Favorites.module.css";
 import React from "react";
-import Lottie from "lottie-react";
-import history from "./history.json";
 import { HistoryEdu } from "@mui/icons-material";
 const style = {
     height: 512,
