@@ -28,6 +28,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import SplitPane, { Pane } from 'react-split-pane';
+import GitHubIcon from '@mui/icons-material/GitHub';
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 // import { windowDimensions } from './useWindowDimension';
 const darkTheme = createTheme({
@@ -170,7 +171,7 @@ const theme = React.useMemo(
               </Grid>
             </Grid>
           </Paper>
-          {theme.palette.mode} mode
+          {theme.palette.mode} 
       <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
         {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
       </IconButton>
