@@ -1,6 +1,9 @@
 "use client";
 import * as React from "react";
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
+import { useTheme, styled, createTheme, ThemeProvider } from "@mui/material/styles";
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiDrawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
@@ -25,8 +28,16 @@ import Grid from "@mui/material/Unstable_Grid2";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import SplitPane, { Pane } from 'react-split-pane';
+const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 // import { windowDimensions } from './useWindowDimension';
-
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#1976d2',
+    },
+  },
+});
 const drawerWidth = 240;
 
 const AppBar = styled(MuiAppBar, {
@@ -81,12 +92,37 @@ function DashboardContent() {
     setOpen(!open);
   };
 
+
+//  new
+const [mode, setMode] = React.useState('light');
+const colorMode = React.useMemo(
+  () => ({
+    toggleColorMode: () => {
+      setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+    },
+  }),
+  [],
+);
+
+const theme = React.useMemo(
+  () =>
+    createTheme({
+      palette: {
+        mode,
+      },
+    }),
+  [mode],
+);
+
   return (
-    <ThemeProvider theme={mdTheme}>
+    // <ThemeProvider theme={mdTheme}>
+        // <ThemeProvider theme={darkTheme}>
+        <ThemeProvider theme={theme}>
       <CssBaseline />
 
       <AppBar
         position="fixed"
+        colour="primary"
         // open={open}
       >
         <Toolbar
@@ -134,6 +170,10 @@ function DashboardContent() {
               </Grid>
             </Grid>
           </Paper>
+          {theme.palette.mode} mode
+      <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
+        {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+      </IconButton>
           <Create />
           <Notifications />
           <Avatar />

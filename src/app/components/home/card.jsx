@@ -26,6 +26,7 @@ import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import Grid from '@mui/material/Unstable_Grid2';
 import Dot from'./dot';
+import Link from "next/link";
 import {
   createTheme,
   responsiveFontSizes,
@@ -64,20 +65,20 @@ theme.typography.h2 = {
 
 
 
-export default function RecipeReviewCard() {
+export default function Component(props) {
 
 
   return (
-    <>
+    <div>
    
     <Card sx={{ width: 310, height: 185, borderRadius: 2}}  >
   
       <HoverVideoPlayer
-  videoSrc="/v.mp4"
+  videoSrc={props.video}
   // We should display an image over the video while it is paused
   pausedOverlay={
     <img
-      src="/i.jpg"
+      src={props.img}
       alt=""
       // style={{
       //   // Make the image expand to cover the video's dimensions
@@ -90,12 +91,12 @@ export default function RecipeReviewCard() {
 />
      
     </Card>
-
+<br/>
      <Grid container columnSpacing={0} rowSpacing={0} sx={{ width: 310, height: 100}}   className="downnail" >
           <Grid xs={2}>
           <Avatar
   alt="Remy Sharp"
-  src="/avatar.svg"
+  src={props.avatar}
   
 />
             </Grid>
@@ -106,7 +107,7 @@ export default function RecipeReviewCard() {
             <Typography variant="h1" gutterBottom  style={{color: 'black'}} className='textoverflow'
             // sx={{fontWeight: 'bold'}}
             >
-            Build and Deploy Your Own ChatGPT AI App in JavaScript | OpenAI, Machine Learning
+           {props.heading}
       </Typography>
       </ThemeProvider>
             </Grid>
@@ -115,7 +116,7 @@ export default function RecipeReviewCard() {
             <Typography variant="h2" gutterBottom  style={{color: '#606060'}}
             // sx={{fontWeight: 'bold'}}
             >
-             Geography Now <CheckCircleIcon style={{fontSize:'1rem'}}/>
+            {props.channel} <CheckCircleIcon style={{fontSize:'1rem'}}/>
       </Typography>
       </ThemeProvider>
              
@@ -125,7 +126,7 @@ export default function RecipeReviewCard() {
             <Typography variant="h2" gutterBottom  style={{color: '#606060'}}
             // sx={{fontWeight: 'bold'}}
             >
-             919K views <CircleIcon style={{fontSize:'4'}}/> 6 years ago
+            {props.view} <CircleIcon style={{fontSize:'4'}}/> {props.date}
       </Typography>
       </ThemeProvider>
              
@@ -140,6 +141,6 @@ export default function RecipeReviewCard() {
           </Grid>
      
       
-    </>
+          </div>
   );
 }

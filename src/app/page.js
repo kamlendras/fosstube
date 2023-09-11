@@ -2,9 +2,9 @@ import Head from "next/head";
 
 import Toolbar from '@mui/material/Toolbar';
 import styles from "./styles/Favorites.module.css";
-import Card from './components/home/card'
+import Cardgrid from './components/home/cardgrid'
 import Copyright2 from './components/copyright2'
-export default function Home() {
+export default function C() {
   return (
     <>
       <Head>
@@ -23,12 +23,12 @@ export default function Home() {
         <Toolbar/>
         <div className="leftspace">
         <span >
-            <Card />
+            <Cardgrid/>
           </span>
 
-          <span >
+          {/* <span >
           <Copyright2 />
-        </span>
+        </span> */}
         </div>
 
 
