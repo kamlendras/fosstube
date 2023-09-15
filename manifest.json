@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Arrow Nap",
-    "short_name": "Arrow Nap",
-    "description": "Arrow Nap is the knowledge-sharing community Of Developers.",
+    "name": "codnap",
+    "short_name": "codnap",
+    "description": "Open & Decentralized",
     "icons": [
         {
             "src": "/icon-192x192.png",
