@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="https://codefoss.github.io/codnapreadme1.png" width="auto" height="auto" alt="codefoss">
+  
 
-## Getting Started
+</div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
 
-First, run the development server:
+[![Matrix](https://codefoss.github.io/matrixlogo.png)](https://matrix.to/#/#codefoss:matrix.org)
+[![Mastodon](https://codefoss.github.io/mastodonlogo.png)](https://fosstodon.org/@codefoss)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun run dev
-```
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Note** <br>
+> We don't accept feature or bug requests on these platforms. Kindly submit requests only on GitHub.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+<h2 align="left">
+<sub>
+<img  src="https://codefoss.github.io/info.svg"
+      height="30"
+      width="30">
+</sub>
+About
+</h2>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Nowdays, platforms has an extremely invasive [privacy policy](https://support.google.com/youtube/answer/10364219) which relies on using user data in unethical ways. They store a lot of your personal data - ranging from ideas, music taste, content, political opinions, and much more than you think.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is aimed at improving the users' privacy by being independent from Big tech companies and bypassing their data collection.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The [Matrix room](https://matrix.to/#/#codefoss:matrix.org) is considered as the main communication channel, all other forums or social media accounts are maintained by volunteers from the community but not the developer(s).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h2 align="left">
+<sub>
+<img  src="https://codefoss.github.io/screenshots.svg"
+      height="30"
+      width="30">
+</sub>
+Screenshots
+</h2>
+
+<div style="width:100%; display:flex; justify-content:space-between;">
+
+[<img src="https://codefoss.github.io/ss1.png" width=40% alt="Home">](https://codefoss.github.io/ss1.png)
+[<img src="https://codefoss.github.io/ss2.png" width=40% alt="Home">](https://codefoss.github.io/ss2.png)
+[<img src="https://codefoss.github.io/dss1.png" width=40% alt="Subscriptions">](https://codefoss.github.io/dss1.png)
+[<img src="https://codefoss.github.io/dss2.png" width=40% alt="Library">](https://codefoss.github.io/dss2.png)
+
+</div>
+
+<h2 align="left">
+<sub>
+<img  src="https://codefoss.github.io/star.svg"
+      height="30"
+      width="30">
+</sub>
+Features
+</h2>
+
+
+| Feature           |     |
+| ----------------- | --- |
+| User Accounts     | ✅ |
+| Subscriptions     | ✅ |
+| User Playlists    | ✅ |
+| Playlist Bookmarks| ✅ |
+| Channel Tabs      | ✅ |
+| Search Filters    | ✅ |
+| Player Gestures   | ✅ |
+| SponsorBlock      | ✅ |
+| Comments          | ✅ |
+| Captions          | ✅ |
+
+<h2 align="left">
+<sub>
+<img  src="https://codefoss.github.io/contributing.svg"
+      height="30"
+      width="30">
+</sub>
+Contributing
+</h2>
+
+Whether you have ideas, translations, design changes, code cleaning or really heavy code changes, help is always welcome. The more is done, the better it gets! Please respect our [Code of Conduct](https://github.com/codnap/codnap/blob/master/CODE_OF_CONDUCT.md) in order to keep all interactions and dicussions healthy.
+
+> **Note** <br>
+> Any issue avoiding the issue template will be ignored and forced to be closed.
+
+
+
+<h2 align="left">
+<sub>
+<img  src="https://codefoss.github.io/lock.svg"
+      height="30"
+      width="30">
+</sub>
+Privacy Policy and Disclaimer
+</h2>
+
+
+codefoss aims to protect the privacy of its users. [Our Privacy Policy](/PRIVACY_POLICY.md) gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of LibreTube as well as the privacy policy of the instance you have chosen inside the app.
+
+### License
+[![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
+
+codefoss is Free Software: You can use, study, share and modify it at your will. The app can be redistributed and/or modified under the terms of the
+[GNU General Public License](https://www.gnu.org/licenses/agpl-3.0.html) version 3 or later published by the Free Software Foundation.
+
+
+### Donate
+If you like this project, please consider donating so we can keep this project running forever!
+
+<a href="https://www.buymeacoffee.com/ksingh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me a Coffee" height="28" width="119"></a>
+<a href="https://liberapay.com/ksingh" target="_blank"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg?style=for-the-badge" alt="Liberapay"></a>
+</div>
