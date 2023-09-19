@@ -1,12 +1,18 @@
 {
+  "homepage": "https://codefoss.github.io",
   "name": "codefoss",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "scripts": {
+    "sir": "next dev -H 192.168.42.2",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export && touch out/.nojekyll",
+    "build-ssg": "next build && next export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
