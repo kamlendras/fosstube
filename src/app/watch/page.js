@@ -9,7 +9,7 @@ export default function App() {
     <>
     <Toolbar/>
     <Grid container spacing={2}>
-        <Grid item xs={6}>
+        <Grid item xs={8}>
         <MediaPlayer
     title="Sprite Fight"
     src="https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4"
@@ -39,7 +39,7 @@ export default function App() {
     <MediaCommunitySkin />
   </MediaPlayer>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={4}>
          <>hello</>
         </Grid>
         

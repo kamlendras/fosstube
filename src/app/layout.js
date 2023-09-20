@@ -226,7 +226,7 @@ export default function RootLayout({ children }) {
             overflow: 'auto',
           }}
         >
-          <Container maxWidth="xl" >
+          <Container maxWidth="xl" sx={{ mt: 0.4, }}>
         {children}
         </Container>
         </Box>
