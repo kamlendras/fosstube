@@ -1,27 +1,41 @@
 "use client"
-import React from 'react';
-import dynamic from 'next/dynamic';
+import 'vidstack/styles/defaults.css';
+import 'vidstack/styles/community-skin/video.css';
+import Toolbar from '@mui/material/Toolbar';
+import { MediaCommunitySkin, MediaOutlet, MediaPlayer, MediaPoster } from '@vidstack/react';
 
-const TutorialContainer=dynamic(import ("../containers/Tutorial"),{ssr:false});
-
-
-class Tutorial extends React.PureComponent{
-
-    render(){
-
-        const licenseServer = "https://widevine-proxy.appspot.com/proxy";
-        const mpdFile = "https://dash.akamaized.net/dash264/TestCases/1c/qualcomm/2/MultiRate.mpd";
-        const videoThumbnail = "https://upload.wikimedia.org/wikipedia/commons/a/a7/Big_Buck_Bunny_thumbnail_vlc.png";
-
-        return (
-
-            <TutorialContainer 
-                licenseServer={licenseServer}
-                manifestUrl={mpdFile}
-                posterUrl={videoThumbnail}
-            />
-        )
-    }
+export default function App() {
+  return (
+    <>
+    <Toolbar/>
+    <MediaPlayer
+    title="Sprite Fight"
+    src="https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4"
+    poster="https://image.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/thumbnail.webp?time=268&width=980"
+    thumbnails="https://media-files.vidstack.io/sprite-fight/thumbnails.vtt"
+    aspectRatio={16 / 9}
+    crossorigin=""
+  >
+    <MediaOutlet>
+      <MediaPoster
+        alt="Girl walks into sprite gnomes around her friend on a campfire in danger!"
+      />
+     <track
+        src="https://media-files.vidstack.io/sprite-fight/subs/english.vtt"
+        label="English"
+        srcLang="en-US"
+        kind="subtitles"
+        default
+      />
+      <track
+        src="https://media-files.vidstack.io/sprite-fight/chapters.vtt"
+        srcLang="en-US"
+        kind="chapters"
+        default
+      />
+    </MediaOutlet>
+    <MediaCommunitySkin />
+  </MediaPlayer>
+  </>
+  );
 }
-
-export default Tutorial;

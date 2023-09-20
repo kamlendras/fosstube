@@ -96,11 +96,11 @@ export default function RootLayout({ children }) {
       setOpen(!open);
     };
   
-  const [mode, setMode] = React.useState("light");
+  const [mode, setMode] = React.useState("dark");
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+        setMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
       },
     }),
     []
@@ -147,7 +147,7 @@ export default function RootLayout({ children }) {
           </span>
           <Typography
             component="h1"
-            variant="h6"
+            variant="h5"
             color="inherit"
             noWrap
             sx={{ flexGrow: 1 }}
@@ -161,7 +161,7 @@ export default function RootLayout({ children }) {
               <Grid xs={11}>
                 <input
                   type="text"
-                  placeholder="Search codnap"
+                  placeholder="Search the entire universe"
                   className="searchcodepress"
                 />
               </Grid>
