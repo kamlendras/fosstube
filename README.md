@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="https://codefoss.github.io/codnapreadme1.png" width="auto" height="auto" alt="codefoss">
+  <img src="https://fosstube.github.io/codnapreadme1.png" width="auto" height="auto" alt="fosstube">
   
 
 </div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
 
-[![Matrix](https://codefoss.github.io/matrixlogo.png)](https://matrix.to/#/#codefoss:matrix.org)
-[![Mastodon](https://codefoss.github.io/mastodonlogo.png)](https://fosstodon.org/@codefoss)
+[![Matrix](https://fosstube.github.io/matrixlogo.png)](https://matrix.to/#/#fosstube:matrix.org)
+[![Mastodon](https://fosstube.github.io/mastodonlogo.png)](https://fosstodon.org/@fosstube)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 <h2 align="left">
 <sub>
-<img  src="https://codefoss.github.io/info.svg"
+<img  src="https://fosstube.github.io/info.svg"
       height="30"
       width="30">
 </sub>
@@ -30,11 +30,11 @@ Nowdays, platforms has an extremely invasive [privacy policy](https://support.go
 This project is aimed at improving the users' privacy by being independent from Big tech companies and bypassing their data collection.
 
 
-The [Matrix room](https://matrix.to/#/#codefoss:matrix.org) is considered as the main communication channel, all other forums or social media accounts are maintained by volunteers from the community but not the developer(s).
+The [Matrix room](https://matrix.to/#/#fosstube:matrix.org) is considered as the main communication channel, all other forums or social media accounts are maintained by volunteers from the community but not the developer(s).
 
 <h2 align="left">
 <sub>
-<img  src="https://codefoss.github.io/screenshots.svg"
+<img  src="https://fosstube.github.io/screenshots.svg"
       height="30"
       width="30">
 </sub>
@@ -43,16 +43,16 @@ Screenshots
 
 <div style="width:100%; display:flex; justify-content:space-between;">
 
-[<img src="https://codefoss.github.io/ss1.png" width=40% alt="Home">](https://codefoss.github.io/ss1.png)
-[<img src="https://codefoss.github.io/ss2.png" width=40% alt="Home">](https://codefoss.github.io/ss2.png)
-[<img src="https://codefoss.github.io/dss1.png" width=40% alt="Subscriptions">](https://codefoss.github.io/dss1.png)
-[<img src="https://codefoss.github.io/dss2.png" width=40% alt="Library">](https://codefoss.github.io/dss2.png)
+[<img src="https://fosstube.github.io/ss1.png" width=40% alt="Home">](https://fosstube.github.io/ss1.png)
+[<img src="https://fosstube.github.io/ss2.png" width=40% alt="Home">](https://fosstube.github.io/ss2.png)
+[<img src="https://fosstube.github.io/dss1.png" width=40% alt="Subscriptions">](https://fosstube.github.io/dss1.png)
+[<img src="https://fosstube.github.io/dss2.png" width=40% alt="Library">](https://fosstube.github.io/dss2.png)
 
 </div>
 
 <h2 align="left">
 <sub>
-<img  src="https://codefoss.github.io/star.svg"
+<img  src="https://fosstube.github.io/star.svg"
       height="30"
       width="30">
 </sub>
@@ -75,7 +75,7 @@ Features
 
 <h2 align="left">
 <sub>
-<img  src="https://codefoss.github.io/contributing.svg"
+<img  src="https://fosstube.github.io/contributing.svg"
       height="30"
       width="30">
 </sub>
@@ -91,7 +91,7 @@ Whether you have ideas, translations, design changes, code cleaning or really he
 
 <h2 align="left">
 <sub>
-<img  src="https://codefoss.github.io/lock.svg"
+<img  src="https://fosstube.github.io/lock.svg"
       height="30"
       width="30">
 </sub>
@@ -99,12 +99,12 @@ Privacy Policy and Disclaimer
 </h2>
 
 
-codefoss aims to protect the privacy of its users. [Our Privacy Policy](/PRIVACY_POLICY.md) gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of LibreTube as well as the privacy policy of the instance you have chosen inside the app.
+fosstube aims to protect the privacy of its users. [Our Privacy Policy](/PRIVACY_POLICY.md) gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of LibreTube as well as the privacy policy of the instance you have chosen inside the app.
 
 ### License
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
 
-codefoss is Free Software: You can use, study, share and modify it at your will. The app can be redistributed and/or modified under the terms of the
+fosstube is Free Software: You can use, study, share and modify it at your will. The app can be redistributed and/or modified under the terms of the
 [GNU General Public License](https://www.gnu.org/licenses/agpl-3.0.html) version 3 or later published by the Free Software Foundation.
 
 
