@@ -1,5 +1,8 @@
 "use client"
 import { useState } from "react";
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
 import 'vidstack/styles/defaults.css';
 import 'vidstack/styles/community-skin/video.css';
 import Toolbar from '@mui/material/Toolbar';
@@ -25,6 +28,7 @@ import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ThumbDownOutlinedIcon from '@mui/icons-material/ThumbDownOutlined';
 import EmojiPicker from 'emoji-picker-react';
+import TextField from '@mui/material/TextField';
 export default function App() {
   const [showMore, setShowMore] = useState(false);
   const {text} = "knsdknknksjnkvd"
@@ -113,8 +117,87 @@ export default function App() {
       
       </Fab>
       <div>
-      <EmojiPicker />
+      {/* <EmojiPicker /> */}
+      <TextField id="standard-basic" label="Add a comment" variant="standard" fullWidth/>
     </div>
+    9,728 Comments
+
+    <List 
+    // sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+    >
+      
+      
+      <Divider variant="inset" component="li" />
+      <ListItem alignItems="flex-start">
+        <ListItemAvatar>
+          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+        </ListItemAvatar>
+        <ListItemText
+          primary={
+            <React.Fragment>
+              <Typography
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
+              
+@izaiahtilton7019 
+              </Typography>
+              {" 2 weeks ago"}
+            </React.Fragment>
+          }
+          secondary={
+            <React.Fragment>
+              <Typography
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
+             I never comment on anything - but this is the kind of content that I keep coming back to YouTube for. This is what it’s all about, creators like you. Incredible.
+              </Typography>
+              
+            </React.Fragment>
+          }
+        />
+      </ListItem>
+      <ListItem alignItems="flex-start">
+        <ListItemAvatar>
+          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+        </ListItemAvatar>
+        <ListItemText
+          primary={
+            <React.Fragment>
+              <Typography
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
+              
+@izaiahtilton7019 
+              </Typography>
+              {" 2 weeks ago"}
+            </React.Fragment>
+          }
+          secondary={
+            <React.Fragment>
+              <Typography
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
+             I never comment on anything - but this is the kind of content that I keep coming back to YouTube for. This is what it’s all about, creators like you. Incredible.
+              </Typography>
+              
+            </React.Fragment>
+          }
+        />
+      </ListItem>
+      </List>
+  
   </>
   );
 }
