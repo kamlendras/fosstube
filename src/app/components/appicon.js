@@ -4,7 +4,7 @@ export default function Code() {
   return (
     <>
      
-      <CodeIcon/>
+      <CodeIcon height={40} width={40}/>
     </>
   );
     }

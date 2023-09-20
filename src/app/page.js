@@ -16,11 +16,11 @@ export default function C() {
         <link rel="icon" href="/codnapwhite.svg" />
       </Head>
 
-    
+    <Toolbar/>
 
 
       
-        <Toolbar/>
+        
        
         <span >
           <Chips/>

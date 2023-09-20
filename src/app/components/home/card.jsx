@@ -62,8 +62,9 @@ export default function Component(props) {
         container
         columnSpacing={0}
         rowSpacing={0}
-        sx={{ width: 335, 
-          // height: 300
+        sx={{ 
+          width: 290, 
+          // height: 50,
          }}
       >
         <Grid sx={12} sm={12} md={12} lg={12} xl={12}>

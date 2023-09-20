@@ -11,7 +11,6 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 import CssBaseline from "@mui/material/CssBaseline";
 import CodeIcon from '@mui/icons-material/Code';
 import MuiDrawer from "@mui/material/Drawer";
-import Box from "@mui/material/Box";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
@@ -34,6 +33,7 @@ import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import SplitPane, { Pane } from "react-split-pane";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Box from '@mui/material/Box';
 import Appicon from "./components/appicon"
 import './globals.css'
 import { Inter, Roboto } from 'next/font/google'
@@ -119,10 +119,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body  className={roboto.className}>
       <ThemeProvider theme={theme}>
+      <Box sx={{ display: "flex" }}>
+
       <CssBaseline />
 
       <AppBar
-        position="fixed"
+        position="absolute"
         colour="primary"
         // open={open}
       >
@@ -147,9 +149,9 @@ export default function RootLayout({ children }) {
           </span>
           <Typography
             component="h1"
-            variant="h5"
+            variant="h4"
             color="inherit"
-            noWrap
+            // noWrap
             sx={{ flexGrow: 1 }}
           >
             {/* <img src="/icon.svg" alt="" height={40} width={40} /> */}
@@ -190,7 +192,8 @@ export default function RootLayout({ children }) {
         </Toolbar>
       </AppBar>
 
-      <span className="LeftPage">
+      {/* <span className="LeftPage"> */}
+      <span>
         <Drawer variant="permanent" open={open}>
           <SimpleBar style={{ maxHeight: "100vh" }}>
             <Toolbar
@@ -213,9 +216,22 @@ export default function RootLayout({ children }) {
           </SimpleBar>
         </Drawer>
       </span>
-        <div className='allbody'>
+        {/* <div className='allbody'> */}
+        <Box
+          component="main"
+          sx={{
+         
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto',
+          }}
+        >
+          <Container maxWidth="xl" >
         {children}
-        </div>
+        </Container>
+        </Box>
+        </Box>
+        {/* </div> */}
     </ThemeProvider>
     
         </body>

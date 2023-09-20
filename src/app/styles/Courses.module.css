@@ -9,8 +9,8 @@
     
     display: inline-grid;
     grid-template-columns: auto auto auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     grid-gap: 0px 0rem;
     background-color: rgb(204, 236, 255);

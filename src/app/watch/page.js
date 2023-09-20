@@ -3,12 +3,14 @@ import 'vidstack/styles/defaults.css';
 import 'vidstack/styles/community-skin/video.css';
 import Toolbar from '@mui/material/Toolbar';
 import { MediaCommunitySkin, MediaOutlet, MediaPlayer, MediaPoster } from '@vidstack/react';
-
+import Grid from '@mui/material/Grid';
 export default function App() {
   return (
     <>
     <Toolbar/>
-    <MediaPlayer
+    <Grid container spacing={2}>
+        <Grid item xs={6}>
+        <MediaPlayer
     title="Sprite Fight"
     src="https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4"
     poster="https://image.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/thumbnail.webp?time=268&width=980"
@@ -36,6 +38,13 @@ export default function App() {
     </MediaOutlet>
     <MediaCommunitySkin />
   </MediaPlayer>
+        </Grid>
+        <Grid item xs={6}>
+         <>hello</>
+        </Grid>
+        
+      </Grid>
+    
   </>
   );
 }
