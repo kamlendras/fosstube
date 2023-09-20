@@ -57,7 +57,7 @@ export default function Component(props) {
   );
 
   return (
-    <Paper elevation={24}>
+    <Paper elevation={24} square>
       <Grid
         container
         columnSpacing={0}
