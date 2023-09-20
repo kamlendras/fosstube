@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Co(props) {
   return (
     <Link passHref href={props.l} legacyBehavior>
-      <Card sx={{ maxWidth: 300, maxHight: 50 }}>
+      <Card square sx={{ maxWidth: 300, maxHight: 50 }}>
         <CardActionArea>
           <CardMedia
             component="img"
