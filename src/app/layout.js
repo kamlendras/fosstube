@@ -1,4 +1,35 @@
 "use client"
+// import Divider from '@mui/material/Divider';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import ListSubheader from '@mui/material/ListSubheader';
+import HomeIcon from '@mui/icons-material/Home';
+import PlayCircleOutlineOutlinedIcon from '@mui/icons-material/PlayCircleOutlineOutlined';
+import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import LayersIcon from '@mui/icons-material/Layers';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
+import HistoryIcon from '@mui/icons-material/History';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import RocketOutlinedIcon from '@mui/icons-material/RocketOutlined';
+import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
+import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
+import WhatshotOutlinedIcon from '@mui/icons-material/WhatshotOutlined';
+import MusicNoteOutlinedIcon from '@mui/icons-material/MusicNoteOutlined';
+import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
+import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
+import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import FeedbackOutlinedIcon from '@mui/icons-material/FeedbackOutlined';
+import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
+import Link from 'next/link'
+import { usePathname } from "next/navigation";
+import Copyright from './components/copyrightr'
 import * as React from "react";
 import {
   useTheme,
@@ -19,9 +50,8 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
-import { ListItems } from "./components/listitems";
 import Notifications from "./components/notifications";
 import Create from "./components/create";
 import Avatar from "./components/avatar";
@@ -90,7 +120,9 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 export default function RootLayout({ children }) {
-  
+  const pathname = usePathname();
+
+
     const [open, setOpen] = React.useState(false);
     const toggleDrawer = () => {
       setOpen(!open);
@@ -212,7 +244,210 @@ export default function RootLayout({ children }) {
               </span>
             </Toolbar>
 
-            <List component="nav">{ListItems}</List>
+            <List component="nav">
+              
+            <React.Fragment>
+    <Link href="/" className={pathname == "/" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+   
+    <HomeIcon href="/" className={pathname == "/" ? "active" : ""}/>
+      
+      </ListItemIcon>
+      <ListItemText primary="Home" />
+    </ListItemButton>
+    </Link>
+    <Link href="/play"  className={pathname == "/play" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        <PlayCircleOutlineOutlinedIcon  className={pathname == "/play" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Play" />
+    </ListItemButton>
+    </Link>
+    <Link href="/spaces" className={pathname == "/spaces" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+     < RocketOutlinedIcon  className={pathname == "/spaces" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Spaces" />
+    </ListItemButton>
+    </Link>
+    <Divider sx={{ my: 1 }} />
+    <Link href="/courses"  className={pathname == "/courses" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        <BookOutlinedIcon className={pathname == "/courses" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Courses" />
+    </ListItemButton>
+    </Link>
+    <Divider sx={{ my: 1 }} />
+    <Link href="/library" className={pathname == "/library" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        <LibraryBooksOutlinedIcon className={pathname == "/library" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Library" />
+    </ListItemButton>
+    </Link>
+    <Link href="/history" className={pathname == "/history" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        <HistoryIcon className={pathname == "/history" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="History" />
+    </ListItemButton>
+    </Link>
+    <Link href="space" className={pathname == "/space" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        <RocketLaunchOutlinedIcon className={pathname == "/space" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Your Space" />
+    </ListItemButton>
+    </Link>
+    <Link href="/favorites" className={pathname == "/favorites" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        <FavoriteBorderIcon className={pathname == "/favorites" ? "active" : ""} />
+      </ListItemIcon>
+      <ListItemText primary="Favorites" />
+    </ListItemButton>
+    </Link>
+    <Divider sx={{ my: 1 }} />
+    <ListSubheader  inset>
+    <Typography variant="body1" gutterBottom >
+        Spaces
+      </Typography>
+    </ListSubheader>
+  
+  
+    {/* <ListItemText >
+        Browse
+      </ListItemText> */}
+      <Link href="/browse" className={pathname == "/browse" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < AddCircleOutlineOutlinedIcon className={pathname == "/browse" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText >
+        Browse
+      </ListItemText>
+    </ListItemButton>
+    </Link>
+    <Divider sx={{ my: 1 }} />
+    <ListSubheader component="div" inset>
+      Explore
+    </ListSubheader>
+    <Link href="/trending" className={pathname == "/trending" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < WhatshotOutlinedIcon className={pathname == "/trending" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Trending" />
+    </ListItemButton>
+    </Link>
+    <Link href="/music" className={pathname == "/music" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < MusicNoteOutlinedIcon className={pathname == "/music" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Music" />
+    </ListItemButton>
+    </Link>
+    <Link href="/gaming" className={pathname == "/gaming" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < SportsEsportsOutlinedIcon className={pathname == "/gaming" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Gaming" />
+    </ListItemButton>
+    </Link>
+    <Link href="/news" className={pathname == "/news" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        <NewspaperIcon className={pathname == "/news" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="News" />
+    </ListItemButton>
+    </Link>
+    <Link href="/learning" className={pathname == "/learning" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < LightbulbOutlinedIcon className={pathname == "/learning" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Learning" />
+    </ListItemButton>
+    </Link>
+    <Divider sx={{ my: 1 }} />
+    <ListSubheader component="div" inset>
+      More From Code Press
+    </ListSubheader>
+    <Link href="/codeeditor">
+    <ListItemButton>
+    <ListItemIcon>
+    <img src="/ce.svg" height={26} width={26} ></img>
+      </ListItemIcon>
+      
+  
+      <ListItemText primary="Code Editor" />
+    </ListItemButton>
+    </Link>
+    <Link href="/webcompiler">
+    <ListItemButton>
+      <ListItemIcon>
+      <img src="/wc.svg" height={26} width={26} ></img>
+      </ListItemIcon>
+      <ListItemText primary="Web Compiler" />
+    </ListItemButton>
+    </Link>
+      <Divider sx={{ my: 1 }} />
+      <Link href="/account" className={pathname == "/settings" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < SettingsOutlinedIcon className={pathname == "/settings" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Settings" />
+    </ListItemButton>
+    </Link>
+    <Link href="/report" className={pathname == "/report" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < OutlinedFlagIcon className={pathname == "/report" ? "active" : ""} />
+      </ListItemIcon>
+      <ListItemText primary="Report" />
+    </ListItemButton>
+    </Link>
+    <Link href="/help" className={pathname == "/help" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < HelpOutlineOutlinedIcon className={pathname == "/help" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Help" />
+    </ListItemButton>
+    </Link>
+    <Link href="/feedback" className={pathname == "/feedback" ? "active" : ""}>
+    <ListItemButton>
+      <ListItemIcon>
+        < FeedbackOutlinedIcon className={pathname == "/feedback" ? "active" : ""}/>
+      </ListItemIcon>
+      <ListItemText primary="Feedback" />
+    </ListItemButton>
+    </Link>
+
+    <ListSubheader component="div" inset>
+    <Copyright sx={{ pt: 4 }} />
+    </ListSubheader>
+  
+  </React.Fragment>
+ 
+              
+              
+              {/* {ListItems} */}
+              
+              
+              </List>
           </SimpleBar>
         </Drawer>
       </span>
