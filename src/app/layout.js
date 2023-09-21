@@ -406,26 +406,19 @@ export default function RootLayout({ children }) {
     </Link>
     <Divider sx={{ my: 1 }} />
     <ListSubheader component="div" inset>
-      More From Code Press
+      Try FOSS
     </ListSubheader>
-    <Link href="/codeeditor">
+    <Link href="https://ueats.github.io/">
     <ListItemButton>
     <ListItemIcon>
-    <img src="/ce.svg" height={26} width={26} ></img>
+    <img src="/ueats.jpeg" height={26} width={26} ></img>
       </ListItemIcon>
       
   
-      <ListItemText primary="Code Editor" />
+      <ListItemText primary="Ueats (FOSS)" />
     </ListItemButton>
     </Link>
-    <Link href="/webcompiler">
-    <ListItemButton>
-      <ListItemIcon>
-      <img src="/wc.svg" height={26} width={26} ></img>
-      </ListItemIcon>
-      <ListItemText primary="Web Compiler" />
-    </ListItemButton>
-    </Link>
+    
       <Divider sx={{ my: 1 }} />
       <Link href="/account" className={pathname == "/settings" ? "active" : ""}>
     <ListItemButton>

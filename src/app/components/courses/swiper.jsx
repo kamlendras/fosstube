@@ -26,7 +26,7 @@ export default function App() {
       className="Swiper"
     >
       <SwiperSlide>
-        <img src="/14.jpeg" alt="no internet" height={400} width={1600} />
+        <img src="/n1.png" alt="no internet" height={400} width={1600} />
       </SwiperSlide>
       <SwiperSlide>
         <img src="/11.jpeg" alt="no internet" height={400} width={1600} />
