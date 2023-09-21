@@ -30,6 +30,8 @@ import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
 import Link from 'next/link'
 import { usePathname } from "next/navigation";
 import Copyright from './components/copyrightr'
+import localFont from 'next/font/local'
+
 import * as React from "react";
 import {
   useTheme,
@@ -65,6 +67,8 @@ import SplitPane, { Pane } from "react-split-pane";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Box from '@mui/material/Box';
 import Appicon from "./components/appicon"
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import './globals.css'
 import { Inter, Roboto } from 'next/font/google'
 const roboto = Roboto({ subsets: ['latin'] , weight: ['400']})
@@ -118,7 +122,7 @@ const Drawer = styled(MuiDrawer, {
     }),
   },
 }));
-
+const myFont = localFont({ src: './gothic.otf' })
 export default function RootLayout({ children }) {
   const pathname = usePathname();
 
@@ -147,6 +151,9 @@ export default function RootLayout({ children }) {
       }),
     [mode]
   );
+
+  
+ 
  return (
     <html lang="en">
       <body  className={roboto.className}>
@@ -186,11 +193,27 @@ export default function RootLayout({ children }) {
             // noWrap
             sx={{ flexGrow: 1 }}
           >
-            {/* <img src="/icon.svg" alt="" height={40} width={40} /> */}
-         <Appicon/>
-          </Typography>
 
-          <Paper elevation={3} className="sp">
+           
+            <main className={myFont.className}>
+            < YouTubeIcon fontSize="large"/>FossTube
+    </main>
+       
+          </Typography>
+      
+          <div className="wrap">
+  <div className="search">
+    <input type="text" className="searchTerm" placeholder="Search FossTube" />
+    <button type="submit" className="searchButton">
+    <SearchOutlinedIcon/>
+      {/* <i className="fa fa-search" /> */}
+    </button>
+  </div>
+</div>
+
+
+         
+          {/* <Paper elevation={3} className="sp">
             <Grid container spacing={2}>
               <Grid xs={11}>
                 <input
@@ -205,7 +228,8 @@ export default function RootLayout({ children }) {
                 </centre>
               </Grid>
             </Grid>
-          </Paper>
+          </Paper> */}
+      
           {theme.palette.mode}
           <IconButton
             sx={{ ml: 1 }}
