@@ -19,6 +19,9 @@ jobs:
 
       - name: Bun Install 
         run:  bun install && bun build-ssg
+ 
+      - name: Bun ssg
+        run:  bun build-ssg
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
