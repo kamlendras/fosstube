@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout 
-      - uses: actions/checkout@v3
+        run: actions/checkout@v3
 
       - name: bun setup
-      - uses: oven-sh/setup-bun@v1
+        run: oven-sh/setup-bun@v1
 
       - name: Bun Install 
         run:  bun install && bun build-ssg
