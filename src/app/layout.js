@@ -179,7 +179,7 @@ export default function RootLayout({ children }) {
               aria-label="open drawer"
               onClick={toggleDrawer}
               sx={{
-                marginRight: "36px",
+                marginRight: "10px",
                 // ...(open && { display: 'none' }),
               }}
             >
