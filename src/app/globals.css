@@ -4,6 +4,8 @@
 :root {
   --duration: 5s;
   --duration-double: 10s;
+  --color-background: #222;
+  --color-foreground: #ddd;
 }
 body {
   padding: 0;
@@ -462,3 +464,6 @@ disp
     left: 0%;
   }
 }
+
+
+
