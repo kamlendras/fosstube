@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  --duration: 5s;
+  --duration-double: 10s;
+}
 body {
   padding: 0;
   margin: 0;
@@ -405,4 +408,57 @@ disp
 }
 .expn{
   margin-left: -14px;
+}
+
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  height: 2.5rem;
+  overflow-x: hidden;
+ margin-bottom: 1rem;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: primary 13s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.primary {
+  animation: primary 13s linear infinite;
+  margin: 0 auto;
+}
+
+.secondary {
+  animation: secondary 13s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
 }
