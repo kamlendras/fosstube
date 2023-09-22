@@ -35,8 +35,8 @@ export default function App() {
   return (
     <>
     <Toolbar/>
-    <Grid container spacing={0}>
-        <Grid item xs={8}>
+    <Grid container >
+        <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
         <MediaPlayer
     title="Sprite Fight"
     src="https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4"
@@ -65,139 +65,150 @@ export default function App() {
     </MediaOutlet>
     <MediaCommunitySkin />
   </MediaPlayer>
+
+
+        Baalam Gunda (Official Video) | Fiza Choudhary, Tushar Goel | New Haryanvi Songs Haryanavi 2023
+<Grid container>
+<Grid item xs={12} sm={12} md={12} lg={3.5} xl={2}>
+        <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+      <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <ImageIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="AMOGYA MUSIC" secondary="9.25K subscribers" />
+        </ListItem>
+       
+       
+      </List>
+      </Grid>
+      <Grid item xs={5} sm={5} md={5} lg={2} xl={8}>
+    <Fab variant="extended" size="small" color="white">
+          
+          subscribe
+        </Fab></Grid>
+      <Grid item xs={12} sm={12} md={12} lg={7} xl={8}>
+
+
+        <Fab variant="extended" size="small">
+          <ThumbUpOutlinedIcon sx={{ mr: 1 }} />
+          900 |  
+  
+          <ThumbDownOutlinedIcon sx={{ ml: 1 }}/>
+        </Fab>
+        <Fab variant="extended" size="small">
+          <ShareOutlinedIcon sx={{ mr: 1 }} />
+          share
+        </Fab>
+        <Fab variant="extended" size="small">
+          <FileDownloadOutlinedIcon sx={{ mr: 1 }} />
+          Download
+        </Fab>
+        <Fab  size="small">
+          <MoreHorizOutlinedIcon  />
+        
+        </Fab>
         </Grid>
-        <Grid item xs={4}>
+        </Grid>
+
+        <div>
+        {/* <EmojiPicker /> */}
+        <TextField id="standard-basic" label="Add a comment" variant="standard" fullWidth/>
+      </div>
+      9,728 Comments
+  
+      <List 
+      // sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+      >
+        
+        
+        <Divider variant="inset" component="li" />
+        <ListItem alignItems="flex-start">
+          <ListItemAvatar>
+            <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+          </ListItemAvatar>
+          <ListItemText
+            primary={
+              <React.Fragment>
+                <Typography
+                  sx={{ display: 'inline' }}
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+                
+  @izaiahtilton7019 
+                </Typography>
+                {" 2 weeks ago"}
+              </React.Fragment>
+            }
+            secondary={
+              <React.Fragment>
+                <Typography
+                  sx={{ display: 'inline' }}
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+               I never comment on anything - but this is the kind of content that I keep coming back to YouTube for. This is what it’s all about, creators like you. Incredible.
+                </Typography>
+                
+              </React.Fragment>
+            }
+          />
+        </ListItem>
+        <ListItem alignItems="flex-start">
+          <ListItemAvatar>
+            <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+          </ListItemAvatar>
+          <ListItemText
+            primary={
+              <React.Fragment>
+                <Typography
+                  sx={{ display: 'inline' }}
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+                
+  @izaiahtilton7019 
+                </Typography>
+                {" 2 weeks ago"}
+              </React.Fragment>
+            }
+            secondary={
+              <React.Fragment>
+                <Typography
+                  sx={{ display: 'inline' }}
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+               I never comment on anything - but this is the kind of content that I keep coming back to YouTube for. This is what it’s all about, creators like you. Incredible.
+                </Typography>
+                
+              </React.Fragment>
+            }
+          />
+        </ListItem>
+        </List>
+        </Grid>
+
+
+
+        <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
          <>hello</>
         </Grid>
 
-        </Grid>
       
-        Baalam Gunda (Official Video) | Fiza Choudhary, Tushar Goel | New Haryanvi Songs Haryanavi 2023
+      
       
        
 
 
-        <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-        
-        
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <ImageIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="AMOGYA MUSIC" secondary="9.25K subscribers" />
-      </ListItem>
-     
-     
-    </List>
-  
-    
-   
-    <Fab variant="extended" size="small" color="white">
-        
-        subscribe
-      </Fab>
-      <Fab variant="extended" size="small">
-        <ThumbUpOutlinedIcon sx={{ mr: 1 }} />
-        900 |  
-
-        <ThumbDownOutlinedIcon sx={{ ml: 1 }}/>
-      </Fab>
-      <Fab variant="extended" size="small">
-        <ShareOutlinedIcon sx={{ mr: 1 }} />
-        share
-      </Fab>
-      <Fab variant="extended" size="small">
-        <FileDownloadOutlinedIcon sx={{ mr: 1 }} />
-        Download
-      </Fab>
-      <Fab  size="small">
-        <MoreHorizOutlinedIcon  />
       
-      </Fab>
-      <div>
-      {/* <EmojiPicker /> */}
-      <TextField id="standard-basic" label="Add a comment" variant="standard" fullWidth/>
-    </div>
-    9,728 Comments
-
-    <List 
-    // sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-    >
-      
-      
-      <Divider variant="inset" component="li" />
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-        </ListItemAvatar>
-        <ListItemText
-          primary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-              
-@izaiahtilton7019 
-              </Typography>
-              {" 2 weeks ago"}
-            </React.Fragment>
-          }
-          secondary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-             I never comment on anything - but this is the kind of content that I keep coming back to YouTube for. This is what it’s all about, creators like you. Incredible.
-              </Typography>
-              
-            </React.Fragment>
-          }
-        />
-      </ListItem>
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-        </ListItemAvatar>
-        <ListItemText
-          primary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-              
-@izaiahtilton7019 
-              </Typography>
-              {" 2 weeks ago"}
-            </React.Fragment>
-          }
-          secondary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-             I never comment on anything - but this is the kind of content that I keep coming back to YouTube for. This is what it’s all about, creators like you. Incredible.
-              </Typography>
-              
-            </React.Fragment>
-          }
-        />
-      </ListItem>
-      </List>
-  
+  </Grid>
   </>
   );
 }
