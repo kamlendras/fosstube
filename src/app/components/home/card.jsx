@@ -3,20 +3,8 @@ import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CircleIcon from "@mui/icons-material/Circle";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Divider from "@mui/material/Divider";
-import { useState } from "react";
-import PersonAdd from "@mui/icons-material/PersonAdd";
-import Settings from "@mui/icons-material/Settings";
-import Logout from "@mui/icons-material/Logout";
 import Grid from "@mui/material/Unstable_Grid2";
 import Paper from "@mui/material/Paper";
 import Dot from "./dot";
@@ -91,12 +79,14 @@ export default function Component(props) {
           />
         </Grid>
 
-        <Grid container columnSpacing={1.5} rowSpacing={1.5}>
-          <Grid sx={2} sm={2} md={2} lg={2} xl={2} padding={1}>
+        <Grid container 
+        // columnSpacing={1.5} rowSpacing={1.5}
+        >
+          <Grid sx={2} sm={2} md={2} lg={2} xl={2} paddingLeft={0.3}>
             <Avatar alt={props.channel} src={props.avatar} />
           </Grid>
 
-          <Grid sx={8} sm={8} md={8} lg={8} xl={8}>
+          <Grid sx={6} sm={6} md={8} lg={8} xl={8}>
             <Typography
               variant="body1"
               gutterBottom

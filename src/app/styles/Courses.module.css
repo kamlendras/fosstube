@@ -16,3 +16,20 @@
     background-color: rgb(204, 236, 255);
    
   } 
+
+  @media only screen and (max-width: 600px) {
+
+    .grid{
+    
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 0rem;
+      grid-gap: 0px 0rem;
+      background-color: rgb(204, 236, 255);
+     
+    } 
+
+
+  }

@@ -1,78 +1,63 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
- 
-
+@tailwind utilities;
 
 body {
-   padding: 0;
+  padding: 0;
   margin: 0;
-   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
-    /* overflow-y: scroll;
-    overflow-x: hidden; */
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-      /* background-color: rgb(234, 247, 255);   */
-      /* background-color: #e3f2fd;  */
-     box-sizing: border-box; 
-     --twitter-color: #50b7f5; 
-    --twitter-background: #e6ecf0; 
-     border: 0 !important;
-    border-bottom: 0;  
-    
- }  
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
+  box-sizing: border-box;
 
-
+  border: 0 !important;
+  border-bottom: 0;
+}
 
 a {
   color: inherit;
   text-decoration: none;
 }
-.textoverflow{
+.textoverflow {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
-          line-clamp: 2; 
+  line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.aboutgrid{
+.aboutgrid {
   margin-top: 5rem;
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    grid-gap: 0px 0rem;
-    background-color: rgb(204, 236, 255);
-   
-  }
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  grid-gap: 0px 0rem;
+  background-color: rgb(204, 236, 255);
+}
 
-.allbody{
+.allbody {
   padding-left: 15rem;
 }
 
-.active{
-  /* background-color: #ff0000; */
+.active {
   color: #d50000;
- 
 }
-.downnail{
+.downnail {
   margin-top: 1rem;
-
 }
-.dotio{
+.dotio {
   visibility: visible;
 }
-.dotio:hover{
+.dotio:hover {
   visibility: visible;
 }
-.downthub:hover + .dotio{
+.downthub:hover + .dotio {
   display: block;
 }
-  
 
 .ld {
   flex: 0.3;
@@ -89,11 +74,11 @@ a {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.borders{
+.borders {
   border-radius: 100px;
 }
 
-.star42{
+.star42 {
   /* width: 200vh; */
   height: 100vh;
   overflow-x: hidden;
@@ -101,15 +86,13 @@ a {
   text-align: center;
 }
 
-
 * {
   box-sizing: border-box;
-} 
-.sp{
+}
+.sp {
   width: 100%;
   margin-left: 1rem;
   margin-right: 0.5rem;
- 
 }
 
 .page {
@@ -117,7 +100,6 @@ a {
   /* height: 100vh; */
   /* max-width: 1300px; */
   /* width: 99vw; */
-  
 }
 
 .LeftPage {
@@ -134,7 +116,6 @@ a {
   /* padding-top: 20px; */
   /* overflow-x: hidden; */
   /* overflow-y: auto; */
-
 }
 /* .LeftPage::-webkit-scrollbar {
   width: 0.5rem;
@@ -170,7 +151,7 @@ a {
   color: #3d3d3d;
 }
 
-.searchTerm:focus{
+.searchTerm:focus {
   color: #1e1e1f;
 }
 
@@ -187,19 +168,18 @@ a {
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
+.wrap {
   width: 30%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.medium{
-flex:1;
+.medium {
+  flex: 1;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-
 }
 /* .medium::-webkit-scrollbar {
   width: 0.5rem;
@@ -218,47 +198,38 @@ flex:1;
   background: rgb(0, 110, 255);
 } */
 
-
-
-
-
-
-
 .rightmedium {
   flex: 0.3;
   overflow-y: scroll;
-}  
-.hellowow{
+}
+.hellowow {
   position: relative;
   top: -100;
 }
-.searchcodepress{
+.searchcodepress {
   width: 100%;
   /* border-color: white; */
   border: none;
   :active {
     border: none;
+  }
 }
-}
-.vc{
- 
+.vc {
   margin-top: 0.5rem;
 }
 
- /* ::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 disp
 }  */
 
-
-
-.hr1{
+.hr1 {
   color: #ff0000;
   width: 100%;
   height: 7px;
 }
-.star{
+.star {
   overflow: hidden;
-  white-space: nowrap
+  white-space: nowrap;
 }
 .sidebarOption {
   display: flex;
@@ -287,7 +258,6 @@ disp
   color: var(--twitter-color);
 }
 
-
 .scroll {
   /* margin: 4px, 4px; */
   /* padding: 4px; */
@@ -295,7 +265,6 @@ disp
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-
 }
 
 /* .container .input {
@@ -367,13 +336,9 @@ disp
   width: 1rem !important;
 } */
 
-
-
-.authg{
-  margin-top: 
-  13rem !important;
+.authg {
+  margin-top: 13rem !important;
 }
-
 
 .nap {
   font-family: "Raleway", sans-serif !important;
@@ -384,47 +349,60 @@ disp
   .nap {
     font-size: 1.5rem !important;
   }
-} 
+}
 
-.ve{
+.ve {
   margin-top: 2rem;
 }
-
-::-webkit-scrollbar {
-  width: 0.5rem;
+.sidenavbarx {
+  display: inline;
+  top: 0;
 }
-
-::-webkit-scrollbar-track {
-  background: (189, 231, 255);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #424242;
-  border-radius: 1rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #212121;
-}
-
-
-.sidenavbarx{
-
- display: inline;
- top: 0;
-}
-.inlinex{
+.inlinex {
   display: inline;
 }
 
-.menuicon{
- 
+.menuicon {
   display: inline;
-  
 }
 
-.leftspace{
+.leftspace {
   margin-left: 240px;
-
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* button */
+::-webkit-scrollbar-button {
+  background: #222; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+/* The track NOT covered by the handle.
+::-webkit-scrollbar-track-piece {
+  background: #000; 
+}
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: #999; 
+}
+/* Resizer */
+::-webkit-resizer {
+  background: #111; 
+}
+.expn{
+  margin-left: -14px;
+}

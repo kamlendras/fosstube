@@ -6,10 +6,6 @@ import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import HomeIcon from '@mui/icons-material/Home';
 import PlayCircleOutlineOutlinedIcon from '@mui/icons-material/PlayCircleOutlineOutlined';
-import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import LayersIcon from '@mui/icons-material/Layers';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
 import HistoryIcon from '@mui/icons-material/History';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
@@ -72,11 +68,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import './globals.css'
 import { Inter, Roboto } from 'next/font/google'
 const roboto = Roboto({ subsets: ['latin'] , weight: ['400']})
-const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
-// export const metadata = {
-//   title: 'codnap',
-//   description: 'Open & Decentralized',
-// }                 
+const ColorModeContext = React.createContext({ toggleColorMode: () => {} });               
 const drawerWidth = 240;
 
 const AppBar = styled(MuiAppBar, {
@@ -165,12 +157,11 @@ export default function RootLayout({ children }) {
       <AppBar
         position="absolute"
         colour="primary"
-        // open={open}
       >
         <Toolbar variant="dense"
-          sx={{
-            pr: "24px", // keep right padding when drawer closed
-          }}
+          // sx={{
+          //   pr: "24px", 
+          // }}
         >
           <span className="menuicon">
             <IconButton
@@ -190,7 +181,7 @@ export default function RootLayout({ children }) {
             component="h1"
             variant="h4"
             color="inherit"
-            // noWrap
+            noWrap
             sx={{ flexGrow: 1 }}
           >
 
@@ -200,35 +191,21 @@ export default function RootLayout({ children }) {
     </main>
        
           </Typography>
-      
+         
           <div className="wrap">
   <div className="search">
     <input type="text" className="searchTerm" placeholder="Search FossTube" />
     <button type="submit" className="searchButton">
     <SearchOutlinedIcon/>
-      {/* <i className="fa fa-search" /> */}
     </button>
   </div>
 </div>
 
 
          
-          {/* <Paper elevation={3} className="sp">
-            <Grid container spacing={2}>
-              <Grid xs={11}>
-                <input
-                  type="text"
-                  placeholder="Search the entire universe"
-                  className="searchcodepress"
-                />
-              </Grid>
-              <Grid xs={1}>
-                <centre>
-                  <SearchIcon style={{ color: "gray" }} className="vc" />
-                </centre>
-              </Grid>
-            </Grid>
-          </Paper> */}
+          
+         
+       
       
           {theme.palette.mode}
           <IconButton
@@ -248,7 +225,7 @@ export default function RootLayout({ children }) {
         </Toolbar>
       </AppBar>
 
-      {/* <span className="LeftPage"> */}
+     
       <span>
         <Drawer variant="permanent" open={open}>
           <SimpleBar style={{ maxHeight: "100vh" }}>
@@ -260,7 +237,7 @@ export default function RootLayout({ children }) {
                 px: [1],
               }}
             >
-              {" "}
+             
               <span className="menuicon">
                 <IconButton onClick={toggleDrawer}>
                   <MenuIcon />
@@ -345,11 +322,6 @@ export default function RootLayout({ children }) {
         Spaces
       </Typography>
     </ListSubheader>
-  
-  
-    {/* <ListItemText >
-        Browse
-      </ListItemText> */}
       <Link href="/browse" className={pathname == "/browse" ? "active" : ""}>
     <ListItemButton>
       <ListItemIcon>
@@ -461,14 +433,14 @@ export default function RootLayout({ children }) {
  
               
               
-              {/* {ListItems} */}
+              
               
               
               </List>
           </SimpleBar>
         </Drawer>
       </span>
-        {/* <div className='allbody'> */}
+      
         <Box
           component="main"
           sx={{
@@ -478,12 +450,12 @@ export default function RootLayout({ children }) {
             overflow: 'auto',
           }}
         >
-          <Container maxWidth="xl" sx={{ mt: 0.4, }}>
+          <Container maxWidth="xl"  sx={{ mt: 0.4, }}>
         {children}
         </Container>
         </Box>
         </Box>
-        {/* </div> */}
+      
     </ThemeProvider>
     
         </body>
