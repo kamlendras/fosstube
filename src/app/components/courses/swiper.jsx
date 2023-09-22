@@ -32,16 +32,16 @@ export default function App() {
         <img src="/11.jpeg" alt="no internet" height={400} width={1600} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/12.jpeg" alt="no internet" height={400} width={1600} />
+        <img src="/14.png" alt="no internet" height={400} width={1600} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/13.jpeg" alt="no internet" height={400} width={1600} />
+        <img src="/16.png" alt="no internet" height={400} width={1600} />
       </SwiperSlide>
       <SwiperSlide>
         <img src="/15.png" alt="no internet" height={400} width={1600} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/16.jpeg" alt="no internet" height={400} width={1600} />
+        <img src="/18.png" alt="no internet" height={400} width={1600} />
       </SwiperSlide>
     </Swiper>
     </span>

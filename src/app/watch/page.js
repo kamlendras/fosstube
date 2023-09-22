@@ -39,7 +39,7 @@ export default function App() {
         <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
         <MediaPlayer
     title="Sprite Fight"
-    src="https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4"
+    src="/2.mp4"
     poster="https://image.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/thumbnail.webp?time=268&width=980"
     thumbnails="https://media-files.vidstack.io/sprite-fight/thumbnails.vtt"
     aspectRatio={16 / 9}
