@@ -62,7 +62,7 @@ const messageExamples = [
   {
    
     t: 'HTML.',
-    i: 'https://www.freecodecamp.org/news/content/images/2021/08/html.png',
+    i: '/html.png',
     d: 'This courses is for web dev beginers.',
     l:'Courses/HTML'
 
@@ -81,7 +81,7 @@ const messageExamples = [
   {
    
     t: 'JavaScript.',
-    i: 'https://cdn-media-1.freecodecamp.org/images/dbnmtPdU02XbZ41M74SLaIPbLUeG3zMJa5UV',
+    i: '/js.png',
     d: 'JavaScript Tutorials.',
     l:'Courses/JavaScript'
    
