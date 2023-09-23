@@ -212,14 +212,14 @@ const messageExamples = [
 
   },   {
    
-    t: 'Basic Python Programs.',
+    t: 'Basic Python Programs   cvb.',
     i: 'https://www.maxupskill.com/media/course/python.jpg',
     d: 'Basic Python Programs With Code',
      l:'Courses/Basic-Python-Programs'
 
   },   {
    
-    t: 'Web Development Using Flask and Python from Zero',
+    t: 'Web Development Using Flask and Python.',
     i: 'https://tutsnode.com/wp-content/uploads/2021/05/Learn-Flask-A-web-Development-Framework-of-Python.jpg',
     d: 'Web Development Using Flask and Python',
      l:'Courses/Web-Development-Using-Flask-and-Python'
