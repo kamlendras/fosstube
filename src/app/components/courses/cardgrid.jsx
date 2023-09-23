@@ -205,7 +205,7 @@ const messageExamples = [
 
   },   {
    
-    t: 'Machine Learning.',
+    t: 'Machine Learning with Python',
     i: 'https://tutoraj.com/wp-content/uploads/2021/04/20190903-MachineLearning.jpg',
     d: 'Machine Learning Tutorials For Beginners Using Python',
      l:'Courses/Machine-Learning'
@@ -219,7 +219,7 @@ const messageExamples = [
 
   },   {
    
-    t: 'Web Development Using Flask and Python.',
+    t: 'Web Development Using Flask and Python from Zero',
     i: 'https://tutsnode.com/wp-content/uploads/2021/05/Learn-Flask-A-web-Development-Framework-of-Python.jpg',
     d: 'Web Development Using Flask and Python',
      l:'Courses/Web-Development-Using-Flask-and-Python'
