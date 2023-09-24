@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://fosstube.github.io/codnapreadme1.png" width="auto" height="auto" alt="fosstube">
+  <img src="https://fosstube.github.io/fosstube.png" width="auto" height="auto" alt="fosstube">
   
 
 </div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
@@ -65,7 +65,7 @@ Features
 | User Accounts     | ✅ |
 | Subscriptions     | ✅ |
 | User Playlists    | ✅ |
-| Playlist Bookmarks| ✅ |
+| Bookmarks         | ✅ |
 | Channel Tabs      | ✅ |
 | Search Filters    | ✅ |
 | Player Gestures   | ✅ |
@@ -83,11 +83,6 @@ Contributing
 </h2>
 
 Whether you have ideas, translations, design changes, code cleaning or really heavy code changes, help is always welcome. The more is done, the better it gets! Please respect our [Code of Conduct](https://github.com/codnap/codnap/blob/master/CODE_OF_CONDUCT.md) in order to keep all interactions and dicussions healthy.
-
-> **Note** <br>
-> Any issue avoiding the issue template will be ignored and forced to be closed.
-
-
 
 <h2 align="left">
 <sub>
