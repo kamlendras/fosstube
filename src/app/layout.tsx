@@ -43,7 +43,7 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 import CssBaseline from "@mui/material/CssBaseline";
 import CodeIcon from "@mui/icons-material/Code";
 import MuiDrawer from "@mui/material/Drawer";
-import MuiAppBar from "@mui/material/AppBar";
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
@@ -74,51 +74,58 @@ import stylesm from "./styles/msearch.module.scss";
 import SessionProvider from "./components/SessionProvider";
 const roboto = Roboto({ subsets: ["latin"], weight: ["400"] });
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
-const drawerWidth = 240;
+const drawerWidth: number = 240;
+
+interface AppBarProps extends MuiAppBarProps {
+  open?: boolean;
+}
 
 const AppBar = styled(MuiAppBar, {
-  shouldForwardProp: (prop) => prop !== "open",
-})(({ theme, open }) => ({
+  shouldForwardProp: (prop) => prop !== 'open',
+})<AppBarProps>(({ theme, open }) => ({
   zIndex: theme.zIndex.drawer + 1,
-  transition: theme.transitions.create(["width", "margin"], {
+  transition: theme.transitions.create(['width', 'margin'], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
   ...(open && {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(["width", "margin"], {
+    transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
   }),
 }));
 
-const Drawer = styled(MuiDrawer, {
-  shouldForwardProp: (prop) => prop !== "open",
-})(({ theme, open }) => ({
-  "& .MuiDrawer-paper": {
-    position: "relative",
-    whiteSpace: "nowrap",
-    width: drawerWidth,
-    transition: theme.transitions.create("width", {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    boxSizing: "border-box",
-    ...(!open && {
-      overflowX: "hidden",
-      transition: theme.transitions.create("width", {
+const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
+  ({ theme, open }) => ({
+    '& .MuiDrawer-paper': {
+      position: 'relative',
+      whiteSpace: 'nowrap',
+      width: drawerWidth,
+      transition: theme.transitions.create('width', {
         easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.leavingScreen,
+        duration: theme.transitions.duration.enteringScreen,
       }),
-      width: theme.spacing(7),
-      [theme.breakpoints.up("sm")]: {
-        width: theme.spacing(9),
-      },
-    }),
-  },
-}));
+      boxSizing: 'border-box',
+      ...(!open && {
+        overflowX: 'hidden',
+        transition: theme.transitions.create('width', {
+          easing: theme.transitions.easing.sharp,
+          duration: theme.transitions.duration.leavingScreen,
+        }),
+        width: theme.spacing(7),
+        [theme.breakpoints.up('sm')]: {
+          width: theme.spacing(9),
+        },
+      }),
+    },
+  }),
+);
+
+
+
 const myFont = localFont({ src: "./gothic.otf" });
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
@@ -141,7 +148,7 @@ const useMediaQuery = (width) => {
     }
 
     return () => media.removeListener(updateTarget);
-  }, []);
+  }, [updateTarget, width]);
 
   return targetReached;
 };
@@ -161,16 +168,15 @@ export default function RootLayout({
     setOpen(!open);
   };
 
-  const [mode, setMode] = React.useState("dark");
+  const [mode, setMode] = React.useState<'dark' | 'light'>('dark');
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
+        setMode((prevMode) => (prevMode === 'dark' ? 'light' : 'dark'));
       },
     }),
-    []
+    [],
   );
-
   const theme = React.useMemo(
     () =>
       createTheme({
@@ -178,7 +184,7 @@ export default function RootLayout({
           mode,
         },
       }),
-    [mode]
+    [mode],
   );
 
   const isBreakpoint = useMediaQuery(768);
@@ -254,7 +260,9 @@ export default function RootLayout({
                     {/* <Create />
           <Notifications /> */}
                     <div className={stylesm.container}>
-                      <form action className={stylesm.search}>
+                      <form 
+                      // action
+                       className={stylesm.search}>
                         <input
                           className={stylesm.search__input}
                           type="search"
