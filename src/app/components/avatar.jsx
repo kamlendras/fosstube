@@ -32,7 +32,18 @@ import Keyboard from "./keyboard"
 import RocketOutlinedIcon from "@mui/icons-material/RocketOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import { signIn, signOut, useSession } from "next-auth/react"
+import styles from "../styles/header.module.css"
+
+// The approach used in this component shows how to build a sign in and sign out
+// component that works on pages which support both client and server side
+// rendering, and avoids any flash incorrect content on initial page load.
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Fab from '@mui/material/Fab';
 export default function AccountMenu() {
+  const { data: session, status } = useSession()
+  const loading = status === "loading"
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
@@ -50,6 +61,63 @@ export default function AccountMenu() {
 
   return (
     <React.Fragment>
+<header>
+      <noscript>
+        <style>{`.nojs-show { opacity: 1; top: 0; }`}</style>
+      </noscript>
+      <div className={styles.signedInStatus}>
+        <p
+          className={`nojs-show ${
+            !session && loading ? styles.loading : styles.loaded
+          }`}
+        >
+          {!session && (
+            <>
+              <span className={styles.notSignedInText}>
+                You are not signed in
+              </span>
+              <a
+                href={`/api/auth/signin`}
+                className={styles.buttonPrimary}
+                onClick={(e) => {
+                  e.preventDefault()
+                  signIn()
+                }}
+              >
+                Sign in
+              </a>
+            </>
+          )}
+          {/* {session?.user && (
+            <>
+              {session.user.image && (
+                <span
+                  style={{ backgroundImage: `url('${session.user.image}')` }}
+                  className={styles.avatar}
+                />
+              )}
+              <span className={styles.signedInText}>
+                <small>Signed in as</small>
+                <br />
+                <strong>{session.user.email ?? session.user.name}</strong>
+              </span>
+              <a
+                href={`/api/auth/signout`}
+                className={styles.button}
+                onClick={(e) => {
+                  e.preventDefault()
+                  signOut()
+                }}
+              >
+                Sign out
+              </a>
+            </>
+          )} */}
+        </p>
+      </div>
+     
+    </header>
+
       <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
         <Tooltip>
           <IconButton
@@ -60,7 +128,26 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
-            <Avatar sx={{ width: 32, height: 32 }}>B</Avatar>
+            <Avatar sx={{ width: 42, height: 42 }}> 
+            
+            {session?.user && (
+            <>
+              {session.user.image && (
+                <span
+                  style={{ backgroundImage: `url('${session.user.image}')` }}
+                  className={styles.avatar}
+                />
+              )}
+             
+             
+            </>
+          )}
+            
+            
+            
+            
+            
+             </Avatar>
           </IconButton>
         </Tooltip>
       </Box>
@@ -107,19 +194,48 @@ export default function AccountMenu() {
             <ListItemAvatar>
          
       
-              <img src="./avatar.svg" width={56} height={56} alt="You" />
+            {session?.user && (
+            <>
+              {session.user.image && (
+                <span
+                  style={{ backgroundImage: `url('${session.user.image}')` }}
+                  className={styles.avatar}
+                />
+              )}
+             
+             
+            </>
+          )}
       </ListItemAvatar>
             </Grid>
             <Grid xs={9}>
               <Grid xs={12}>
-                <ListItemText>K Singh</ListItemText>
+                <ListItemText>
+
+             
+                {session?.user && (
+            <>
+             
+             
+              
+                {session.user.email ?? session.user.name}
+            
+              
+            </>
+          )}
+              
+             
+           
+          
+
+                </ListItemText>
               </Grid>
               <Grid xs={12}>
-                <ListItemText> @ksingh</ListItemText>
+                <ListItemText> @unknown</ListItemText>
               </Grid>
               <Grid xs={12}>
                 <Link2 href="#" underline="none" fontSize="medium">
-                  {"Manage your codefoss Account"}
+                  {"Manage your account"}
                 </Link2>
               </Grid>
             </Grid>
@@ -137,12 +253,34 @@ export default function AccountMenu() {
         
 
         <Switchaccount/>
-        <ListItemButton onClick={handleClose}>
+
+
+        {session?.user && (
+            <>
+             
+              <a
+                href={`/api/auth/signout`}
+                // className={styles.button}
+              
+              >
+              
+              <ListItemButton   onClick={(e) => {
+                  e.preventDefault()
+                  signOut()
+                }}>
           <ListItemIcon>
             <LogoutOutlinedIcon fontSize="small" />
           </ListItemIcon>
           Sign out
         </ListItemButton>
+
+
+
+
+              </a>
+            </>
+          )}
+      
         <Divider />
 
         <Appearance /><Language/><Location /><Keyboard/>
