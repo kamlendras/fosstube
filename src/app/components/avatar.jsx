@@ -73,9 +73,10 @@ export default function AccountMenu() {
         >
           {!session && (
             <>
-              <span className={styles.notSignedInText}>
+              {/* <span 
+              className={styles.notSignedInText}>
                 You are not signed in
-              </span>
+              </span> */}
               <a
                 href={`/api/auth/signin`}
                 // className={styles.buttonPrimary}
