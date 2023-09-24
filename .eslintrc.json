@@ -3,14 +3,17 @@
 // }
 /** @type {import('next').NextConfig} */
 
-{
-  "extends": {
-    "ignoreDuringBuilds": true
-},
-  "rules": {
+// {
+//   "extends": {
+//     "ignoreDuringBuilds": true
+// },
+//   "rules": {
     
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
-  }
-}
+//     "react/no-unescaped-entities": "off",
+//     "@next/next/no-page-custom-font": "off"
+//   }
+// }
 
+{
+  "extends": "next/core-web-vitals"
+}
