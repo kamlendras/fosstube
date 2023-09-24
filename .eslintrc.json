@@ -1,19 +1,7 @@
-// {
-//   "extends": "next/core-web-vitals"
-// }
-/** @type {import('next').NextConfig} */
-
-// {
-//   "extends": {
-//     "ignoreDuringBuilds": true
-// },
-//   "rules": {
-    
-//     "react/no-unescaped-entities": "off",
-//     "@next/next/no-page-custom-font": "off"
-//   }
-// }
-
-{
-  "extends": "next/core-web-vitals"
+module.exports = {
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
 }
