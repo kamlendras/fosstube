@@ -439,12 +439,12 @@ disp
 }
 
 .primary {
-  animation: primary 13s linear infinite;
+  animation: primary 20s linear infinite;
   margin: 0 auto;
 }
 
 .secondary {
-  animation: secondary 13s linear infinite;
+  animation: secondary 20s linear infinite;
 }
 
 @keyframes primary {
@@ -467,3 +467,12 @@ disp
 
 
 
+.fosstubeicon{
+  vertical-align: bottom;
+  display: inline;
+}
+
+
+.MuiFab-root{
+  background-color: #ffffff !important;
+}
