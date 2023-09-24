@@ -114,7 +114,7 @@ export default function AccountMenu() {
           <ListItemIcon>
             <RemoveCircleOutlineOutlinedIcon fontSize="small" />
           </ListItemIcon>
-          Don't recommend space
+          Don&apos;t recommend space
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <ListItemIcon>

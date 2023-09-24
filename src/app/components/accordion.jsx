@@ -66,7 +66,7 @@ By using codnap, you can freely watch and listen to content without the fear of 
         <AccordionDetails>
           <Typography>
           Whether you have ideas, translations, design changes, code cleaning, or real heavy code changes, help is always welcome. The more is done the better it gets!
-If you're interested in contributing, you can browse the issues or create a new one to discuss your feature idea. Every contribution is very welcome.
+If you&apos;re interested in contributing, you can browse the issues or create a new one to discuss your feature idea. Every contribution is very welcome.
           </Typography>
         </AccordionDetails>
       </Accordion>
