@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/watch/page.js", "src/app/components/searchx.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/watch/page.js", "src/app/components/searchx.jsx", "src/app/api/auth/[...nextauth]/route.jsx"],
   "exclude": ["node_modules"]
 }
