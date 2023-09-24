@@ -78,13 +78,18 @@ export default function AccountMenu() {
               </span>
               <a
                 href={`/api/auth/signin`}
-                className={styles.buttonPrimary}
+                // className={styles.buttonPrimary}
                 onClick={(e) => {
                   e.preventDefault()
                   signIn()
                 }}
               >
-                Sign in
+                 <Fab 
+          variant="extended"
+           size="small" color="success">
+<GitHubIcon sx={{ mr: 1 }} />
+Sign in with GitHub
+</Fab>
               </a>
             </>
           )}

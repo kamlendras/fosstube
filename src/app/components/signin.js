@@ -59,12 +59,7 @@ export default function Header() {
 //         signIn()
 //       }}
 //     >
-//     <Fab 
-//           variant="extended"
-//            size="small" color="success">
-// <GitHubIcon sx={{ mr: 1 }} />
-// Sign in with GitHub
-// </Fab>
+// 
 //     </a>
 //   </>
 // )}
