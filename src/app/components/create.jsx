@@ -53,7 +53,7 @@ export default function CREATE() {
         open={open}
         onClose={handleClose}
         onClick={handleClose}
-        onClose={setIsActive}
+        // onClose={setIsActive}
         PaperProps={{
           elevation: 0,
           sx: {

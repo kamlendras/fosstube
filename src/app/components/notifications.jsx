@@ -54,7 +54,7 @@ export default function AccountMenu() {
         anchorEl={anchorEl}
         id="account-menu"
         open={open}
-        onClose={setIsActive}
+        // onClose={setIsActive}
         onClose={handleClose}
         onClick={handleClose}
         PaperProps={{
