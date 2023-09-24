@@ -357,7 +357,7 @@ export default function RootLayout({
 
 
        
-<SignIn/>
+<Avatar/>
 
 
      
