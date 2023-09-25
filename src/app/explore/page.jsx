@@ -2,7 +2,7 @@
 import React from 'react'
 import Codecarddata from "../../components/codecarddata";
 
-import styles from "../styles/Explore.module.css";
+import styles from "../../styles/Explore.module.css";
 import { Box, Container, Grid } from '@mui/material';
 export default function Explore() {
 
