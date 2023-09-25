@@ -34,7 +34,7 @@ By using codnap, you can freely watch and listen to content without the fear of 
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header">
-          <Typography>Which Licence do codefoss use ?</Typography>
+          <Typography>Which Licence do FossTube use ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -48,7 +48,7 @@ By using codnap, you can freely watch and listen to content without the fear of 
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header">
-          <Typography>How codefoss runs ?</Typography>
+          <Typography>How FossTube runs ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -61,7 +61,7 @@ By using codnap, you can freely watch and listen to content without the fear of 
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header">
-          <Typography>How can I contribute to codefoss ?</Typography>
+          <Typography>How can I contribute to FossTube ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

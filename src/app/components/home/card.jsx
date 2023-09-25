@@ -45,7 +45,7 @@ export default function Component(props) {
   );
 
   return (
-    <Link href="/watch/:id">
+    <Link href="/watch">
     <Paper elevation={24} square>
       <Grid
         container

@@ -1,8 +1,8 @@
 import Copyright2 from "../components/copyright2";
 import styles from "../styles/Bookmarks.module.css";
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
 import Typography from '@mui/material/Typography';
-function favorites() {
+function gaming() {
   return (
     <>
       <div className={styles.Container}>
@@ -10,12 +10,12 @@ function favorites() {
           <div className={styles.CTA}></div>
           <span className={styles.bookmark}>
             {/* <img src="/bookmark.svg" height={312} width={312} alt="heart"></img> */}
-            <FavoriteBorderOutlinedIcon sx={{ color: 'text.primary', fontSize: 312, fontWeight: 'medium' }} />
+            <ConstructionOutlinedIcon sx={{ color: 'text.primary', fontSize: 312, fontWeight: 'medium' }} />
           </span>
 
           {/* <p className={styles.text}> */}
           <Typography variant="h6" gutterBottom>
-          Your favorites will appear here.
+          This Page is in Construction.
       </Typography>
       {/* </p> */}
 
@@ -28,4 +28,4 @@ function favorites() {
   );
 }
 
-export default favorites;
+export default gaming;

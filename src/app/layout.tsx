@@ -628,7 +628,7 @@ export default function RootLayout({
                           <ListSubheader component="div" inset>
                             Try FOSS
                           </ListSubheader>
-                          <Link href="https://ueats.github.io/">
+                          <Link href="https://ueats.vercel.app/">
                             <ListItemButton>
                               <ListItemIcon>
                                 <Image
@@ -690,15 +690,13 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="/feedback"
-                            className={pathname == "/feedback" ? "active" : ""}
+                            href="https://github.com/fosstube/fosstube.github.io/issues"
+                           
                           >
                             <ListItemButton>
                               <ListItemIcon>
                                 <FeedbackOutlinedIcon
-                                  className={
-                                    pathname == "/feedback" ? "active" : ""
-                                  }
+                              
                                 />
                               </ListItemIcon>
                               <ListItemText primary="Feedback" />
