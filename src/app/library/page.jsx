@@ -1,42 +1,31 @@
-"use client"
-import Head from "next/head";
-
 import Copyright2 from "../components/copyright2";
-import styles from "../styles/Favorites.module.css";
-import React from "react";
-import Lottie from "lottie-react";
-import library from "./library.json";
-import { HistoryEdu } from "@mui/icons-material";
-const style = {
-    height: 400,
-  };
-function favorites() {
+import styles from "../styles/Bookmarks.module.css";
+import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
+import Typography from '@mui/material/Typography';
+function library() {
   return (
     <>
-      <Head>
-        <title>Favorites</title>
-        <meta
-          name="description"
-          content="codnap|codnap is the knowledge-sharing community Of Developers."
-        />
-        <link rel="icon" href="favicon.ico" />
-      </Head>
-   
+      <div className={styles.Container}>
+        <div className={styles.Content}>
+          <div className={styles.CTA}></div>
+          <span className={styles.bookmark}>
+            {/* <img src="/bookmark.svg" height={312} width={312} alt="heart"></img> */}
+            <LibraryBooksOutlinedIcon sx={{ color: 'text.primary', fontSize: 312, fontWeight: 'medium' }} />
+          </span>
 
-      <span className={styles.heart}>
-        {/* <img src="/heart.svg" height={512} width={512} alt="heart"></img> */}
-        <Lottie animationData={library} loop={true}
-       style={style} />
-      </span>
+          {/* <p className={styles.text}> */}
+          <Typography variant="h6" gutterBottom>
+          Your library will appear here.
+      </Typography>
+      {/* </p> */}
 
-      {/* <p className={styles.heartt}>Your Favorites will appear here.</p> */}
-     
-        <span className={styles.Footern}>
-          <Copyright2 />
-        </span>
-   
+          <span className={styles.Footern}>
+            <Copyright2 />
+          </span>
+        </div>
+      </div>
     </>
   );
 }
 
-export default favorites;
+export default library;

@@ -6,9 +6,9 @@ function Copyright(props) {
   return (
     
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
+      {'AGPL-3.0 LICENSED  '}
       <Link color="inherit" href="/">
-      codnap
+      FossTube
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

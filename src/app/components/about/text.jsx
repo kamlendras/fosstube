@@ -9,7 +9,7 @@ export default function Types() {
   justifyContent="center">
         <Grid xs={12}>
       <Typography variant="h1" gutterBottom>
-      About codnap
+      About FossTube
       </Typography>
       </Grid>
       <Grid xs={12}>
