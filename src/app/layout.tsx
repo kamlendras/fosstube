@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image'
 import { useSession, signIn, signOut } from "next-auth/react";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -630,11 +631,12 @@ export default function RootLayout({
                           <Link href="https://ueats.github.io/">
                             <ListItemButton>
                               <ListItemIcon>
-                                <img
+                                <Image
                                   src="/ueats.jpeg"
                                   height={26}
                                   width={26}
-                                ></img>
+                                  alt="ueats"
+                                />
                               </ListItemIcon>
 
                               <ListItemText primary="Ueats (FOSS)" />
