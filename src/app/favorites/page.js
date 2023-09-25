@@ -1,5 +1,5 @@
-import Copyright2 from "../components/copyright2";
-import styles from "../styles/Bookmarks.module.css";
+import Copyright2 from "../../components/copyright2";
+import styles from "../../styles/Bookmarks.module.css";
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import Typography from '@mui/material/Typography';
 function favorites() {

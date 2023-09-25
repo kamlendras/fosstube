@@ -1,20 +1,9 @@
-import Head from "next/head";
+
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link'
 function Signup() {
   return <>
-  <Head>
-      <title>   
- Community
-        </title>
-      <meta
-        name="description"
-        content="codnap| codnap is the knowledge-sharing community Of Developers."
-      />
-      <link rel="icon" href="favicon.ico" />
-   
 
-    </Head>
   <section className="text-gray-600 body-font relative">
     <span className="absolute inset-0 bg-gray-300">
     <Fade big>

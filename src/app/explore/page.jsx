@@ -1,6 +1,6 @@
-import Head from "next/head";
+
 import React from 'react'
-import Codecarddata from "../components/codecarddata";
+import Codecarddata from "../../components/codecarddata";
 
 import styles from "../styles/Explore.module.css";
 import { Box, Container, Grid } from '@mui/material';
@@ -10,18 +10,7 @@ export default function Explore() {
     
       <>
 
-<Head>
-        <title>   
-         Explore
-          </title>
-        <meta
-          name="description"
-          content="codnap| codnap is the knowledge-sharing community Of Developers."
-        />
-        
-     
 
-      </Head>
 
 
     <Box

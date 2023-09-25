@@ -2,7 +2,7 @@ import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-import Card from '../components/browse/card'
+import Card from '../../components/browse/card'
 import Toolbar from '@mui/material/Toolbar';
 export default function CenteredElementGrid() {
   return (
