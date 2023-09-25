@@ -1,6 +1,6 @@
 import Toolbar from '@mui/material/Toolbar';
-import Qa from "../components/accordion";
-import Footer from "../components/footer";
+import Qa from "../../components/accordion";
+import Footer from "../../components/footer";
 import HelpIcon from '@mui/icons-material/Help';
 import Typography from '@mui/material/Typography';
 export default function Home() {

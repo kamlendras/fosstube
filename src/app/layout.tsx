@@ -24,11 +24,11 @@ import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@mui/icons-material/FeedbackOutlined";
 import BookOutlinedIcon from "@mui/icons-material/BookOutlined";
-import SignIn from "./components/signin"
+import SignIn from "../components/signin"
 import Link from "next/link";
 import type { ReactNode } from "react"
 import { usePathname } from "next/navigation";
-import Copyright from "./components/copyrightr";
+import Copyright from "../components/copyrightr";
 import localFont from "next/font/local";
 import { useState, useCallback, useEffect } from "react";
 
@@ -54,9 +54,9 @@ import Badge from "@mui/material/Badge";
 import Container from "@mui/material/Container";
 // import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
-import Notifications from "./components/notifications";
-import Create from "./components/create";
-import Avatar from "./components/avatar";
+import Notifications from "../components/notifications";
+import Create from "../components/create";
+import Avatar from "../components/avatar";
 import TextField from "@mui/material/TextField";
 import SearchIcon from "@mui/icons-material/Search";
 import Paper from "@mui/material/Paper";
@@ -66,13 +66,13 @@ import "simplebar-react/dist/simplebar.min.css";
 import SplitPane, { Pane } from "react-split-pane";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Box from "@mui/material/Box";
-import Appicon from "./components/appicon";
+import Appicon from "../components/appicon";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import "./globals.css";
 import { Inter, Roboto } from "next/font/google";
-import stylesm from "./styles/msearch.module.scss";
-import SessionProvider from "./components/SessionProvider";
+import stylesm from ".././styles/msearch.module.scss";
+import SessionProvider from "../components/SessionProvider";
 const roboto = Roboto({ subsets: ["latin"], weight: ["400"] });
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 const drawerWidth: number = 240;
