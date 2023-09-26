@@ -4,6 +4,10 @@ import Codecarddata from "../../components/codecarddata";
 
 import styles from "../../styles/Explore.module.css";
 import { Box, Container, Grid } from '@mui/material';
+export const metadata = {
+  title: "Explore - FossTube",
+  description: "Open & Decentralized",
+};
 export default function Explore() {
 
   return (

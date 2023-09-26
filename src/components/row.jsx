@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from "react";
 import Chatbox from "./chatbox";
 import Feed from "./feed";

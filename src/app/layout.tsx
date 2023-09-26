@@ -646,13 +646,13 @@ export default function RootLayout({
                           <Divider sx={{ my: 1 }} />
                           <Link
                             href="/account"
-                            className={pathname == "/settings" ? "active" : ""}
+                            className={pathname == "/account" ? "active" : ""}
                           >
                             <ListItemButton>
                               <ListItemIcon>
                                 <SettingsOutlinedIcon
                                   className={
-                                    pathname == "/settings" ? "active" : ""
+                                    pathname == "/account" ? "active" : ""
                                   }
                                 />
                               </ListItemIcon>
