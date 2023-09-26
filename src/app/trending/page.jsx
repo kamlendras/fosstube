@@ -2,6 +2,10 @@ import Copyright2 from "../../components/copyright2";
 import styles from "../../styles/Bookmarks.module.css";
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
 import Typography from '@mui/material/Typography';
+export const metadata = {
+  title: "Trending - FossTube",
+  description: "Open & Decentralized",
+};
 function library() {
   return (
     <>

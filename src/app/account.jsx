@@ -1,4 +1,7 @@
-
+export const metadata = {
+  title: "Account - FossTube",
+  description: "Open & Decentralized",
+};
 export default function Eaccount() {
     return (
       <>

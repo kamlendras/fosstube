@@ -4,6 +4,10 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import Card from '../../components/browse/card'
 import Toolbar from '@mui/material/Toolbar';
+export const metadata = {
+  title: "Browse - FossTube",
+  description: "Open & Decentralized",
+};
 export default function CenteredElementGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>

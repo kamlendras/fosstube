@@ -1,3 +1,4 @@
+"use client"
 import * as React from 'react';
 import Appbar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';

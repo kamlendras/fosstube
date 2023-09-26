@@ -1,6 +1,10 @@
 
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link'
+export const metadata = {
+  title: "Community - FossTube",
+  description: "Open & Decentralized",
+};
 function Signup() {
   return <>
 
