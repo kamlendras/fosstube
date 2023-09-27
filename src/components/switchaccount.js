@@ -30,7 +30,11 @@ export default function NestedList() {
   const handleClick = () => {
     setOpen(!open);
   };
+  const [selectedIndex, setSelectedIndex] = React.useState(1);
 
+  const handleListItemClick = (event, index) => {
+    setSelectedIndex(index);
+  };
   return (
     <>
    

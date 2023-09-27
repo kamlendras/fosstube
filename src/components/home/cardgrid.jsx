@@ -154,3 +154,110 @@ const messageExamples = [
 
 
 ];
+
+    {/* <div className={styles.grid}>
+      <Card
+        l={title}
+        links={"https://www.youtube.com/watch?v=${resourceId.videoId}"}
+        key={id}
+        img={medium.url}
+        video={title}
+        heading={title}
+        avatar={medium.url}
+        date={title}
+        view={title}
+        channel={title}
+      />
+    </div> */}
+//     </main>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import * as React from "react";
+// import Card from "./card";
+// import styles from "../../styles/Courses.module.css";
+// import youtubeService from '../../services/youtube';
+// export async function getServerSideProps() {
+//   const playlistId = 'PLMElh5YpJilZCEzu6OhfbsLYPJYz5TACL'; // Replace with your actual YouTube playlist ID
+//   const response = await youtubeService.playlistItems.list({
+//     part: 'snippet',
+//     maxResults: 50, // Set the number of videos you want to retrieve
+//     playlistId,
+//   });
+
+//   const playlistItems = response.data.items;
+
+//   return {
+//     props: { playlistItems },
+//   };
+// }
+
+
+// function PlaylistPage({ playlistItems }) {
+//   return (
+//     <div>
+//       <h1>YouTube Playlist</h1>
+//       <ul>
+//         {playlistItems?.map((item) => (
+//           <li key={item.id}>
+//             <a
+//               href={`https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`}
+//               target="_blank"
+//               rel="noopener noreferrer"
+//             >
+//               {item.snippet.title}
+//             </a>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
+
+// export default PlaylistPage;
+
+
+
+
+
+
+    {/* <div className={styles.grid}>
+      <Card
+        l={title}
+        links={"https://www.youtube.com/watch?v=${resourceId.videoId}"}
+        key={id}
+        img={medium.url}
+        video={title}
+        heading={title}
+        avatar={medium.url}
+        date={title}
+        view={title}
+        channel={title}
+      />
+    </div> */}
+
+
+  
