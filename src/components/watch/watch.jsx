@@ -24,11 +24,12 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
-import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ThumbDownOutlinedIcon from '@mui/icons-material/ThumbDownOutlined';
 import EmojiPicker from 'emoji-picker-react';
 import TextField from '@mui/material/TextField';
+import Dot from "./dot"
 export default function App() {
   const [showMore, setShowMore] = useState(false);
   const {text} = "knsdknknksjnkvd"
@@ -93,9 +94,10 @@ export default function App() {
 
         <Fab variant="extended" size="small">
           <ThumbUpOutlinedIcon sx={{ mr: 1 }} />
-          900 |  
+          900 |
   
           <ThumbDownOutlinedIcon sx={{ ml: 1 }}/>
+                      400
         </Fab>
         <Fab variant="extended" size="small">
           <ShareOutlinedIcon sx={{ mr: 1 }} />
@@ -105,10 +107,8 @@ export default function App() {
           <FileDownloadOutlinedIcon sx={{ mr: 1 }} />
           Download
         </Fab>
-        <Fab  size="small">
-          <MoreHorizOutlinedIcon  />
-        
-        </Fab>
+       
+        <Dot/>
         </Grid>
         </Grid>
 
