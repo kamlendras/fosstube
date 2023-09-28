@@ -82,7 +82,7 @@ const messageExamples = [
    
     t: 'JavaScript.',
     i: '/js.png',
-    d: 'JavaScript From Basic to advance.',
+    d: 'Learn JavaScript from basic.',
     l:'Courses/JavaScript'
    
 
