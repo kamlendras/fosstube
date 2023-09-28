@@ -184,7 +184,7 @@ const messageExamples = [
 
   },   {
    
-    t: 'Python Django.',
+    t: 'Learn Python & Django.',
     i: 'https://miro.medium.com/max/1200/1*slHeZngyeUr7ypEz7MNL5w.png',
     d: 'Python Django Tutorials',
      l:'Courses/Python-Django'
