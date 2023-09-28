@@ -29,7 +29,7 @@ import AddIcon from "@mui/icons-material/Add";
 import EditIcon from "@mui/icons-material/Edit";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import NavigationIcon from "@mui/icons-material/Navigation";
-import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import Share from "./share"
 import Download from "./download"
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import ThumbDownOutlinedIcon from "@mui/icons-material/ThumbDownOutlined";
@@ -110,10 +110,7 @@ export default function App() {
             </Fab>
           {/* </Grid> */}
           {/* <Grid xs={3} sm={3} md={2} lg={1} xl={2}> */}
-            <Fab variant="extended" size="small" sx={{ ml: 0.4 , textTransform: 'none'}}>
-              <ShareOutlinedIcon sx={{ mr: 1 }} />
-              Share
-            </Fab>
+           <Share/>
           {/* </Grid> */}
           {/* <Grid xs={3} sm={3} md={2} lg={2} xl={2}> */}
             <Download/>
