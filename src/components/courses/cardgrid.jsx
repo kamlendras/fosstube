@@ -117,7 +117,7 @@ const messageExamples = [
    
     t: 'Python.',
     i: 'https://miro.medium.com/max/700/1*C3kxjCrJy-aWSMpe2chfaA.png',
-    d: 'Python Practice Programs With Logic & Explanation',
+    d: 'Learn Python Programs With Logic.',
      l:'Courses/Python'
 
   },  
