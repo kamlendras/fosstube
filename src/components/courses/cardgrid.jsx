@@ -63,7 +63,7 @@ const messageExamples = [
    
     t: 'HTML.',
     i: '/html.png',
-    d: 'Learn HTML5 From Zero',
+    d: 'Learn HTML from basic.',
     l:'Courses/HTML'
 
   },
