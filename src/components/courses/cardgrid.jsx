@@ -128,7 +128,7 @@ const messageExamples = [
    
     t: 'java.',
     i: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ7LFrSTpn-hmIh_YMy1AXub7S8-6aiJQB9w&usqp=CAU',
-    d: 'This series will cover Java from starting to the end. We will learn java from the start to the end',
+    d: 'This series will cover Java from starting to the end. You will learn java from the start to the end.',
     l:'Courses/java'
 
   },  
