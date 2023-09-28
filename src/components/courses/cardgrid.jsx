@@ -172,7 +172,7 @@ const messageExamples = [
    
     t: 'Complete Git.',
     i: 'https://tatsuno-system.co.jp/wp-content/uploads/2020/06/git-command.png',
-    d: 'Complete Git Tutorials For Beginners',
+    d: 'Learn Git For Beginners',
      l:'Courses/Complete-Git'
 
   },   {
