@@ -25,7 +25,7 @@ import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
 import VolunteerActivismOutlinedIcon from '@mui/icons-material/VolunteerActivismOutlined';
 import ContentCutOutlinedIcon from '@mui/icons-material/ContentCutOutlined';
 import SubtitlesOutlinedIcon from '@mui/icons-material/SubtitlesOutlined';
-export default function AccountMenu() {
+export default function Dot() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {

@@ -38,6 +38,7 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Dot from "./dot";
 import CardGrid from "../home/cardgrid";
+import Subscribe from "./subscribe"
 export default function App() {
   return (
     <>
@@ -96,9 +97,7 @@ export default function App() {
             </List>
           {/* </Grid> */}
           {/* <Grid xs={3} sm={3} md={2} lg={2} xl={2}> */}
-            <Fab variant="extended" size="small" color="white" sx={{ ml: 0.4, mt: 3, textTransform: 'none' }}>
-              Subscribe
-            </Fab>
+           <Subscribe/>
             </Stack>
           {/* </Grid> */}
           {/* <Grid xs={3} sm={3} md={2} lg={2.5} xl={3}> */}
