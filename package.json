@@ -50,7 +50,7 @@
     "eslint": "8.49.0",
     "eslint-config-next": "latest",
     "firebase": "^10.4.0",
-    "firebase-tools": "^12.5.4",
+    "firebase-tools": "^12.6.1",
     "formik": "^2.4.5",
     "framer-motion": "^10.16.4",
     "gh-pages": "^6.0.0",
