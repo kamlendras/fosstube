@@ -198,7 +198,7 @@ const messageExamples = [
 
   },   {
    
-    t: 'Python Game Development.',
+    t: 'Game Development with python.',
     i: 'https://dg53gp9bd7dcq.cloudfront.net/files/2750/icon/1423556780_720_20.jpg',
     d: 'Python Game Development Using Pygame',
      l:'Courses/Python-Game-Development'
