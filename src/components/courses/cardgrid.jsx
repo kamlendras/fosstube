@@ -101,7 +101,7 @@ const messageExamples = [
    
     t: 'React JS.',
     i: 'https://en.karabayyazilim.com/uploads/blogs/reactjs-nedir-2019-06-24-091546/reactjs-nedir-2019-06-24-091546-0.jpg',
-    d: 'This series will cover React from starting to the end. We will learn react from the ground up!',
+    d: 'This series will cover React from starting to the end. You will learn react from the ground up.',
     l:'Courses/React-Js'
 
   },  {
