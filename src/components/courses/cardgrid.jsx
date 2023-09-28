@@ -108,7 +108,7 @@ const messageExamples = [
    
     t: 'React Native.',
     i: 'https://miro.medium.com/max/700/1*C3kxjCrJy-aWSMpe2chfaA.png',
-    d: 'This series will cover React Native from starting to the end. We will learn react from the ground up!',
+    d: 'This series will cover React Native from starting to the end. You will learn react from the ground up.',
     l:'Courses/React-Native'
 
   },  
