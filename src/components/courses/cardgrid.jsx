@@ -212,7 +212,7 @@ const messageExamples = [
 
   },   {
    
-    t: 'Basic Python Programs   cvb.',
+    t: 'Basic Python Programs.',
     i: 'https://www.maxupskill.com/media/course/python.jpg',
     d: 'Basic Python Programs With Code',
      l:'Courses/Basic-Python-Programs'
