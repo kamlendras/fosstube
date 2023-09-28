@@ -92,7 +92,7 @@ const messageExamples = [
    
     t: 'Figma.',
     i: '/Figma.svg',
-    d: 'Learn Figma',
+    d: 'Learn Figma from basic',
      l:'Courses/Figma'
 
   },
