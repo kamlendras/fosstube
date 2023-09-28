@@ -135,7 +135,7 @@ const messageExamples = [
 
   {
    
-    t: 'C Language',
+    t: 'Learn C Simple & Clean.',
     i: 'https://nareshit.com/wp-content/uploads/2018/08/C-Programming-online-training-nareshit.jpg',
     d: 'This series contains programs for you to practice C Programming and related concepts',
      l:'Courses/C-Language'
