@@ -156,7 +156,7 @@ const messageExamples = [
 
   },   {
    
-    t: 'C++ Tutorials.',
+    t: 'Learn C++.',
     i: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQuMi_FAtJ6_osAZcU3qzFKhmkAHYUcUD9sB8HboTWlAnhMLN8WgOODzksPSB4bgOBGp0&usqp=CAU',
     d: 'C++ Tutorials',
      l:'Courses/C++-Tutorials'
