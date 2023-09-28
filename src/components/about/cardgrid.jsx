@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from './card'
-import Grid from '@mui/material/Unstable_Grid2';
 function CardGrid() {
     return(
         <>
