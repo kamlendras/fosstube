@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Fab from '@mui/material/Fab';
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
-import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
@@ -17,6 +16,8 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 import Divider from "@mui/material/Divider";
 import FormLabel from '@mui/material/FormLabel';
+import {ShareSocial} from 'react-share-social' 
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 export default function Download() {
     const [open, setOpen] = React.useState(false);
     const theme = useTheme();
@@ -32,13 +33,9 @@ export default function Download() {
   return (
     <React.Fragment>
       
-      {/* <IconButton aria-label="settings"  >
-            <MoreVertIcon />
-            </IconButton> */}
-
-<Fab variant="extended" size="small" sx={{ ml: 0.4 , textTransform: 'none'}} onClick={handleClickOpen}>
-              <FileDownloadOutlinedIcon sx={{ mr: 1 }} />
-              Download
+      <Fab variant="extended" size="small" sx={{ ml: 0.4 , textTransform: 'none'}} onClick={handleClickOpen}>
+              <ShareOutlinedIcon sx={{ mr: 1 }} />
+              Share
             </Fab>
             <Dialog
         fullScreen={fullScreen}
@@ -47,36 +44,29 @@ export default function Download() {
         aria-labelledby="responsive-dialog-title"
       >
         <DialogTitle id="responsive-dialog-title">
-          {"Download Quality"}
+          {"Share"}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>
-          <FormControl>
-      {/* <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel> */}
-      <RadioGroup
-        aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue="b"
-        name="radio-buttons-group"
-      >
-        <FormControlLabel value="a" control={<Radio />} label="Low (144p)" />
-        <FormControlLabel value="b" control={<Radio />} label="Standard (480p)" />
-        <FormControlLabel value="c" control={<Radio />} label="High (720p)" />
-        <FormControlLabel value="d" control={<Radio />} label="Full HD (1080p)" />
-      </RadioGroup>
-    </FormControl>
-    <Divider sx={{ my: 1 }} />
-
-            <FormControlLabel control={<Checkbox />} label="Remember my settings for 30 days" />
-          </DialogContentText>
+          {/* <DialogContentText> */}
+          <ShareSocial 
+     url ="fosstube.web.app"
+     socialTypes={[
+        'facebook',
+        'whatsapp',
+        'twitter',
+        'linkedin',
+        'telegram',
+        'reddit',
+        'line',
+        'instapaper',
+        'hatena',
+        'email',
+        'ok',
+        'mailru']}
+   />
+          {/* </DialogContentText> */}
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose} sx={{  textTransform: 'none'}}>
-            Cancel
-          </Button>
-          <Button onClick={handleClose} autoFocus sx={{ textTransform: 'none'}}>
-            Download
-          </Button>
-        </DialogActions>
+      
       </Dialog>
       
     </React.Fragment>

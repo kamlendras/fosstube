@@ -79,6 +79,7 @@
     "react-hover-video-player": "^10.0.1",
     "react-infinite-scroll-component": "^6.1.0",
     "react-reveal": "^1.2.2",
+    "react-share-social": "^0.1.55",
     "react-split-pane": "^0.1.92",
     "react-swipeable-views": "^0.14.0",
     "react-typed": "^1.2.0",
