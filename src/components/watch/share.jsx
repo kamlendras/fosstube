@@ -16,7 +16,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 import Divider from "@mui/material/Divider";
 import FormLabel from '@mui/material/FormLabel';
-import {ShareSocial} from 'react-share-social' 
+// import {ShareSocial} from 'react-share-social' 
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 export default function Download() {
     const [open, setOpen] = React.useState(false);
@@ -48,7 +48,7 @@ export default function Download() {
         </DialogTitle>
         <DialogContent>
           {/* <DialogContentText> */}
-          <ShareSocial 
+          {/* <ShareSocial 
      url ="fosstube.web.app"
      socialTypes={[
         'facebook',
@@ -63,7 +63,8 @@ export default function Download() {
         'email',
         'ok',
         'mailru']}
-   />
+   /> */}
+   <h1>social</h1>
           {/* </DialogContentText> */}
         </DialogContent>
       

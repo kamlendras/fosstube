@@ -232,7 +232,7 @@ export default function RootLayout({
                       sx={{ flexGrow: 1 }}
                     >
                       <main className={myFont.className}>
-                        <YouTubeIcon sx={{ fontSize: 60,  }}  />
+                        <YouTubeIcon sx={{ fontSize: 60, }} style={{fill: "green"}}/>
                         FossTube
                       </main>
                     </Typography>
