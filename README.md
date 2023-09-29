@@ -99,7 +99,7 @@ fosstube aims to protect the privacy of its users. [Our Privacy Policy](/PRIVACY
 ### License
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
 
-fosstube is Free Software: You can use, study, share and modify it at your will. The app can be redistributed and/or modified under the terms of the
+FossTube is Free Software: You can use, study, share and modify it at your will. The app can be redistributed and/or modified under the terms of the
 [GNU General Public License](https://www.gnu.org/licenses/agpl-3.0.html) version 3 or later published by the Free Software Foundation.
 
 
