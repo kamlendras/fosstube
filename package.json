@@ -5,7 +5,6 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "sir": "next dev -H 192.168.42.2",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
