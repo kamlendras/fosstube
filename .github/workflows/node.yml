@@ -1,35 +1,35 @@
-name: Bun WorkFlow
+# name: Bun WorkFlow
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout 
-        uses: actions/checkout@v3
+#     steps:
+#       - name: Checkout 
+#         uses: actions/checkout@v3
 
-      - name: bun setup
-        uses: oven-sh/setup-bun@v1
+#       - name: bun setup
+#         uses: oven-sh/setup-bun@v1
 
-      - name: Bun Install 
-        run:  bun install && bun build-ssg
+#       - name: Bun Install 
+#         run:  bun install && bun build-ssg
  
-      - name: Bun ssg
-        run:  bun build-ssg
+#       - name: Bun ssg
+#         run:  bun build-ssg
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: out # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+#       - name: Deploy 🚀
+#         uses: JamesIves/github-pages-deploy-action@3.7.1
+#         with:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           BRANCH: gh-pages # The branch the action should deploy to.
+#           FOLDER: out # The folder the action should deploy.
+#           CLEAN: true # Automatically remove deleted files from the deploy branch
 
 
 
