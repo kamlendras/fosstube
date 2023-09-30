@@ -4,13 +4,13 @@
       height="30"
       width="30">
 </sub>
-fosstube - Privacy Policy
+FossTube - Privacy Policy
 </h2>
 
-**fosstube aims to protect the privacy of its users. Our Privacy Policy gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of fosstube as well as the privacy policy of the instance you have chosen inside the platform.**
+**FossTube aims to protect the privacy of its users. Our Privacy Policy gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of fosstube as well as the privacy policy of the instance you have chosen inside the platform.**
 
 ### Information Collection
-fosstube only stores necessary data such as watch history, settings, and bookmarks. Users have the option to refrain from utilizing data storage features. The platform does not gather any information regarding its usage, nor does it create user profiles or track user activity. Additionally, the application avoids implementing tracking mechanisms within third-party libraries that it utilizes.
+FossTube only stores necessary data such as watch history, settings, and bookmarks. Users have the option to refrain from utilizing data storage features. The platform does not gather any information regarding its usage, nor does it create user profiles or track user activity. Additionally, the application avoids implementing tracking mechanisms within third-party libraries that it utilizes.
 
 ### Information Use
 fosstube doesn't share your data with third parties. When using the app without logging in to a fosstube account, no data will be shared with any fosstube servers. Instead, the data will be stored solely on the device. However, once a user logs in to a fosstube account, their subscriptions and playlists will be saved to that account on the corresponding fosstube instance.
