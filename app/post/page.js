@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Checkout from '../../components/checkout';
+import Checkout from '../components/checkout';
 export const metadata = {
     title: "Post - FossTube",
     description: "Open & Decentralized",

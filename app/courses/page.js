@@ -1,6 +1,6 @@
-import Swiper from "../../components/courses/swiper";
-import Copyright2 from "../../components/copyright2";
-import Cardgrid from "../../components/courses/cardgrid";
+import Swiper from "../components/courses/swiper";
+import Copyright2 from "../components/copyright2";
+import Cardgrid from "../components/courses/cardgrid";
 import Toolbar from '@mui/material/Toolbar';
 export const metadata = {
   title: "Courses - FossTube",

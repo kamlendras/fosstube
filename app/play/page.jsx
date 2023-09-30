@@ -1,4 +1,4 @@
-import Swiper from "../../components/play/swiper"
+import Swiper from "../components/play/swiper"
 export const metadata = {
   title: "Play - FossTube",
   description: "Open & Decentralized",

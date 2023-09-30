@@ -1,4 +1,4 @@
-import Community from "../../components/community"
+import Community from "../components/community"
 export const metadata = {
   title: "Community - FossTube",
   description: "Open & Decentralized",

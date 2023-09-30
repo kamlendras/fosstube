@@ -1,5 +1,5 @@
-import Copyright2 from "../../components/copyright2";
-import styles from "../../styles/Bookmarks.module.css";
+import Copyright2 from "../components/copyright2";
+import styles from "../styles/Bookmarks.module.css";
 import BookmarksOutlinedIcon from '@mui/icons-material/BookmarksOutlined';
 import Typography from '@mui/material/Typography';
 export const metadata = {

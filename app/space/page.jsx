@@ -1,6 +1,6 @@
-import Copyright2 from "../../components/copyright2";
+import Copyright2 from "../components/copyright2";
 import React from "react";
-import Checkout from "../../components/space/Checkout";
+import Checkout from "../components/space/Checkout";
 export const metadata = {
   title: "Space - FossTube",
   description: "Open & Decentralized",
