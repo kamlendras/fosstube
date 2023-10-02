@@ -49,7 +49,7 @@ Screenshots
 
 <h2 align="left">
 <sub>
-<img  src="https://fosstube.github.io/star.svg"
+<img  src="https://fosstube.web.app/star.svg"
       height="30"
       width="30">
 </sub>
@@ -61,7 +61,7 @@ Features
 | ----------------- | --- |
 | User Accounts     | ✅ |
 | Subscriptions     | ✅ |
-| Playlists    | ✅ |
+| Playlists         | ✅ |
 | Bookmarks         | ✅ |
 | Channel Tabs      | ✅ |
 | Search Filters    | ✅ |
@@ -71,18 +71,18 @@ Features
 
 <h2 align="left">
 <sub>
-<img  src="https://fosstube.github.io/contributing.svg"
+<img  src="https://fosstube.web.app/contributing.svg"
       height="30"
       width="30">
 </sub>
 Contributing
 </h2>
 
-Whether you have ideas, translations, design changes, code cleaning or really heavy code changes, help is always welcome. The more is done, the better it gets! Please respect our [Code of Conduct](https://github.com/fosstube/codnap/blob/master/CODE_OF_CONDUCT.md) in order to keep all interactions and dicussions healthy.
+Whether you have ideas, translations, design changes, code cleaning or really heavy code changes, help is always welcome. The more is done, the better it gets! Please respect our [Code of Conduct](https://github.com/fosstube/fosstube/blob/master/CODE_OF_CONDUCT.md) in order to keep all interactions and dicussions healthy.
 
 <h2 align="left">
 <sub>
-<img  src="https://fosstube.github.io/lock.svg"
+<img  src="https://fosstube.web.app/lock.svg"
       height="30"
       width="30">
 </sub>
@@ -90,7 +90,7 @@ Privacy Policy and Disclaimer
 </h2>
 
 
-fosstube aims to protect the privacy of its users. [Our Privacy Policy](/PRIVACY_POLICY.md) gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of LibreTube as well as the privacy policy of the instance you have chosen inside the app.
+FossTube aims to protect the privacy of its users. [Our Privacy Policy](/PRIVACY_POLICY.md) gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of LibreTube as well as the privacy policy of the instance you have chosen inside the app.
 
 ### License
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
