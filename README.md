@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="https://fosstube.gi.io/fosstube.png" width="auto" height="auto" alt="fosstube">
+  <img src="https://fosstube.web.app/fosstube.png" width="auto" height="auto" alt="FossTube">
   
 
 </div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
 
-[![Matrix](https://fosstube.github.io/matrixlogo.png)](https://matrix.to/#/#fosstube:matrix.org)
-[![Mastodon](https://fosstube.github.io/mastodonlogo.png)](https://fosstodon.org/@fosstube)
+[![Matrix](https://fosstube.web.app/matrixlogo.png)](https://matrix.to/#/#fosstube:matrix.org)
+[![Mastodon](https://fosstube.web.app/mastodonlogo.png)](https://fosstodon.org/@fosstube)
 
 </div>
 
