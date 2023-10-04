@@ -24,8 +24,8 @@ About
 
 Online vedio sharing and social media platforms run by the community run for the community.
 
-This project is aimed at improving the users' privacy by being independent from Big tech companies and bypassing their data collection.
-
+This project is aimed at make a high quality trusted open source platform, that is for the community
+by the community.
 
 The [Matrix room](https://matrix.to/#/#fosstube:matrix.org) is considered as the main communication protocol.
 
