@@ -2,7 +2,7 @@
   <img src="https://fosstube.web.app/fosstube.png" width="auto" height="auto" alt="FossTube">
   
 
-</div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
+</div><div align="center" style="width:50%; display:flex; justify-content:space-between;">
 
 [![Matrix](https://fosstube.web.app/matrixlogo.png)](https://matrix.to/#/#fosstube:matrix.org)
 [![Mastodon](https://fosstube.web.app/mastodonlogo.png)](https://fosstodon.org/@fosstube)
