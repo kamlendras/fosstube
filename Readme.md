@@ -5,7 +5,7 @@
 </div><div align="center" style="width:50%; display:flex; justify-content:space-between;">
 
 [![Matrix](https://fosstube.web.app/matrixlogo.png)](https://matrix.to/#/#fosstube:matrix.org)
-[![Mastodon](https://fosstube.web.app/mastodonlogo.png)](https://fosstodon.org/@fosstube)
+[![Mastodon](https://fosstube.web.app/mastodonlogo.png)](https://fosstodon.org/@universal)
 
 </div>
 
@@ -27,7 +27,7 @@ Online vedio sharing and social media platforms run by the community run for the
 Project is aimed at make a high quality trusted open source platform.
 
 
-The [Matrix room](https://matrix.to/#/#fosstube:matrix.org) is considered as the main communication protocol.
+The [Matrix room](https://matrix.to/#/#UniversalDev:matrix.org) is considered as the main communication protocol.
 
 <h2 align="left">
 <sub>
@@ -102,6 +102,6 @@ FossTube is Free Software: You can use, study, share and modify it at your will.
 ### Donate
 If you like this project, please consider donating so we can keep this project running forever!
 
-<a href="https://www.buymeacoffee.com/ksingh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me a Coffee" height="28" width="119"></a>
-<a href="https://liberapay.com/ksingh" target="_blank"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg?style=for-the-badge" alt="Liberapay"></a>
+<a href="https://www.buymeacoffee.com/kamlendras" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me a Coffee" height="28" width="119"></a>
+<a href="https://liberapay.com/kamlendras" target="_blank"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg?style=for-the-badge" alt="Liberapay"></a>
 </div>
