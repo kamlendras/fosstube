@@ -83,7 +83,7 @@ Contributing
 </h2>
 
 ### Code Contributions
-If you're a developer, dive into the open-source codebase on GitLab and help improve the platform's core functionality, user interface, or integration with other decentralized services.
+If you're a developer, dive into the open-source codebase on GitHub and help improve the platform's core functionality, user interface, or integration with other decentralized services.
 
 ### Content Creation
 Upload and share your videos directly on Fosstube, promoting diverse content and contributing to the platform's growth.
