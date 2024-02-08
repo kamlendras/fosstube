@@ -31,6 +31,8 @@ While fostering its own decentralized platform, Fosstube simultaneously acts as 
 Fosstube is a versatile frontend designed to enhance the user experience of Invidious and Piped, two open-source platforms focused on providing privacy-centric alternatives to mainstream video hosting services.
 
 By acting as a frontend for these services, Fosstube serves as a unified and user-friendly interface, streamlining the process of discovering and enjoying content while maintaining a commitment to privacy and open-source principles. This frontend likely incorporates features such as a clean and intuitive user interface, efficient search and navigation capabilities, and seamless integration with the underlying Invidious and Piped platforms.
+
+
 The [Matrix room](https://matrix.to/#/#UniversalDev:matrix.org) is considered as the main communication protocol.
 
 <h2 align="left">
@@ -47,7 +49,7 @@ Screenshots
 [<img src="https://fosstube.web.app/ss1.png" width=0% alt="Home">](https://fosstube.web.app/ss1.png)
 [<img src="https://fosstube.web.app/ss2.png" width=40% alt="Home">](https://fosstube.web.app/ss2.png)
 [<img src="https://fosstube.web.app/dss1.png" width=40% alt="Subscriptions">](https://web.app/dss1.png)
-[<img src="https://fosstube.web.app/dss2.png" width=40% alt="Library">](https://fosstube.web.app/dss2.png)
+[<img src="https://fosstube.web.app/dss2.png" width=0% alt="Library">](https://fosstube.web.app/dss2.png)
 
 </div>
 
