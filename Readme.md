@@ -61,8 +61,7 @@ Features
 </h2>
 
 
-| Feature           |    Description |
-| ----------------- | --- |
+
 | User Accounts     | ✅ |
 | Subscriptions     | ✅ |
 | Playlists         | ✅ |
@@ -73,16 +72,17 @@ Features
 | Comments          | ✅ |
 | Captions          | ✅ |
 
-
-| Decentralized Platform |	Fosters community ownership and avoids data collection practices of centralized platforms like YouTube.|
-| ActivityPub Federation |	Connects to other ActivityPub platforms, expanding content reach and fostering interoperability.|
-| Invideous and Piped Integration |	Provides access to vast libraries of decentralized videos within a familiar user interface.|
-| Free and Open-Source | Transparent codebase allows for community contributions and fosters trust.|
-| User Control |	Users own their data and content, unlike on centralized platforms.|
-| Privacy-Focused |	Minimizes data collection and avoids targeted advertising.|
-| Customization |	Users can personalize their experience with themes and settings.|
-| Community-Driven |	Development relies on community contributions, promoting collaboration and ownership.|
-| Accessible |	Open-source nature allows for contributions to improve accessibility for diverse users.|
+| Feature           |    Description |
+| ----------------- | --- |
+| Decentralized Platform |	Fosters community ownership and avoids data collection practices of centralized platforms like YouTube. |
+| ActivityPub Federation |	Connects to other ActivityPub platforms, expanding content reach and fostering interoperability. |
+| Invideous and Piped Integration |	Provides access to vast libraries of decentralized videos within a familiar user interface. |
+| Free and Open-Source | Transparent codebase allows for community contributions and fosters trust. |
+| User Control |	Users own their data and content, unlike on centralized platforms. |
+| Privacy-Focused |	Minimizes data collection and avoids targeted advertising. |
+| Customization |	Users can personalize their experience with themes and settings. |
+| Community-Driven |	Development relies on community contributions, promoting collaboration and ownership. |
+| Accessible |	Open-source nature allows for contributions to improve accessibility for diverse users. |
 | Future-Oriented |	Contributes to the development of a more open and democratic video ecosystem. |
 
 
