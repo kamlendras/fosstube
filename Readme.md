@@ -22,9 +22,8 @@
 About
 </h2>
 
-Online vedio sharing and social media platforms run by the community run for the community.
-
-Project is aimed at make a high quality trusted open source platform.
+# Decentralized Platform: 
+As a free and open-source, ActivityPub federated platform, Fosstube empowers users with control and data ownership. It stands in stark contrast to centralized platforms like YouTube, where users are subject to algorithms and data collection practices. This decentralized nature encourages community ownership and fosters a more open and democratic online video ecosystem.
 
 
 The [Matrix room](https://matrix.to/#/#UniversalDev:matrix.org) is considered as the main communication protocol.
