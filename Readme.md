@@ -102,8 +102,19 @@ Please respect our [Code of Conduct](https://github.com/fosstube/fosstube/blob/m
 Privacy Policy and Disclaimer
 </h2>
 
+At Fosstube, we are committed to protecting your privacy and ensuring the security of your personal information. When you use our platform, we may collect certain data to enhance your user experience, but rest assured, we prioritize the confidentiality and responsible use of your information.
 
-FossTube aims to protect the privacy of its users. [Our Privacy Policy](/PRIVACY_POLICY.md) gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of FossTube as well as the privacy policy of the instance you have chosen inside the software.
+1. Data Collection:
+We collect minimal data required for the functionality of Fosstube. This may include user preferences, session information, and non-personalized usage statistics. We do not store personally identifiable information unless explicitly provided by users for specific features.
+
+2. Usage of Information:
+The collected data is used solely for improving Fosstube's performance, enhancing user experience, and maintaining the platform's integrity. We do not share or sell any personal information with third parties.
+
+3. Cookies and Tracking:
+Fosstube may use cookies and similar technologies to enhance your browsing experience. These tools help us analyze usage patterns and improve our services. You can adjust your browser settings to manage or disable cookies, though this may affect certain features of the platform.
+
+4. Third-Party Services:
+Fosstube may integrate with third-party services such as Invidious and Piped. Users are encouraged to review the privacy policies of these services independently, as they operate under their respective terms.
 
 ### License
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
