@@ -116,7 +116,14 @@ Fosstube may use cookies and similar technologies to enhance your browsing exper
 4. Third-Party Services:
 Fosstube may integrate with third-party services such as Invidious and Piped. Users are encouraged to review the privacy policies of these services independently, as they operate under their respective terms.
 
-# Disclaimer:
+<h2 align="left">
+<sub>
+<img  src="https://fosstube.web.app/lock.svg"
+      height="30"
+      width="30">
+</sub>
+Disclaimer
+</h2>
 
 1. Content Accuracy:
 Fosstube strives to provide accurate and up-to-date information, but we do not guarantee the accuracy, completeness, or timeliness of the content. Users should independently verify information before relying on it.
