@@ -81,14 +81,18 @@ Features
 </sub>
 Contributing
 </h2>
-## Code Contributions:
+
+### Code Contributions
 If you're a developer, dive into the open-source codebase on GitLab and help improve the platform's core functionality, user interface, or integration with other decentralized services.
-## Content Creation: 
+
+### Content Creation
 Upload and share your videos directly on Fosstube, promoting diverse content and contributing to the platform's growth.
-## Translation & Localization: 
+
+### Translation & Localization: 
 Help make Fosstube accessible to a wider audience by translating its interface and documentation into new languages.
 Spreading the Word: Raise awareness about Fosstube in your online communities and networks, encouraging others to explore and contribute to this alternative video platform.
-## Testing & Feedback:
+
+### Testing & Feedback
 Become a tester and provide valuable feedback on new features and bug fixes, helping to shape the future of Fosstube.
 
 Remember, every contribution, big or small, helps build a stronger and more vibrant decentralized video ecosystem. So, choose your way to participate and become part of the movement towards open and ethical video sharing!
