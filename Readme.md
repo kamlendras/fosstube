@@ -1,18 +1,3 @@
-<div align="center">
-  <img src="https://fosstube.web.app/fosstube.png" width="auto" height="auto" alt="FossTube">
-  
-
-</div><div align="center" style="width:30%; display:flex; justify-content:space-between;">
-
-[![Matrix](https://fosstube.web.app/matrixlogo.png)](https://matrix.to/#/#fosstube:matrix.org)
-[![Mastodon](https://fosstube.web.app/mastodonlogo.png)](https://fosstodon.org/@universal)
-
-</div>
-
-
-
-
-
 <h2 align="left">
 <sub>
 <img  src="https://fosstube.web.app/info.svg"
