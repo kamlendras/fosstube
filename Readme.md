@@ -119,8 +119,8 @@ FossTube is Free Software: You can use, study, share and modify it at your will.
 [GNU General Public License](https://www.gnu.org/licenses/agpl-3.0.html) version 3 or later published by the Free Software Foundation.
 
 
-### Donate
-If you like this project, please consider donating so we can keep this project running forever!
+### Support the Future of Open Video: Donate to Fosstube!
+Fosstube stands at the forefront of a decentralized video revolution, empowering users with control and fostering an open ecosystem. But building and maintaining this alternative platform requires ongoing support. Your donation, no matter how big or small, fuels the development, improves features, and expands reach. By donating to Fosstube, you're not just giving money, you're investing in a future where video sharing is open, transparent, and user-driven. Become part of the movement and contribute to a thriving decentralized video landscape. Donate to Fosstube today!
 
 <a href="https://www.buymeacoffee.com/kamlendras" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me a Coffee" height="28" width="119"></a>
 <a href="https://liberapay.com/kamlendras" target="_blank"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg?style=for-the-badge" alt="Liberapay"></a>
