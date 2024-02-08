@@ -4,7 +4,7 @@
       height="30"
       width="30">
 </sub>
-About
+Info
 </h2>
 
 # Decentralized Platform
