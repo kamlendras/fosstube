@@ -46,10 +46,10 @@ Screenshots
 
 <div style="width:100%; display:flex; justify-content:space-between;">
 
-[<img src="https://fosstube.web.app/ss1.png" width=20% alt="Home">](https://fosstube.web.app/ss1.png)
-[<img src="https://fosstube.web.app/ss2.png" width=20% alt="Home">](https://fosstube.web.app/ss2.png)
-[<img src="https://fosstube.web.app/dss1.png" width=20% alt="Subscriptions">](https://web.app/dss1.png)
-[<img src="https://fosstube.web.app/dss2.png" width=20% alt="Library">](https://fosstube.web.app/dss2.png)
+[<img src="https://fosstube.web.app/ss1.png" width=40% alt="Home">](https://fosstube.web.app/ss1.png)
+[<img src="https://fosstube.web.app/ss2.png" width=40% alt="Home">](https://fosstube.web.app/ss2.png)
+[<img src="https://fosstube.web.app/dss1.png" width=40% alt="Subscriptions">](https://web.app/dss1.png)
+[<img src="https://fosstube.web.app/dss2.png" width=40% alt="Library">](https://fosstube.web.app/dss2.png)
 
 </div>
 
