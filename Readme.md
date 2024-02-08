@@ -99,7 +99,7 @@ Please respect our [Code of Conduct](https://github.com/fosstube/fosstube/blob/m
       height="30"
       width="30">
 </sub>
-Privacy Policy and Disclaimer
+Privacy Policy 
 </h2>
 
 At Fosstube, we are committed to protecting your privacy and ensuring the security of your personal information. When you use our platform, we may collect certain data to enhance your user experience, but rest assured, we prioritize the confidentiality and responsible use of your information.
@@ -115,6 +115,25 @@ Fosstube may use cookies and similar technologies to enhance your browsing exper
 
 4. Third-Party Services:
 Fosstube may integrate with third-party services such as Invidious and Piped. Users are encouraged to review the privacy policies of these services independently, as they operate under their respective terms.
+
+# Disclaimer:
+
+1. Content Accuracy:
+Fosstube strives to provide accurate and up-to-date information, but we do not guarantee the accuracy, completeness, or timeliness of the content. Users should independently verify information before relying on it.
+
+2. Third-Party Links:
+Fosstube may contain links to third-party websites for additional content or resources. We are not responsible for the content, privacy policies, or practices of these external sites and encourage users to review their policies independently.
+
+3. Platform Availability:
+While we make every effort to ensure uninterrupted access to Fosstube, we cannot guarantee the platform's availability at all times. Maintenance, updates, and unforeseen issues may temporarily impact access.
+
+4. Use of Fosstube:
+Users are expected to use Fosstube in compliance with applicable laws and regulations. We disclaim any liability for the misuse of the platform or any consequences arising from such misuse.
+
+5. Changes to Policies:
+Fosstube reserves the right to update and modify the Privacy Policy and Disclaimer. Users are encouraged to periodically review these policies for any changes.
+
+By using Fosstube, you agree to the terms outlined in the Privacy Policy and Disclaimer. If you have any questions or concerns, please contact us at [https://matrix.to/#/#UniversalDev:matrix.org]. Last updated: [9 Feb, 2024].
 
 ### License
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
