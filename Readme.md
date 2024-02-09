@@ -11,7 +11,7 @@ FossTube
 ![Matrix](https://img.shields.io/badge/matrix-000000?style=for-the-badge&logo=Matrix&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Rss](https://img.shields.io/badge/rss-F88900?style=for-the-badge&logo=rss&logoColor=white)
-[![discord-badge]][discord]
+![discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 [![License](https://img.shields.io/github/license/universal-org/fosstube?style=flat)](#license)
 
 # Decentralized Platform
@@ -198,5 +198,4 @@ Fosstube stands at the forefront of a decentralized video revolution, empowering
 ![Z Cash](https://img.shields.io/badge/Zcash-F4B728?style=for-the-badge&logo=zcash&logoColor=white)
 
 
-[discord]: https://discord.gg/QAjfh2gZE4
-[discord-badge]: https://img.shields.io/discord/742612686679965696?color=%235865F2&label=%20&logo=discord&logoColor=white&style=flat-square
+
