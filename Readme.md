@@ -1,11 +1,22 @@
-<h2 align="left">
+<h1 align="left">
 <sub>
 <img  src="https://fosstube.web.app/info.svg"
       height="30"
       width="30">
 </sub>
-Info
-</h2>
+FossTube
+</h1>
+
+![discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+<a href="https://t.me/UniversalDevelopers" target="_blank">
+![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
+<a href="https://matrix.to/#/#UniversalDev:matrix.org" target="_blank"><a/>
+![Matrix](https://img.shields.io/badge/matrix-000000?style=for-the-badge&logo=Matrix&logoColor=white)<a/>
+<a href="https://hub.docker.com/r/kamlendras/fosstube/tags" target="_blank">
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)<a/>
+![Rss](https://img.shields.io/badge/rss-F88900?style=for-the-badge&logo=rss&logoColor=white)
+
+
 
 # Decentralized Platform
 As a free and open-source, ActivityPub federated platform, Fosstube empowers users with control and data ownership. It stands in stark contrast to centralized platforms like YouTube, where users are subject to algorithms and data collection practices. This decentralized nature encourages community ownership and fosters a more open and democratic online video ecosystem.
@@ -18,7 +29,6 @@ Fosstube is a versatile frontend designed to enhance the user experience of Invi
 By acting as a frontend for these services, Fosstube serves as a unified and user-friendly interface, streamlining the process of discovering and enjoying content while maintaining a commitment to privacy and open-source principles. This frontend likely incorporates features such as a clean and intuitive user interface, efficient search and navigation capabilities, and seamless integration with the underlying Invidious and Piped platforms.
 
 
-The [Matrix room](https://matrix.to/#/#UniversalDev:matrix.org) is considered as the main communication protocol.
 
 <h2 align="left">
 <sub>
@@ -91,7 +101,7 @@ Become a tester and provide valuable feedback on new features and bug fixes, hel
 Remember, every contribution, big or small, helps build a stronger and more vibrant decentralized video ecosystem. So, choose your way to participate and become part of the movement towards open and ethical video sharing!
 
 
-Please respect our [Code of Conduct](https://github.com/fosstube/fosstube/blob/master/CODE_OF_CONDUCT.md) in order to keep all interactions and dicussions healthy.
+
 
 <h2 align="left">
 <sub>
@@ -140,7 +150,7 @@ Users are expected to use Fosstube in compliance with applicable laws and regula
 5. Changes to Policies:
 Fosstube reserves the right to update and modify the Privacy Policy and Disclaimer. Users are encouraged to periodically review these policies for any changes.
 
-By using Fosstube, you agree to the terms outlined in the Privacy Policy and Disclaimer. If you have any questions or concerns, please contact us at [https://matrix.to/#/#UniversalDev:matrix.org]. Last updated: [9 Feb, 2024].
+By using Fosstube, you agree to the terms outlined in the Privacy Policy and Disclaimer. If you have any questions or concerns, please contact us at [Matrix](https://matrix.to/#/#UniversalDev:matrix.org). Last updated: [9 Feb, 2024].
 
 ### License
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
@@ -152,6 +162,46 @@ FossTube is Free Software: You can use, study, share and modify it at your will.
 ### Support the Future of Open Video: Donate to Fosstube!
 Fosstube stands at the forefront of a decentralized video revolution, empowering users with control and fostering an open ecosystem. But building and maintaining this alternative platform requires ongoing support. Your donation, no matter how big or small, fuels the development, improves features, and expands reach. By donating to Fosstube, you're not just giving money, you're investing in a future where video sharing is open, transparent, and user-driven. Become part of the movement and contribute to a thriving decentralized video landscape. Donate to Fosstube today!
 
-<a href="https://www.buymeacoffee.com/kamlendras" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me a Coffee" height="28" width="119"></a>
-<a href="https://liberapay.com/kamlendras" target="_blank"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg?style=for-the-badge" alt="Liberapay"></a>
-</div>
+
+
+
+![Amazon Pay](https://img.shields.io/badge/AmazonPay-ff9900.svg?style=for-the-badge&logo=Amazon-Pay&logoColor=white)
+![Apple Pay](https://img.shields.io/badge/ApplePay-000000.svg?style=for-the-badge&logo=Apple-Pay&logoColor=white)
+<a href="https://www.buymeacoffee.com/kamlendras" target="_blank">
+![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)</a>
+![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)
+![Google Pay](https://img.shields.io/badge/GooglePay-%233780F1.svg?style=for-the-badge&logo=Google-Pay&logoColor=white)
+![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)
+<a href="https://liberapay.com/kamlendras" target="_blank">
+![LiberaPay](https://img.shields.io/badge/Liberapay-F6C915?style=for-the-badge&logo=liberapay&logoColor=black)</a>
+![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)
+![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
+![Paytm](https://img.shields.io/badge/Paytm-1C2C94?style=for-the-badge&logo=paytm&logoColor=05BAF3)
+![Phonepe](https://img.shields.io/badge/Phonepe-54039A?style=for-the-badge&logo=phonepe&logoColor=white)
+![Samsung Pay](https://img.shields.io/badge/SamsungPay-1428A0.svg?style=for-the-badge&logo=Samsung-Pay&logoColor=white)
+![Wise](https://img.shields.io/badge/Wise-394e79?style=for-the-badge&logo=wise&logoColor=00B9FF)
+
+
+![Amp](https://img.shields.io/badge/Amp-005AF0?style=for-the-badge&logo=amp&logoColor=white)
+![Bitcoin](https://img.shields.io/badge/Bitcoin-000?style=for-the-badge&logo=bitcoin&logoColor=white)
+![Bitcoin Cash](https://img.shields.io/badge/Bitcoin%20Cash-0AC18E?style=for-the-badge&logo=Bitcoin%20Cash&logoColor=white)
+![Bitcoin SV](https://img.shields.io/badge/Bitcoin%20SV-EAB300?style=for-the-badge&logo=Bitcoin%20SV&logoColor=white)
+![Binance](https://img.shields.io/badge/Binance-FCD535?style=for-the-badge&logo=binance&logoColor=white)
+![Chainlink](https://img.shields.io/badge/Chainlink-375BD2?style=for-the-badge&logo=Chainlink&logoColor=white)
+![Dogecoin](https://img.shields.io/badge/dogecoin-B59A30?style=for-the-badge&logo=dogecoin&logoColor=white)
+![Dash](https://img.shields.io/badge/dash-008DE4?style=for-the-badge&logo=dash&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
+![Iota](https://img.shields.io/badge/iota-29334C?style=for-the-badge&logo=iota&logoColor=white)
+![Litecoin](https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white)
+![Monero](https://img.shields.io/badge/monero-FF6600?style=for-the-badge&logo=monero&logoColor=white)
+![Polkadot](https://img.shields.io/badge/polkadot-E6007A?style=for-the-badge&logo=polkadot&logoColor=white)
+![Stellar](https://img.shields.io/badge/Stellar-7D00FF?style=for-the-badge&logo=Stellar&logoColor=white)
+![Tether](https://img.shields.io/badge/tether-168363?style=for-the-badge&logo=tether&logoColor=white)
+![Xrp](https://img.shields.io/badge/Xrp-black?style=for-the-badge&logo=xrp&logoColor=white)
+![Z Cash](https://img.shields.io/badge/Zcash-F4B728?style=for-the-badge&logo=zcash&logoColor=white)
+
+
+
+
+
+
