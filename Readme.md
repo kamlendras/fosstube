@@ -101,7 +101,7 @@ Become a tester and provide valuable feedback on new features and bug fixes, hel
 Remember, every contribution, big or small, helps build a stronger and more vibrant decentralized video ecosystem. So, choose your way to participate and become part of the movement towards open and ethical video sharing!
 
 
-Please respect our [Code of Conduct](https://github.com/fosstube/fosstube/blob/master/CODE_OF_CONDUCT.md) in order to keep all interactions and dicussions healthy.
+
 
 <h2 align="left">
 <sub>
@@ -150,7 +150,7 @@ Users are expected to use Fosstube in compliance with applicable laws and regula
 5. Changes to Policies:
 Fosstube reserves the right to update and modify the Privacy Policy and Disclaimer. Users are encouraged to periodically review these policies for any changes.
 
-By using Fosstube, you agree to the terms outlined in the Privacy Policy and Disclaimer. If you have any questions or concerns, please contact us at [https://matrix.to/#/#UniversalDev:matrix.org]. Last updated: [9 Feb, 2024].
+By using Fosstube, you agree to the terms outlined in the Privacy Policy and Disclaimer. If you have any questions or concerns, please contact us at [Matrix](https://matrix.to/#/#UniversalDev:matrix.org). Last updated: [9 Feb, 2024].
 
 ### License
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
