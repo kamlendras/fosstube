@@ -7,7 +7,7 @@
 FossTube
 </h1>
 
-![Monero](https://img.shields.io/badge/monero-FF6600?style=for-the-badge&logo=monero&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![Rss](https://img.shields.io/badge/rss-F88900?style=for-the-badge&logo=rss&logoColor=white)
 [![discord-badge]][discord]
 [![License](https://img.shields.io/github/license/universal-org/fosstube?style=flat)](#license)
