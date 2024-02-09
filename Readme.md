@@ -196,6 +196,7 @@ Fosstube stands at the forefront of a decentralized video revolution, empowering
 ![Tether](https://img.shields.io/badge/tether-168363?style=for-the-badge&logo=tether&logoColor=white)
 ![Xrp](https://img.shields.io/badge/Xrp-black?style=for-the-badge&logo=xrp&logoColor=white)
 ![Z Cash](https://img.shields.io/badge/Zcash-F4B728?style=for-the-badge&logo=zcash&logoColor=white)
+
 [BuyMeACoffee]: https://www.buymeacoffee.com/kamlendras
 [LiberaPay]: https://liberapay.com/kamlendras
 [discord]: https://discord.gg/QAjfh2gZE4
