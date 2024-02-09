@@ -27,7 +27,6 @@ Fosstube is a versatile frontend designed to enhance the user experience of Invi
 By acting as a frontend for these services, Fosstube serves as a unified and user-friendly interface, streamlining the process of discovering and enjoying content while maintaining a commitment to privacy and open-source principles. This frontend likely incorporates features such as a clean and intuitive user interface, efficient search and navigation capabilities, and seamless integration with the underlying Invidious and Piped platforms.
 
 
-The [Matrix room](https://matrix.to/#/#UniversalDev:matrix.org) is considered as the main communication protocol.
 
 <h2 align="left">
 <sub>
