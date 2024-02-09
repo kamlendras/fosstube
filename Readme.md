@@ -4,8 +4,11 @@
       height="30"
       width="30">
 </sub>
-Info
+FossTube
 </h2>
+[![Test Matrix](https://github.com/universal-org/fosstube/workflows/Tests/badge.svg)](https://github.com/universal-org/fosstube/actions/workflows/run-tests.yml)
+[![Test Matrix](https://github.com/universal-org/fosstube/workflows/Docker/badge.svg)](https://github.com/universal-org/fosstube/actions/workflows/build-docker.yml)
+[![License](https://img.shields.io/github/license/universal-org/fosstube?style=flat)](#license)
 
 # Decentralized Platform
 As a free and open-source, ActivityPub federated platform, Fosstube empowers users with control and data ownership. It stands in stark contrast to centralized platforms like YouTube, where users are subject to algorithms and data collection practices. This decentralized nature encourages community ownership and fosters a more open and democratic online video ecosystem.
