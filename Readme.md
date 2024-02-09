@@ -159,9 +159,7 @@ FossTube is Free Software: You can use, study, share and modify it at your will.
 ### Support the Future of Open Video: Donate to Fosstube!
 Fosstube stands at the forefront of a decentralized video revolution, empowering users with control and fostering an open ecosystem. But building and maintaining this alternative platform requires ongoing support. Your donation, no matter how big or small, fuels the development, improves features, and expands reach. By donating to Fosstube, you're not just giving money, you're investing in a future where video sharing is open, transparent, and user-driven. Become part of the movement and contribute to a thriving decentralized video landscape. Donate to Fosstube today!
 
-<a href="https://www.buymeacoffee.com/kamlendras" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me a Coffee" height="28" width="119"></a>
-<a href="" target="_blank"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg?style=for-the-badge" alt="Liberapay"></a>
-</div>
+
 
 
 ![Amazon Pay](https://img.shields.io/badge/AmazonPay-ff9900.svg?style=for-the-badge&logo=Amazon-Pay&logoColor=white)
@@ -171,7 +169,8 @@ Fosstube stands at the forefront of a decentralized video revolution, empowering
 ![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)
 ![Google Pay](https://img.shields.io/badge/GooglePay-%233780F1.svg?style=for-the-badge&logo=Google-Pay&logoColor=white)
 ![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)
-![LiberaPay](https://img.shields.io/badge/Liberapay-F6C915?style=for-the-badge&logo=liberapay&logoColor=black)
+<a href="https://liberapay.com/kamlendras" target="_blank">
+![LiberaPay](https://img.shields.io/badge/Liberapay-F6C915?style=for-the-badge&logo=liberapay&logoColor=black)</a>
 ![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)
 ![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
 ![Paytm](https://img.shields.io/badge/Paytm-1C2C94?style=for-the-badge&logo=paytm&logoColor=05BAF3)
@@ -198,7 +197,6 @@ Fosstube stands at the forefront of a decentralized video revolution, empowering
 ![Xrp](https://img.shields.io/badge/Xrp-black?style=for-the-badge&logo=xrp&logoColor=white)
 ![Z Cash](https://img.shields.io/badge/Zcash-F4B728?style=for-the-badge&logo=zcash&logoColor=white)
 
-[BuyMeACoffee]: https://www.buymeacoffee.com/kamlendras
-[LiberaPay]: https://liberapay.com/kamlendras
+
 [discord]: https://discord.gg/QAjfh2gZE4
 [discord-badge]: https://img.shields.io/discord/742612686679965696?color=%235865F2&label=%20&logo=discord&logoColor=white&style=flat-square
