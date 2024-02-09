@@ -118,7 +118,7 @@ Fosstube may integrate with third-party services such as Invidious and Piped. Us
 
 <h2 align="left">
 <sub>
-<img  src=""
+<img  src="https://files.mastodon.social/media_attachments/files/111/898/712/075/657/497/original/33ddc34458b38146.png"
       height="30"
       width="30">
 </sub>
