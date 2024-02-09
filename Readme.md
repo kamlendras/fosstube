@@ -8,6 +8,7 @@ FossTube
 </h1>
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 ![Rss](https://img.shields.io/badge/rss-F88900?style=for-the-badge&logo=rss&logoColor=white)
 [![discord-badge]][discord]
 [![License](https://img.shields.io/github/license/universal-org/fosstube?style=flat)](#license)
