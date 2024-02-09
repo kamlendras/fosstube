@@ -10,7 +10,6 @@ FossTube
 [![Test Matrix](https://github.com/universal-org/fosstube/workflows/Tests/badge.svg)](https://github.com/universal-org/fosstube/actions/workflows/run-tests.yml)
 [![Test Matrix](https://github.com/universal-org/fosstube/workflows/Docker/badge.svg)](https://github.com/universal-org/fosstube/actions/workflows/build-docker.yml)
 [![discord-badge]][discord]
-[![jsdelivr-badge]][jsdelivr]
 [![License](https://img.shields.io/github/license/universal-org/fosstube?style=flat)](#license)
 
 # Decentralized Platform
@@ -162,7 +161,5 @@ Fosstube stands at the forefront of a decentralized video revolution, empowering
 <a href="https://liberapay.com/kamlendras" target="_blank"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg?style=for-the-badge" alt="Liberapay"></a>
 </div>
 
-[jsdelivr]: https://www.jsdelivr.com/package/npm/vidstack
-[jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/vidstack/badge
 [discord]: https://discord.gg/QAjfh2gZE4
 [discord-badge]: https://img.shields.io/discord/742612686679965696?color=%235865F2&label=%20&logo=discord&logoColor=white&style=flat-square
