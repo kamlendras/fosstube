@@ -1,11 +1,11 @@
-<h2 align="left">
+<h1 align="left">
 <sub>
 <img  src="https://fosstube.web.app/info.svg"
       height="30"
       width="30">
 </sub>
 FossTube
-</h2>
+</h1>
 
 [![Test Matrix](https://github.com/universal-org/fosstube/workflows/Tests/badge.svg)](https://github.com/universal-org/fosstube/actions/workflows/run-tests.yml)
 [![Test Matrix](https://github.com/universal-org/fosstube/workflows/Docker/badge.svg)](https://github.com/universal-org/fosstube/actions/workflows/build-docker.yml)
