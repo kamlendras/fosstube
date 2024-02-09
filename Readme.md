@@ -7,12 +7,13 @@
 FossTube
 </h1>
 
+![discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 ![Matrix](https://img.shields.io/badge/matrix-000000?style=for-the-badge&logo=Matrix&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Rss](https://img.shields.io/badge/rss-F88900?style=for-the-badge&logo=rss&logoColor=white)
-![discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-[![License](https://img.shields.io/github/license/universal-org/fosstube?style=flat)](#license)
+
+
 
 # Decentralized Platform
 As a free and open-source, ActivityPub federated platform, Fosstube empowers users with control and data ownership. It stands in stark contrast to centralized platforms like YouTube, where users are subject to algorithms and data collection practices. This decentralized nature encourages community ownership and fosters a more open and democratic online video ecosystem.
