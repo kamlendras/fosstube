@@ -21,12 +21,8 @@ FossTube
 # Decentralized Platform
 As a free and open-source, ActivityPub federated platform, Fosstube empowers users with control and data ownership. It stands in stark contrast to centralized platforms like YouTube, where users are subject to algorithms and data collection practices. This decentralized nature encourages community ownership and fosters a more open and democratic online video ecosystem.
 
-# Invideous and Piped Interface
-While fostering its own decentralized platform, Fosstube simultaneously acts as a frontend for existing peer-to-peer video streaming services like Invideous and Piped. This provides users with immediate access to a vast library of videos hosted on decentralized networks, without sacrificing a user-friendly interface familiar to those accustomed to traditional platforms
 
-Fosstube is a versatile frontend designed to enhance the user experience of Invidious and Piped, two open-source platforms focused on providing privacy-centric alternatives to mainstream video hosting services.
 
-By acting as a frontend for these services, Fosstube serves as a unified and user-friendly interface, streamlining the process of discovering and enjoying content while maintaining a commitment to privacy and open-source principles. This frontend likely incorporates features such as a clean and intuitive user interface, efficient search and navigation capabilities, and seamless integration with the underlying Invidious and Piped platforms.
 
 
 
@@ -65,7 +61,6 @@ Features
 | ----------------- | --- |
 | Decentralized Platform |	Fosters community ownership and avoids data collection practices of centralized platforms like YouTube. |
 | ActivityPub Federation |	Connects to other ActivityPub platforms, expanding content reach and fostering interoperability. |
-| Invideous and Piped Integration |	Provides access to vast libraries of decentralized videos within a familiar user interface. |
 | Free and Open-Source | Transparent codebase allows for community contributions and fosters trust. |
 | User Control |	Users own their data and content, unlike on centralized platforms. |
 | Privacy-Focused |	Minimizes data collection and avoids targeted advertising. |
