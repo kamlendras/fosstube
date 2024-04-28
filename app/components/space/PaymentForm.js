@@ -9,7 +9,7 @@ export default function PaymentForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Payment method
+        Earn Money
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
@@ -56,8 +56,8 @@ export default function PaymentForm() {
         <Grid item xs={12}>
           <FormControlLabel
             control={<Checkbox color="secondary" name="saveCard" value="yes" />}
-            label="Remember credit card details for next time"
-          />
+            label="For human verification one-time 1$ will be deducted from your account ( Help us fight against botnet world )"
+            disabled checked/>
         </Grid>
       </Grid>
     </React.Fragment>

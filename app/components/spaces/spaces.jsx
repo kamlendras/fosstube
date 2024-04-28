@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import  { useState } from "react";
 
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -25,6 +25,10 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const defaultTheme = createTheme();
 
 export default function Album() {
+  const [active, setActive] = useState(false);
+    const handleClick = () => {
+      setActive(!active);
+    };
   return (
    <>
      
@@ -61,7 +65,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">Follow</Button>
+                    <Button size="small" onClick={handleClick}>{ active ? "following" : "follow"}</Button>
                     
                   </CardActions>
                 </Card>
