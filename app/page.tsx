@@ -12,8 +12,7 @@ export default function C() {
       <Toolbar />
       <Chips />
       <Cardgrid />
-    // <div className="expn">
-    // </div>
+
     </>
   );
 }
