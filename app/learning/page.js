@@ -1,35 +1,17 @@
-import Copyright2 from "../_components/copyright2";
-import styles from "../_styles/Bookmarks.module.css";
-import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
-import Typography from '@mui/material/Typography';
+import Toolbar from "@mui/material/Toolbar";
+import Cardgrid from "../_components/learning/cardgrid";
 export const metadata = {
-  title: "Learning - FossTube",
+  title: "FossTube",
   description: "Open & Decentralized",
 };
-function learning() {
+export default function C() {
   return (
     <>
-      <div className={styles.Container}>
-        <div className={styles.Content}>
-          <div className={styles.CTA}></div>
-          <span className={styles.bookmark}>
-            {/* <img src="/bookmark.svg" height={312} width={312} alt="heart"></img> */}
-            <ConstructionOutlinedIcon sx={{ color: 'text.primary', fontSize: 312, fontWeight: 'medium' }} />
-          </span>
+      <Toolbar />
+      <Toolbar />
+     
+      <Cardgrid />
 
-          {/* <p className={styles.text}> */}
-          <Typography variant="h6" gutterBottom>
-          This Page is in Construction.
-      </Typography>
-      {/* </p> */}
-
-          <span className={styles.Footern}>
-            <Copyright2 />
-          </span>
-        </div>
-      </div>
     </>
   );
 }
-
-export default learning;
