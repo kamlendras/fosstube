@@ -1,4 +1,5 @@
-import Swiper from "../_components/play/swiper"
+import Main from "../_components/play/main"
+import Toolbar from '@mui/material/Toolbar';
 export const metadata = {
   title: "Play - FossTube",
   description: "Open & Decentralized",
@@ -6,7 +7,9 @@ export const metadata = {
 export default function App() {
   return (
     <>
-      <Swiper/>
+    {/* <Toolbar /> */}
+      <Main/>
+      {/* <Toolbar /> */}
     </>
   );
 }
