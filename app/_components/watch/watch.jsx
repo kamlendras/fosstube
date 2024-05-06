@@ -49,6 +49,7 @@ export default function App() {
         <Grid item xs={12} sm={12} md={12} lg={9.5} xl={9.5}>
           {/* <Grid item xs={12} sm={12} md={12} lg={12} xl={12}> */}
           <MediaPlayer
+          autoPlay
             title="Sprite Fight"
             src="/video.mp4"
             poster="https://image.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/thumbnail.webp?time=268&width=980"
