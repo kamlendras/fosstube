@@ -656,15 +656,13 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="/report"
-                            className={pathname == "/report" ? "active" : ""}
+                            href="https://github.com/universal-org/fosstube/issues"
+                           
                           >
                             <ListItemButton>
                               <ListItemIcon>
                                 <OutlinedFlagIcon
-                                  className={
-                                    pathname == "/report" ? "active" : ""
-                                  }
+                               
                                 />
                               </ListItemIcon>
                               <ListItemText primary="Report" />
@@ -686,7 +684,7 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="https://github.com/fosstube/fosstube.github.io/issues"
+                            href="https://github.com/universal-org/fosstube/issues"
                            
                           >
                             <ListItemButton>
