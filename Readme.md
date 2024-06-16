@@ -148,10 +148,10 @@ Fosstube reserves the right to update and modify the Privacy Policy and Disclaim
 By using Fosstube, you agree to the terms outlined in the Privacy Policy and Disclaimer. If you have any questions or concerns, please contact us at [Matrix](https://matrix.to/#/#UniversalDev:matrix.org). Last updated: [9 Feb, 2024].
 
 ### License
-[![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
+[![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 FossTube is Free Software: You can use, study, share and modify it at your will. The app can be redistributed and/or modified under the terms of the
-[GNU General Public License](https://www.gnu.org/licenses/agpl-3.0.html) version 3 or later published by the Free Software Foundation.
+[GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html) version 3 or later published by the Free Software Foundation.
 
 
 ### Support the Future of Open Video: Donate to Fosstube!
