@@ -61,42 +61,42 @@ export default function AccountMenu() {
 
   return (
     <React.Fragment>
-<header>
-      <noscript>
-        {/* <style>{`.nojs-show { opacity: 1; top: 0; }`}</style> */}
-      </noscript>
-      <div 
-      // className={styles.signedInStatus}
-      >
-        <p
+      <header>
+        <noscript>
+          {/* <style>{`.nojs-show { opacity: 1; top: 0; }`}</style> */}
+        </noscript>
+        <div
+        // className={styles.signedInStatus}
+        >
+          <p
           // className={`nojs-show ${
           //   !session && loading ? styles.loading : styles.loaded
           // }`}
-        >
-          {!session && (
-            <>
-              {/* <span 
+          >
+            {!session && (
+              <>
+                {/* <span 
               className={styles.notSignedInText}>
                 You are not signed in
               </span> */}
-              <a
-                href={`/api/auth/signin`}
-                // className={styles.buttonPrimary}
-                onClick={(e) => {
-                  e.preventDefault()
-                  signIn()
-                }}
-              >
-                 <Fab 
-          variant="extended"
-           size="small" color="success">
-<GitHubIcon sx={{ mr: 1 }} />
-Sign in with GitHub
-</Fab>
-              </a>
-            </>
-          )}
-          {/* {session?.user && (
+                <a
+                  href={`/api/auth/signin`}
+                  // className={styles.buttonPrimary}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    signIn()
+                  }}
+                >
+                  <Fab
+                    variant="extended"
+                    size="small" color="success">
+                    <GitHubIcon sx={{ mr: 1 }} />
+                    Sign in with GitHub
+                  </Fab>
+                </a>
+              </>
+            )}
+            {/* {session?.user && (
             <>
               {session.user.image && (
                 <span
@@ -121,10 +121,10 @@ Sign in with GitHub
               </a>
             </>
           )} */}
-        </p>
-      </div>
-     
-    </header>
+          </p>
+        </div>
+
+      </header>
 
       <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
         <Tooltip>
@@ -136,26 +136,26 @@ Sign in with GitHub
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
-            <Avatar sx={{ width: 42, height: 42 }}> 
-            
-            {session?.user && (
-            <>
-              {session.user.image && (
-                <span
-                  style={{ backgroundImage: `url('${session.user.image}')` }}
-                  className={styles.avatar}
-                />
+            <Avatar sx={{ width: 42, height: 42 }}>
+
+              {session?.user && (
+                <>
+                  {session.user.image && (
+                    <span
+                      style={{ backgroundImage: `url('${session.user.image}')` }}
+                      className={styles.avatar}
+                    />
+                  )}
+
+
+                </>
               )}
-             
-             
-            </>
-          )}
-            
-            
-            
-            
-            
-             </Avatar>
+
+
+
+
+
+            </Avatar>
           </IconButton>
         </Tooltip>
       </Box>
@@ -199,42 +199,42 @@ Sign in with GitHub
         <MenuItem onClick={handleClose}>
           <Grid container columnSpacing={2}>
             <Grid xs={3}>
-            <ListItemAvatar>
-         
-      
-            {session?.user && (
-            <>
-              {session.user.image && (
-                <span
-                  style={{ backgroundImage: `url('${session.user.image}')` }}
-                  className={styles.avatar}
-                />
-              )}
-             
-             
-            </>
-          )}
-      </ListItemAvatar>
+              <ListItemAvatar>
+
+
+                {session?.user && (
+                  <>
+                    {session.user.image && (
+                      <span
+                        style={{ backgroundImage: `url('${session.user.image}')` }}
+                        className={styles.avatar}
+                      />
+                    )}
+
+
+                  </>
+                )}
+              </ListItemAvatar>
             </Grid>
             <Grid xs={9}>
               <Grid xs={12}>
                 <ListItemText>
 
-             
-                {session?.user && (
-            <>
-             
-             
-              
-                {session.user.email ?? session.user.name}
-            
-              
-            </>
-          )}
-              
-             
-           
-          
+
+                  {session?.user && (
+                    <>
+
+
+
+                      {session.user.email ?? session.user.name}
+
+
+                    </>
+                  )}
+
+
+
+
 
                 </ListItemText>
               </Grid>
@@ -255,45 +255,45 @@ Sign in with GitHub
             <RocketOutlinedIcon />
           </ListItemIcon>
           <ListItemText>Your Space</ListItemText>
-         
+
         </ListItemButton>
 
-        
 
-        <Switchaccount/>
+
+        <Switchaccount />
 
 
         {session?.user && (
-            <>
-             
-              <a
-                href={`/api/auth/signout`}
-                // className={styles.button}
-              
-              >
-              
-              <ListItemButton   onClick={(e) => {
-                  e.preventDefault()
-                  signOut()
-                }}>
-          <ListItemIcon>
-            <LogoutOutlinedIcon fontSize="small" />
-          </ListItemIcon>
-          Sign out
-        </ListItemButton>
+          <>
+
+            <a
+              href={`/api/auth/signout`}
+            // className={styles.button}
+
+            >
+
+              <ListItemButton onClick={(e) => {
+                e.preventDefault()
+                signOut()
+              }}>
+                <ListItemIcon>
+                  <LogoutOutlinedIcon fontSize="small" />
+                </ListItemIcon>
+                Sign out
+              </ListItemButton>
 
 
 
 
-              </a>
-            </>
-          )}
-      
+            </a>
+          </>
+        )}
+
         <Divider />
 
-        <Appearance /><Language/><Location /><Keyboard/>
+        <Appearance /><Language /><Location /><Keyboard />
 
-        
+
         <Divider />
         <ListItemButton onClick={handleClose}>
           <ListItemIcon>
