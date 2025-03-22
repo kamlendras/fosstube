@@ -1,32 +1,24 @@
 "use client";
 import * as React from "react";
 import {styled,createTheme,ThemeProvider,} from "@mui/material/styles";
-// import Image from 'next/image'
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ListSubheader from "@mui/material/ListSubheader";
 import HomeIcon from "@mui/icons-material/Home";
 import PlayCircleOutlineOutlinedIcon from "@mui/icons-material/PlayCircleOutlineOutlined";
-import LibraryBooksOutlinedIcon from "@mui/icons-material/LibraryBooksOutlined";
 import HistoryIcon from "@mui/icons-material/History";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import RocketOutlinedIcon from "@mui/icons-material/RocketOutlined";
-import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";
-import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
 import WhatshotOutlinedIcon from "@mui/icons-material/WhatshotOutlined";
 import MusicNoteOutlinedIcon from "@mui/icons-material/MusicNoteOutlined";
 import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
-import LightbulbOutlinedIcon from "@mui/icons-material/LightbulbOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@mui/icons-material/FeedbackOutlined";
-import BookOutlinedIcon from "@mui/icons-material/BookOutlined";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Copyright from "./_components/copyrightr";
+import Copyright from "./components/copyright";
 import localFont from "next/font/local";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
@@ -40,17 +32,28 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
 import MenuIcon from "@mui/icons-material/Menu";
-import Notifications from "./_components/notifications";
-import Create from "./_components/create";
-import Avatar from "./_components/avatar";
+import Notifications from "./components/notifications";
+import Create from "./components/create";
+import Avatar from "./components/avatar";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import Box from "@mui/material/Box";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import "./globals.css";
 import { Roboto } from "next/font/google";
-import SessionProvider from "./_components/SessionProvider";
+import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined';
+import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
+import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
+import SmartDisplayOutlinedIcon from '@mui/icons-material/SmartDisplayOutlined';
+import PlaylistPlayOutlinedIcon from '@mui/icons-material/PlaylistPlayOutlined';
+import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
+import MovieCreationOutlinedIcon from '@mui/icons-material/MovieCreationOutlined';
+import LiveTvOutlinedIcon from '@mui/icons-material/LiveTvOutlined';
+import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import DiamondOutlinedIcon from '@mui/icons-material/DiamondOutlined';
+import PodcastsOutlinedIcon from '@mui/icons-material/PodcastsOutlined';
+
 const roboto = Roboto({ subsets: ["latin"], weight: ["400"] });
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 const drawerWidth: number = 240;
@@ -106,40 +109,13 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 
 const myFont = localFont({ src: "./_gothic.otf" });
-// const useMediaQuery = (width) => {
-//   const [targetReached, setTargetReached] = useState(false);
 
-//   const updateTarget = useCallback((e) => {
-//     if (e.matches) {
-//       setTargetReached(true);
-//     } else {
-//       setTargetReached(false);
-//     }
-//   }, []);
-
-//   useEffect(() => {
-//     const media = window.matchMedia(`(max-width: ${width}px)`);
-//     media.addListener(updateTarget);
-
-    // Check on mount (callback is not called until a change occurs)
-//     if (media.matches) {
-//       setTargetReached(true);
-//     }
-
-//     return () => media.removeListener(updateTarget);
-//   }, [updateTarget, width]);
-
-//   return targetReached;
-// };
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
 
-  // const { data: session, status } = useSession()
-  // const session = useSession();
-  // const loading = status === "loading"
   const pathname = usePathname();
 
   const [open, setOpen] = React.useState(true);
@@ -168,7 +144,7 @@ export default function RootLayout({
 
   // const isBreakpoint = useMediaQuery(768);
   return (
-      <SessionProvider>
+      <>
     <html lang="en">
       <body className={roboto.className}>
         <ThemeProvider theme={theme}>
@@ -209,10 +185,8 @@ export default function RootLayout({
                       noWrap
                       sx={{ flexGrow: 1 }}
                     >
-                      <main className={myFont.className}>
-                        <YouTubeIcon  sx={{ fontSize: 45,  }} />
-                        FossTube
-                      </main>
+                      <img src="/youtubefull.svg" 
+                      />
                     </Typography>
 
                     <div className="wrap">
@@ -220,7 +194,7 @@ export default function RootLayout({
                         <input
                           type="text"
                           className="searchTerm"
-                          placeholder="Search FossTube"
+                          placeholder="Search YouTube"
                         />
                         <button type="submit" className="searchButton">
                           <SearchOutlinedIcon />
@@ -299,67 +273,36 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="/play"
-                            className={pathname == "/play" ? "active" : ""}
+                            href="/shorts"
+                            className={pathname == "/shorts" ? "active" : ""}
                           >
                             <ListItemButton>
                               <ListItemIcon>
                                 <PlayCircleOutlineOutlinedIcon
                                   className={
-                                    pathname == "/play" ? "active" : ""
+                                    pathname == "/shorts" ? "active" : ""
                                   }
                                 />
                               </ListItemIcon>
-                              <ListItemText primary="Play" />
+                              <ListItemText primary="Shorts" />
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="/spaces"
-                            className={pathname == "/spaces" ? "active" : ""}
+                            href="/subscriptions"
+                            className={pathname == "/subscriptions" ? "active" : ""}
                           >
                             <ListItemButton>
                               <ListItemIcon>
-                                <RocketOutlinedIcon
+                                <SubscriptionsOutlinedIcon
                                   className={
-                                    pathname == "/spaces" ? "active" : ""
+                                    pathname == "/subscriptions" ? "active" : ""
                                   }
                                 />
                               </ListItemIcon>
-                              <ListItemText primary="Spaces" />
+                              <ListItemText primary="Subscriptions" />
                             </ListItemButton>
                           </Link>
                           <Divider sx={{ my: 1 }} />
-                          <Link
-                            href="/courses"
-                            className={pathname == "/courses" ? "active" : ""}
-                          >
-                            <ListItemButton>
-                              <ListItemIcon>
-                                <BookOutlinedIcon
-                                  className={
-                                    pathname == "/courses" ? "active" : ""
-                                  }
-                                />
-                              </ListItemIcon>
-                              <ListItemText primary="Courses" />
-                            </ListItemButton>
-                          </Link>
-                          <Divider sx={{ my: 1 }} />
-                          <Link
-                            href="/library"
-                            className={pathname == "/library" ? "active" : ""}
-                          >
-                            <ListItemButton>
-                              <ListItemIcon>
-                                <LibraryBooksOutlinedIcon
-                                  className={
-                                    pathname == "/library" ? "active" : ""
-                                  }
-                                />
-                              </ListItemIcon>
-                              <ListItemText primary="Library" />
-                            </ListItemButton>
-                          </Link>
                           <Link
                             href="/history"
                             className={pathname == "/history" ? "active" : ""}
@@ -376,57 +319,85 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="space"
-                            className={pathname == "/space" ? "active" : ""}
+                            href="/playlists"
+                            className={pathname == "/playlists" ? "active" : ""}
                           >
                             <ListItemButton>
                               <ListItemIcon>
-                                <RocketLaunchOutlinedIcon
+                                < PlaylistPlayOutlinedIcon
                                   className={
-                                    pathname == "/space" ? "active" : ""
+                                    pathname == "/playlists" ? "active" : ""
                                   }
                                 />
                               </ListItemIcon>
-                              <ListItemText primary="Your Space" />
+                              <ListItemText primary="Playlists" />
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="/favorites"
-                            className={pathname == "/favorites" ? "active" : ""}
+                            href="your_videos"
+                            className={pathname == "/your_videos" ? "active" : ""}
                           >
                             <ListItemButton>
                               <ListItemIcon>
-                                <FavoriteBorderIcon
+                                <SmartDisplayOutlinedIcon
                                   className={
-                                    pathname == "/favorites" ? "active" : ""
+                                    pathname == "/your_videos" ? "active" : ""
                                   }
                                 />
                               </ListItemIcon>
-                              <ListItemText primary="Favorites" />
+                              <ListItemText primary="Your videos" />
                             </ListItemButton>
                           </Link>
-                          <Divider sx={{ my: 1 }} />
-                          <ListSubheader inset>
-                            <Typography variant="body1" gutterBottom>
-                              Spaces
-                            </Typography>
-                          </ListSubheader>
                           <Link
-                            href="/browse"
-                            className={pathname == "/browse" ? "active" : ""}
+                            href="/watch_later"
+                            className={pathname == "/watch_later" ? "active" : ""}
                           >
                             <ListItemButton>
                               <ListItemIcon>
-                                <AddCircleOutlineOutlinedIcon
+                                <AccessTimeOutlinedIcon
                                   className={
-                                    pathname == "/browse" ? "active" : ""
+                                    pathname == "/watch_later" ? "active" : ""
                                   }
                                 />
                               </ListItemIcon>
-                              <ListItemText>Browse</ListItemText>
+                              <ListItemText primary="Watch later" />
                             </ListItemButton>
                           </Link>
+                          <Link
+                            href="/liked_videos"
+                            className={pathname == "/liked_videos" ? "active" : ""}
+                          >
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <ThumbUpOutlinedIcon
+                                  className={
+                                    pathname == "/liked_videos" ? "active" : ""
+                                  }
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary="Liked videos" />
+                            </ListItemButton>
+                          </Link>
+                          {/* <Link
+                            href="/courses"
+                            className={pathname == "/courses" ? "active" : ""}
+                          >
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <BookOutlinedIcon
+                                  className={
+                                    pathname == "/courses" ? "active" : ""
+                                  }
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary="Courses" />
+                            </ListItemButton>
+                          </Link> */}
                           <Divider sx={{ my: 1 }} />
+                        
+                     
+                          
+                          
                           <ListSubheader component="div" inset>
                             Explore
                           </ListSubheader>
@@ -446,6 +417,21 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
+                            href="/shopping"
+                            className={pathname == "/shopping" ? "active" : ""}
+                          >
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <LocalMallOutlinedIcon
+                                  className={
+                                    pathname == "/shopping" ? "active" : ""
+                                  }
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary="Shopping" />
+                            </ListItemButton>
+                          </Link>
+                          <Link
                             href="/music"
                             className={pathname == "/music" ? "active" : ""}
                           >
@@ -458,6 +444,36 @@ export default function RootLayout({
                                 />
                               </ListItemIcon>
                               <ListItemText primary="Music" />
+                            </ListItemButton>
+                          </Link>
+                          <Link
+                            href="/movies"
+                            className={pathname == "/movies" ? "active" : ""}
+                          >
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <MovieCreationOutlinedIcon
+                                  className={
+                                    pathname == "/movies" ? "active" : ""
+                                  }
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary="Movies" />
+                            </ListItemButton>
+                          </Link>
+                          <Link
+                            href="/live"
+                            className={pathname == "/live" ? "active" : ""}
+                          >
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <LiveTvOutlinedIcon 
+                                  className={
+                                    pathname == "/live" ? "active" : ""
+                                  }
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary="Live" />
                             </ListItemButton>
                           </Link>
                           <Link
@@ -491,36 +507,124 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="/learning"
-                            className={pathname == "/learning" ? "active" : ""}
+                            href="/sports"
+                            className={pathname == "/sports" ? "active" : ""}
                           >
                             <ListItemButton>
                               <ListItemIcon>
-                                <LightbulbOutlinedIcon
+                                <EmojiEventsOutlinedIcon
                                   className={
-                                    pathname == "/learning" ? "active" : ""
+                                    pathname == "/sports" ? "active" : ""
                                   }
                                 />
                               </ListItemIcon>
-                              <ListItemText primary="Learning" />
+                              <ListItemText primary="Sports" />
                             </ListItemButton>
                           </Link>
+                          <Link
+                            href="/courses"
+                            className={pathname == "/courses" ? "active" : ""}
+                          >
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <SchoolOutlinedIcon
+                                  className={
+                                    pathname == "/courses" ? "active" : ""
+                                  }
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary="Courses" />
+                            </ListItemButton>
+                          </Link>
+                          <Link
+                            href="/fashion"
+                            className={pathname == "/fashion" ? "active" : ""}
+                          >
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <DiamondOutlinedIcon
+                                  className={
+                                    pathname == "/fashion" ? "active" : ""
+                                  }
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary="Fashion &amp; Beauty" />
+                            </ListItemButton>
+                          </Link>
+                          <Link
+                            href="/podcasts"
+                            className={pathname == "/podcasts" ? "active" : ""}
+                          >
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <PodcastsOutlinedIcon
+                                  className={
+                                    pathname == "/podcasts" ? "active" : ""
+                                  }
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary="Podcasts" />
+                            </ListItemButton>
+                          </Link>
+                        
                           <Divider sx={{ my: 1 }} />
                           <ListSubheader component="div" inset>
-                            Try FOSS
+                          More from YouTube
                           </ListSubheader>
-                          <Link href="https://ueats.vercel.app/">
+                          <Link href="/youtube_premium">
                             <ListItemButton>
                               <ListItemIcon>
                                 <img
-                                  src="/ueats.jpeg"
+                                  src="/youtube.svg"
                                   height={26}
                                   width={26}
                                   alt="ueats"
                                 />
                               </ListItemIcon>
 
-                              <ListItemText primary="Ueats (FOSS)" />
+                              <ListItemText primary="Youtube Premium" />
+                            </ListItemButton>
+                          </Link>
+                          <Link href="/youtube_studio">
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <img
+                                  src="/youtubestudio.svg"
+                                  height={26}
+                                  width={26}
+                                  alt="ueats"
+                                />
+                              </ListItemIcon>
+
+                              <ListItemText primary="Youtube Studio" />
+                            </ListItemButton>
+                          </Link>
+                          <Link href="/youtube_music">
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <img
+                        src="/youtubemusic.svg"
+                                  height={26}
+                                  width={26}
+                                  alt="ueats"
+                                />
+                              </ListItemIcon>
+
+                              <ListItemText primary="Youtube Music" />
+                            </ListItemButton>
+                          </Link>
+                          <Link href="/youtube_kids">
+                            <ListItemButton>
+                              <ListItemIcon>
+                                <img
+                                    src="/youtubekids.svg"
+                                  height={26}
+                                  width={26}
+                                  alt="ueats"
+                                />
+                              </ListItemIcon>
+
+                              <ListItemText primary="Youtube Kids" />
                             </ListItemButton>
                           </Link>
 
@@ -541,7 +645,7 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="https://github.com/universal-org/fosstube/issues"
+                            href="/report_history"
                            
                           >
                             <ListItemButton>
@@ -550,7 +654,7 @@ export default function RootLayout({
                                
                                 />
                               </ListItemIcon>
-                              <ListItemText primary="Report" />
+                              <ListItemText primary="Report history" />
                             </ListItemButton>
                           </Link>
                           <Link
@@ -569,7 +673,7 @@ export default function RootLayout({
                             </ListItemButton>
                           </Link>
                           <Link
-                            href="https://github.com/universal-org/fosstube/issues"
+                            href="/send_feedback"
                            
                           >
                             <ListItemButton>
@@ -578,7 +682,7 @@ export default function RootLayout({
                               
                                 />
                               </ListItemIcon>
-                              <ListItemText primary="Feedback" />
+                              <ListItemText primary="Send feedback" />
                             </ListItemButton>
                           </Link>
 
@@ -602,11 +706,11 @@ export default function RootLayout({
               }}
             >
               <Container 
-              // maxWidth="xl"
+              maxWidth="xl"
 // maxWidth="100vw"
 
 
-               sx={{ mt: 0.90 }}
+              //  sx={{ mt: 0.90 }}
               
               >
                 {children}
@@ -617,6 +721,6 @@ export default function RootLayout({
       </body>
 
     </html>
-        </SessionProvider>
+        </>
   );
 }

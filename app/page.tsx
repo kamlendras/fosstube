@@ -1,8 +1,7 @@
 import Toolbar from "@mui/material/Toolbar";
-import Cardgrid from "./_components/home/cardgrid";
-import Chips from "./_components/chips";
+import Cardgrid from "./components/home/cardgrid";
 export const metadata = {
-  title: "FossTube",
+  title: "Youtube",
   description: "Open & Decentralized",
 };
 export default function C() {
@@ -10,7 +9,6 @@ export default function C() {
     <>
       <Toolbar />
       <Toolbar />
-      <Chips />
       <Cardgrid />
 
     </>

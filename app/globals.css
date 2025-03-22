@@ -18,6 +18,7 @@ body {
   border-bottom: 0;
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -472,7 +473,7 @@ disp
 
 
 
-.fosstubeicon{
+.YouTubeicon{
   vertical-align: bottom;
   display: inline;
 }
@@ -481,4 +482,42 @@ disp
 .MuiFab-root{
   background-color: #ffffff !important;
   color: #000000 !important;
+}
+
+
+
+.copyright{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+     right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+color: rgb(255, 255, 255);
+}
+
+
+.container{
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.content{
+  margin-bottom: 10vw;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 40px;
+  height: 100%;
 }
