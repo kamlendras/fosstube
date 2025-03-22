@@ -43,7 +43,7 @@ A full-featured YouTube clone built using modern web technologies. This project 
 
 1. Clone the repository:
 
-<code>git clone https://github.com/your-username/youtube-clone.git <br/>
+<code>git clone https://github.com/kamlendras/youtube-clone.git <br/>
 cd youtube-clone</code>
 
 2. Install dependencies:
