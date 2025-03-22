@@ -3,7 +3,7 @@ import SmartDisplayOutlinedIcon from '@mui/icons-material/SmartDisplayOutlined';
 import Typography from '@mui/material/Typography';
 
 export const metadata = {
-  title: "YourVideos - YouTube",
+  title: "Your Videos - YouTube",
 };
 function YourVideos() {
   return (
